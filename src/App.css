@@ -1,3 +1,4 @@
+/*HEADER*
 .header-bg{
   background-color:#1b1d21;
   min-height: 120px;
@@ -35,3 +36,47 @@
     font-weight: bold;
     font-size: 36;
   }
+
+/*Footer*/
+
+.footer {
+  background-color: #1b1d21;
+}
+a {
+  /* color: white; */
+  margin: 10px 10px;
+}
+
+.footer-font {
+  color: #f2f4f7;
+  font-weight: bold;
+  font-size: 36;
+}
+.logo-text {
+  margin-left: 10px;
+}
+h3 {
+  margin-left: 10px;
+}
+.Link-class {
+  margin-top: 40px;
+  font-size: large;
+}
+.logo-footer {
+  border-radius: 25px;
+}
+.footer-link-name {
+  color: white;
+}
+.footer-link-name:hover {
+  color: #737a85;
+  text-decoration: none;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
