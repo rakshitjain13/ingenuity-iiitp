@@ -53,6 +53,7 @@ class Header extends Component {
                         <a href="#" className="btn btn-social-icon zoom" title="follow us on our page"><i className="fa fa-instagram" style={{color:'white'}} aria-hidden="true"></i></a>
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div> */}
 
           <Navbar expand='md'>
@@ -90,6 +91,31 @@ class Header extends Component {
                   </NavItem>
                 </Nav>
               </Collapse>
+=======
+                </div>
+                <Navbar  expand="md">
+                    <div className="container nav-font ">
+                        <NavbarToggler onClick={this.toggleNav}><span className="fa fa-bars" style={{color:'white'}} ></span></NavbarToggler>
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav className="ml-auto" navbar>
+                            <NavItem >
+                                <NavLink className="nav-link nav-font"  to='/home'>Blogs</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link nav-font"  to='/home'>Editorials</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link nav-font"  to='/home'>Success Stories</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link nav-font"  to='/home'>About us</NavLink>
+                            </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </div>
+                </Navbar>
+                </div>
+>>>>>>> 59514de2a82c01713a5020c39531b7ac7a7dbe73
             </div>
           </Navbar>
         </div>
