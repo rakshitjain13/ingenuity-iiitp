@@ -49,7 +49,7 @@ class Header extends Component{
                                 <NavLink className="nav-link nav-font"  to='/home'>Success Stories</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link nav-font"  to='/home'>Our Team</NavLink>
+                                <NavLink className="nav-link nav-font"  to='/home'>About us</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>

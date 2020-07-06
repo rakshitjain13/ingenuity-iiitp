@@ -208,3 +208,95 @@ padding: 20px;
     font-size: 32px;
   }
 }
+section.featured-posts .row:nth-of-type(odd) .text {
+  background: #fafafa;
+}
+
+section.featured-posts .row:last-of-type {
+  margin-bottom: 0;
+}
+
+section.featured-posts p {
+  font-weight: 400;
+  color: #777;
+  font-size: 0.95em;
+}
+
+section.featured-posts .text-inner {
+  padding: 50px 30px;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.featured-posts a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section.featured-posts h2 {
+  line-height: 1.1em;
+  color: #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.featured-posts h2:hover {
+  color: #555;
+}
+
+section.featured-posts .avatar {
+  max-width: 40px;
+  min-width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+section.featured-posts .title,
+section.featured-posts .date,
+section.featured-posts .comments {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #999;
+}
+
+section.featured-posts .title i,
+section.featured-posts .date i,
+section.featured-posts .comments i {
+  margin-right: 5px;
+}
+
+section.featured-posts .title::after,
+section.featured-posts .date::after,
+section.featured-posts .comments::after {
+  content: '|';
+  display: inline-block;
+  margin: 0 7px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+section.featured-posts .comments::after {
+  display: none;
+}
+
+section.featured-posts .image {
+  max-height: 200px;
+  width: auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+section.featured-posts .image img {
+  height: 100%;
+}
+
+section.featured-posts .post-header {
+  margin-bottom: 10px;
+}
+
+section.featured-posts .post-footer {
+  margin-top: 30px;
+}

@@ -51,13 +51,9 @@ class Home extends Component{
 
             </div>
 			<Gallery key={carddata.id} data={carddata}/>
-			<div className="container">
-				<div className="row">
-					<div className="col-12 col-md-9 mt-5 mb-5">
-						<Featured featured={featured}/>
-					</div>
-				</div>
-			</div>
+
+			<Featured featured={featured}/>
+	
 		</div>
         );
     }
