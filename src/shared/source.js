@@ -2,7 +2,10 @@ export const intern=[
     {
         id:0,
         slider:true,
-        featured:true,
+		featured:true,
+		card:true,
+		likes:3,
+		date:'02 July 2020',
 		title: 'Internship Experience',
 		description:
 		'I am Karra Nagasaikiran ,4th year CSE.I did internship with the FINIQ for 1 month . I always work alone but  this internship taught me about the importance of working in teams .',
@@ -14,7 +17,10 @@ export const intern=[
     {
         id:1,
         slider:true,
-        featured:true,
+		featured:true,
+		card:true,
+		likes:3,
+		date:'02 July 2020',
 		title: 'Internship Experience',
 		description:
 		'I am Karra Nagasaikiran ,4th year CSE.I did internship with the FINIQ for 1 month . I always work alone but  this internship taught me about the importance of working in teams .',
@@ -26,7 +32,10 @@ export const intern=[
     {
         id:2,
         slider:true,
-        featured:true,
+		featured:true,
+		card:true,
+		likes:3,
+		date:'02 July 2020',
 		title: 'Internship Experience',
 		description:
 		'I am Karra Nagasaikiran ,4th year CSE.I did internship with the FINIQ for 1 month . I always work alone but  this internship taught me about the importance of working in teams .',

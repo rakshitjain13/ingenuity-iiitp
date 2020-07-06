@@ -4,6 +4,8 @@ import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import '../slider-animations.css';
 import './styles.css';
+import Gallery from './CardComponent';
+import Featured from './FeaturedComponent';
 
 
 class Home extends Component{
@@ -14,9 +16,12 @@ class Home extends Component{
         }
     }
     render(){
-        const content=this.state.exprience.filter(item=>item.slider);
+		const content=this.state.exprience.filter(item=>item.slider);
+		const carddata=this.state.exprience.filter(item=>item.card);
+		const featured=this.state.exprience.filter(item=>item.featured);
         console.log(content);
         return(
+			<div>
             <div className="container">
                 <div className="row justify-content-center" style={{margin:10}}>
                     <div className="col-12 col-md-10 ">
@@ -40,10 +45,20 @@ class Home extends Component{
 					</section>
 				</div>
 			))}
-		</Slider>
+			</Slider>
                     </div>
                 </div>
+
             </div>
+			<Gallery key={carddata.id} data={carddata}/>
+			<div className="container">
+				<div className="row">
+					<div className="col-12 col-md-9 mt-5 mb-5">
+						<Featured featured={featured}/>
+					</div>
+				</div>
+			</div>
+		</div>
         );
     }
 }

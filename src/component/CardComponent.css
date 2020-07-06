@@ -69,6 +69,7 @@
 figure.effect-ravi {
   background: #303fa9;
   margin: 0;
+  border-radius: 25px;
 }
 
 .grid [class^='col'] {

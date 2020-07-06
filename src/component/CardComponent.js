@@ -9,13 +9,13 @@ class Gallery extends Component {
           <div class='row'>
             {this.props.data.map((item) => (
               <div className='col-md-4'>
-                <figure className='effect-ravi'>
+                <figure className='effect-ravi' >
                   <img src={item.image} alt='img17' />
                   <figcaption>
                     <h2>{item.title}</h2>
                     <p>
                       <a href='#'>
-                        <i className='fa fa-search'></i>
+                        <i className='fa fa-book fa-lg'></i>
                       </a>
                     </p>
                   </figcaption>
