@@ -1,176 +1,131 @@
-.grid figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer;
+section.latest-posts header {
+  margin-bottom: 50px;
 }
 
-.grid figure img {
-  position: relative;
-  display: block;
-  height: 220px;
-  width: 300px;
-  opacity: 0.8;
-  margin: 0;
+.post-meta {
+  margin: 10px 0;
+  font-size: 0.8em;
 }
 
-.grid figure figcaption {
-  padding: 2em;
-  color: #fff;
+.post-meta .date {
   text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  font-weight: 400;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
+.post-meta .date::after {
+  display: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.post p:not(.lead) {
+  font-weight: 400;
+  color: #777;
+  font-size: 0.95em;
 }
 
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
+.post a {
+  text-decoration: none;
 }
 
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
+.post a:hover, .post a:focus {
+  text-decoration: none;
 }
 
-.grid figure h2 span {
-  font-weight: 800;
+.post h3 {
+  line-height: 1.1em;
+  color: #222;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
 }
 
-.grid figure h2,
-.grid figure p {
-  margin: 0;
+.post h3:hover {
+  color: #555;
 }
 
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
+.post .category a {
+  color: #ef5285;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-figure.effect-ravi {
-  background: #303fa9;
-  margin: 0;
-  border-radius: 25px;
+.post .date {
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #aaa;
 }
 
-.grid [class^='col'] {
-  padding: 10px;
+.post .avatar {
+  max-width: 40px;
+  min-width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-figure.effect-ravi h2 {
-  font-size: 158.75%;
+.post .title,
+.post .date,
+.post .comments,
+.post .views {
+  font-weight: 400;
+  color: #999;
+  text-transform: capitalize;
 }
 
-figure.effect-ravi h2,
-figure.effect-ravi p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
+.post .title i,
+.post .date i,
+.post .comments i,
+.post .views i {
+  margin-right: 5px;
+  font-size: 1.1em;
 }
 
-figure.effect-ravi figcaption::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120px;
-  height: 120px;
-  border: 2px solid #fff;
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(0, 0, 1);
-  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(0, 0, 1);
-  -webkit-transform-origin: 50%;
-  transform-origin: 50%;
+.post .title::after,
+.post .date::after,
+.post .comments::after,
+.post .views::after {
+  content: '|';
+  display: inline-block;
+  margin: 0 7px;
+  font-size: 0.9em;
+  color: #ccc;
 }
 
-figure.effect-ravi p {
-  width: 100px;
-  text-transform: none;
-  font-size: 121%;
-  line-height: 2;
+.post .post-tags {
+  margin-top: 30px;
 }
 
-figure.effect-ravi p a {
+.post .post-tags .tag {
+  padding: 5px 25px;
+  border: 1px solid #ddd;
+  margin: 5px;
+  color: #777;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.post .post-tags .tag:hover {
+  background: #ef5285;
   color: #fff;
+  border-color: #ef5285;
 }
 
-figure.effect-ravi p a:hover,
-figure.effect-ravi p a:focus {
-  opacity: 0.6;
+.post .meta-last::after {
+  display: none;
 }
 
-figure.effect-ravi p a i {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-ravi p a:first-child i {
-  -webkit-transform: translate3d(-60px, -60px, 0);
-  transform: translate3d(-60px, -60px, 0);
-}
-
-figure.effect-ravi p a:nth-child(2) i {
-  -webkit-transform: translate3d(60px, -60px, 0);
-  transform: translate3d(60px, -60px, 0);
-}
-
-figure.effect-ravi p a:nth-child(3) i {
-  -webkit-transform: translate3d(-60px, 60px, 0);
-  transform: translate3d(-60px, 60px, 0);
-}
-
-figure.effect-ravi p a:nth-child(4) i {
-  -webkit-transform: translate3d(60px, 60px, 0);
-  transform: translate3d(60px, 60px, 0);
-}
-
-figure.effect-ravi:hover figcaption::before {
-  opacity: 1;
-  -webkit-transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(1, 1, 1);
-  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg)
-    scale3d(1, 1, 1);
-}
-
-figure.effect-ravi:hover h2 {
-  opacity: 0;
-  -webkit-transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
-  transform: translate3d(-50%, -50%, 0) scale3d(0.8, 0.8, 1);
-}
-
-figure.effect-ravi:hover p i:empty {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  /* just because it's stronger than nth-child */
-  opacity: 1;
+/* Latest Posts Section Media Query ------------------------------------- */
+@media (max-width: 767px) {
+  .post {
+    margin-bottom: 40px;
+  }
+  .post:last-of-type {
+    margin-bottom: 0;
+  }
 }

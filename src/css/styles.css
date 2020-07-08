@@ -10,7 +10,7 @@ button {
   -webkit-transition: all .5s ease;
           transition: all .5s ease;
   border: none;
-  background: #FFD800;
+  background: #C2B9B0;
   border-radius: 30px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -209,7 +209,7 @@ padding: 20px;
   }
 }
 section.featured-posts .row:nth-of-type(odd) .text {
-  background:#423d3d;
+  background:#C2B9B0;
 }
 
 section.featured-posts .row:last-of-type {

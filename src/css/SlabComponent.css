@@ -1,0 +1,80 @@
+section.latest-posts header {
+    margin-bottom: 50px;
+  }
+  footer.main-footer .latest-posts .image {
+    max-width: 50px;
+    padding: 4px;
+    border: 2px solid #333;
+    margin-right: 10px;
+  }
+  
+  footer.main-footer .latest-posts a {
+    font-size: 0.95em;
+    text-decoration: none;
+  }
+  
+  footer.main-footer .latest-posts a:hover {
+    color: #fff;
+  }
+  
+  footer.main-footer .latest-posts strong {
+    display: block;
+  }
+  
+  footer.main-footer .latest-posts .date {
+    font-size: 0.85em;
+    color: #aaa;
+  }
+  .widget.latest-posts a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .widget.latest-posts a:hover {
+    color: #000;
+  }
+  
+  .widget.latest-posts .image {
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .widget.latest-posts .item {
+    margin-bottom: 20px;
+  }
+  
+  .widget.latest-posts strong {
+    font-size: 0.95em;
+    display: block;
+    line-height: 1em;
+  }
+  
+  .widget.latest-posts .views,
+  .widget.latest-posts .comments {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #bbb;
+    margin-top: 10px;
+  }
+  
+  .widget.latest-posts .views i,
+  .widget.latest-posts .comments i {
+    margin-right: 5px;
+  }
+  
+  .widget.latest-posts .views::after,
+  .widget.latest-posts .comments::after {
+    content: '|';
+    display: inline-block;
+    margin: 0 7px;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
+  .widget.latest-posts .comments::after {
+    display: none;
+  }

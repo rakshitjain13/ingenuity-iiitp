@@ -3,6 +3,8 @@ import '../css/CardComponent.css';
 
 class Gallery extends Component {
   render() {
+    const list=this.props.data;
+    console.log(list);
     return (
       //    <div class='container'>
       //      <div class='grid'>
@@ -30,94 +32,43 @@ class Gallery extends Component {
         <div class='container'>
           <header>
             <h2>Latest from the blog</h2>
-            <p class='text-big'>
+            {/* <p class='text-big'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
+            </p> */}
           </header>
-
-          <div class='row'>
-            <div class='post col-md-4'>
-              <div class='post-thumbnail'>
-                <a href='post.html'>
-                  <img
-                    src='https://d19m59y37dris4.cloudfront.net/blog/1-2-1/img/blog-1.jpg'
-                    alt='...'
-                    class='img-fluid'
-                  />
-                </a>
-              </div>
-              <div class='post-details'>
-                <div class='post-meta d-flex justify-content-between'>
-                  <div class='date'>20 May | 2016</div>
-                  <div class='category'>
-                    <a href='#'>Business</a>
-                  </div>
-                </div>
-                <a href='post.html'>
-                  <h3 class='h4'>Ways to remember your important ideas</h3>
-                </a>
-                <p class='text-muted'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </div>
-            </div>
-
-            <div class='post col-md-4'>
-              <div class='post-thumbnail'>
-                <a href='post.html'>
-                  <img
-                    src='https://d19m59y37dris4.cloudfront.net/blog/1-2-1/img/blog-2.jpg'
-                    alt='...'
-                    class='img-fluid'
-                  />
-                </a>
-              </div>
-              <div class='post-details'>
-                <div class='post-meta d-flex justify-content-between'>
-                  <div class='date'>20 May | 2016</div>
-                  <div class='category'>
-                    <a href='#'>Technology</a>
-                  </div>
-                </div>
-                <a href='post.html'>
-                  <h3 class='h4'>
-                    Diversity in Engineering: Effect on Questions
-                  </h3>
-                </a>
-                <p class='text-muted'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </div>
-            </div>
-
-            <div class='post col-md-4'>
-              <div class='post-thumbnail'>
-                <img
-                  src='https://d19m59y37dris4.cloudfront.net/blog/1-2-1/img/blog-3.jpg'
-                  alt='...'
-                  class='img-fluid'
-                />
-              </div>
-              <div class='post-details'>
-                <div class='post-meta d-flex justify-content-between'>
-                  <div class='date'>20 May | 2016</div>
-                  <div class='category'>
-                    <a href='#'>Financial</a>
-                  </div>
-                </div>
-                <a href='post.html'>
-                  <h3 class='h4'>
-                    Alberto Savoia Can Teach You About Interior
-                  </h3>
-                </a>
-                <p class='text-muted'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore.
-                </p>
-              </div>
-            </div>
+          <div className='row'>
+          {list.map(item=>(
+                   <div class='post col-md-4'>
+                   <div class='post-thumbnail'>
+                     <a href='post.html'>
+                       <img
+                         src={item.image}
+                         alt='...'
+                         class='img-fluid'
+                         style={{
+                           width:'350px',
+                           height:'250px'
+                         }}
+                       />
+                     </a>
+                   </div>
+                   <div class='post-details'>
+                     <div class='post-meta d-flex justify-content-between'>
+                       <div class='date'>{item.date}</div>
+                       <div class='category'>
+                         <a href='#'>{item.type}</a>
+                       </div>
+                     </div>
+                     <a href='post.html'>
+                       <h3 class='h4'>{item.title}</h3>
+                     </a>
+                     <p class='text-muted'>
+                      {item.description}
+                     </p>
+                   </div>
+                 </div>
+          ))
+          }
           </div>
         </div>
       </section>
