@@ -8,7 +8,7 @@ class Gallery extends Component {
         <div class='grid'>
           <div class='row'>
             {this.props.data.map((item) => (
-              <div className='col-md-4'>
+              <div className="col-lg-4 ">
                 <figure className='effect-ravi' >
                   <img src={item.image} alt='...' />
                   <figcaption>

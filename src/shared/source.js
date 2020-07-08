@@ -7,6 +7,7 @@ export const intern=[
 		likes:3,
 		date:'02 July 2020',
 		title: 'Internship Experience',
+		type:'Experience',
 		description:
 		'I am Karra Nagasaikiran ,4th year CSE.I did internship with the FINIQ for 1 month . I always work alone but  this internship taught me about the importance of working in teams .',
 		button: 'Read More',

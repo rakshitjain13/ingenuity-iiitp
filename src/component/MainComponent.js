@@ -12,7 +12,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Background />
+       
         <Header />
         <Switch location={this.props.location}>
           <Route path='/home' component={() => <Home />} />

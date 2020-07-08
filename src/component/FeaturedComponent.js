@@ -7,7 +7,7 @@ function RenderList({blog,index}){
     if(index&1)
     return (
                 <div className="row d-flex align-items-stretch">
-                <div className="text col-md-9">
+                <div className="text d-block col-12 col-lg-9">
                 <div className="text-inner d-flex align-items-center">
                     <div className="content">
                     <header className="post-header">
@@ -23,15 +23,15 @@ function RenderList({blog,index}){
                     </div>
                 </div>
                 </div>
-                <div className="image col-md-3" ><img  className="image-fluid" src={blog.image} alt="..."  /></div>
+                <div className="image d-none d-md-block col-12 col-lg-3" ><img  className="image-fluid" src={blog.image} alt="..."  /></div>
             </div> 
 
     );
     else
         return(
             <div className="row d-flex align-items-stretch">
-            <div className="image col-md-3" ><img  className="image-fluid" src={blog.image} alt="..."  /></div>
-            <div className="text col-md-9">
+            <div className="image d-none d-md-block col-12 col-lg-3" ><img  className="image-fluid" src={blog.image} alt="..."  /></div>
+            <div className="text d-block col-12 col-lg-9">
             <div className="text-inner d-flex align-items-center">
                 <div className="content">
                 <header className="post-header">
