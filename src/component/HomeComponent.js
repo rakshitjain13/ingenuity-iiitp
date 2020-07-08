@@ -6,6 +6,8 @@ import '../css/styles.css';
 import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';
+import Background from './BackgroundComponent';
+import PicGallery from './PictureGalleryComponent';
 
 class Home extends Component {
   constructor(props) {
@@ -55,6 +57,7 @@ class Home extends Component {
         <Featured featured={featured} />
         <Slab />
         <Gallery key={carddata.id} data={carddata} />
+        <PicGallery />
       </div>
     );
   }

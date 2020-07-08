@@ -26,7 +26,8 @@ section.latest-posts header {
   text-decoration: none;
 }
 
-.post a:hover, .post a:focus {
+.post a:hover,
+.post a:focus {
   text-decoration: none;
 }
 
