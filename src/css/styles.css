@@ -209,7 +209,7 @@ padding: 20px;
   }
 }
 section.featured-posts .row:nth-of-type(odd) .text {
-  background: #fafafa;
+  background:#423d3d;
 }
 
 section.featured-posts .row:last-of-type {
@@ -218,7 +218,7 @@ section.featured-posts .row:last-of-type {
 
 section.featured-posts p {
   font-weight: 400;
-  color: #777;
+  color:#FFFFFF;
   font-size: 0.95em;
 }
 
@@ -236,7 +236,7 @@ section.featured-posts a {
 
 section.featured-posts h2 {
   line-height: 1.1em;
-  color: #333;
+  color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -283,14 +283,15 @@ section.featured-posts .comments::after {
 }
 
 section.featured-posts .image {
-  max-height: 200px;
-  width: auto;
+  /* height:100px;
+  width:100px; */
   overflow: hidden;
   padding: 0;
 }
 
 section.featured-posts .image img {
-  height: 100%;
+  height: 270px;
+  width:300px;
 }
 
 section.featured-posts .post-header {

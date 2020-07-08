@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CardComponent.css';
+import '../css/CardComponent.css';
 
 class Gallery extends Component {
   render() {
@@ -10,7 +10,7 @@ class Gallery extends Component {
             {this.props.data.map((item) => (
               <div className='col-md-4'>
                 <figure className='effect-ravi' >
-                  <img src={item.image} alt='img17' />
+                  <img src={item.image} alt='...' />
                   <figcaption>
                     <h2>{item.title}</h2>
                     <p>

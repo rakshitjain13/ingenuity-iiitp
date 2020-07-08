@@ -2,8 +2,7 @@ import React,{Component } from 'react';
 import {intern} from '../shared/source';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import '../slider-animations.css';
-import './styles.css';
+import '../css/styles.css';
 import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 

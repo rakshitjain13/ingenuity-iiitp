@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './BackgroundComponent.css';
+import '../css/BackgroundComponent.css';
 
 class Background extends Component {
   render() {
