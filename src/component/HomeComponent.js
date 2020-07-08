@@ -3,6 +3,7 @@ import { intern } from '../shared/source';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import '../css/styles.css';
+import'../css/slider-animations.css';
 import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';

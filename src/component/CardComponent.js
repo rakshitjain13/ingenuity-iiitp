@@ -47,7 +47,7 @@ class Gallery extends Component {
                          class='img-fluid'
                          style={{
                            width:'350px',
-                           height:'250px'
+                           height:'300px'
                          }}
                        />
                      </a>
