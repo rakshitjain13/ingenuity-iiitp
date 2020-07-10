@@ -1,6 +1,6 @@
 export const intern=[
     {
-        id:0,
+        id:1,
         slider:true,
 		featured:true,
 		card:true,
@@ -16,7 +16,7 @@ export const intern=[
 		userProfile: 'https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg'
     },
     {
-        id:1,
+        id:2,
         slider:true,
 		featured:true,
 		card:true,
@@ -32,7 +32,7 @@ export const intern=[
 		userProfile: 'https://media-exp1.licdn.com/dms/image/C5103AQH0S172PGXN_A/profile-displayphoto-shrink_800_800/0?e=1599696000&v=beta&t=o4qOuJWDPhcd384DKv0E18YG_riB9D6Nzwo4lJxuh8A'
     },
     {
-        id:2,
+        id:3,
         slider:true,
 		featured:true,
 		card:true,

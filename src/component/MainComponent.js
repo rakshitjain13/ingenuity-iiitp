@@ -16,6 +16,7 @@ class Main extends Component {
         <Header />
         <Switch location={this.props.location}>
           <Route path='/home' component={() => <Home />} />
+          <Route exact path='/experience/:articleId'/>
           <Redirect to='/home' />
         </Switch>
         <Footer />

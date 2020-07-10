@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { intern } from '../shared/source';
+import axios from 'axios';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import '../css/styles.css';
@@ -7,20 +7,27 @@ import'../css/slider-animations.css';
 import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';
-import Background from './BackgroundComponent';
 import PicGallery from './PictureGalleryComponent';
+import {baseUrl} from '../shared/baseUrl';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      exprience: intern,
+      homedata: []
     };
   }
+  componentDidMount() {
+    axios.get(baseUrl+'homedata')
+      .then(res => {
+        const homedata = res.data;
+        this.setState({ homedata });
+      })
+  }
   render() {
-    const content = this.state.exprience.filter((item) => item.slider);
-    const carddata = this.state.exprience.filter((item) => item.card);
-    const featured = this.state.exprience.filter((item) => item.featured);
+    const content = this.state.homedata.filter((item) => item.slider);
+    const carddata = this.state.homedata.filter((item) => item.card);
+    const featured = this.state.homedata.filter((item) => item.featured);
     console.log(content);
     return (
       <div>

@@ -1,9 +1,5 @@
 export const data=[
     {
-        id:0,
-        content:''
-    },
-    {
         id:1,
         content:'During the internship, I worked with three technical teams based on three different projects. For the first two weeks, we were divided into groups of five consisting of few MBA students and remaining B.Tech students. The task assigned was to design and develop a website or landing webpage(having five scrollable sections) for a financial relationship manager. The website had to be designed in a way that it did not resemble the usual, boring tabular structures of a typical trading website. It must be user friendly with a creative user interface for providing best experience to the relationship manager. We had a wonderful experience during the task and learnt various aspects of web designing. It helped me to gain hands-on experience of HTML5, CSS3, Bootstrap, JavaScript and jQuery.The second project was based on creating a news feed for stocks with high fluctuations on a particular day. We had to first web scrape data related to such stocks, analyse them and then web scrape news articles which could explain the cause of such fluctuations in that stock. Further, we had to create a website which would display these stocks along with the news and relevant graphs. I found this to be the most challenging task out of all the three. However, I thoroughly enjoyed it. \
         The last project was related to Natural Language Processing. We had to cluster financial documents based on their similarity. This would help to create similar templates for such clustered documents. I had never worked on NLP before this. During this project, I explored a totally new field, learnt about pre-processing, vectorization, clustering algorithms, etc. The atmosphere in the company was co-operative, supportive and motivating. Overall, the internship experience was amazing!\
