@@ -83,3 +83,15 @@ h3 {
 .zoom:hover {
   transform: scale(1.5);
 }
+.shrink {
+  transition: transform 0.2s; /* Animation */
+}
+
+.shrink:hover {
+  transform: scale(0.9);
+}
+/*Background white*/
+.bg-white {
+  background-color: white !important;
+  position: relative;
+}

@@ -8,26 +8,20 @@ import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';
 import PicGallery from './PictureGalleryComponent';
-import {baseUrl} from '../shared/baseUrl';
+import {data} from '../shared/source';
+import{Link} from 'react-router-dom';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      homedata: []
+      data
     };
   }
-  componentDidMount() {
-    axios.get(baseUrl+'homedata')
-      .then(res => {
-        const homedata = res.data;
-        this.setState({ homedata });
-      })
-  }
   render() {
-    const content = this.state.homedata.filter((item) => item.slider);
-    const carddata = this.state.homedata.filter((item) => item.card);
-    const featured = this.state.homedata.filter((item) => item.featured);
+    const content = this.state.data.filter((item) => item.slider);
+    const carddata = this.state.data.filter((item) => item.card);
+    const featured = this.state.data.filter((item) => item.featured);
     console.log(content);
     return (
       <div>
@@ -46,7 +40,7 @@ class Home extends Component {
                     <div className='inner'>
                       <h1>{item.title}</h1>
                       <p>{item.description}</p>
-                      <button>{item.button}</button>
+                      <Link to={`${item.type}/${item.id}`}><button>{item.button}</button></Link>
                     </div>
                     <section>
                       <img src={item.userProfile} alt={item.user} />

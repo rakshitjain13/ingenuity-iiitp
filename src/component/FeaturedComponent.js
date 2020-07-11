@@ -2,6 +2,7 @@ import React from 'react';
 import { Fade, Stagger } from 'react-animation-components';
 import { Card, CardHeader, CardBody, Media } from 'reactstrap';
 import '../css/styles.css';
+import{Link} from 'react-router-dom';
 
 function RenderList({ blog, index }) {
   console.log(index);
@@ -12,13 +13,14 @@ function RenderList({ blog, index }) {
           <div className='text-inner d-flex align-items-center'>
             <div className='content'>
               <header className='post-header'>
-                <h2 className='h4'>{blog.title}</h2>
+                <h2 className='h4'><Link to={`${blog.type}/${blog.id}`}>{blog.title}</Link></h2>
               </header>
               <p>{blog.description}</p>
               <footer className=' post-footer d-flex align-items-center'>
+                
                 <a
                   href='#'
-                  className='author d-flex align-items-center flex-wrap'
+                  className='author d-flex align-items-center flex-wrap '
                 >
                   <div className='avatar'>
                     <img
@@ -57,7 +59,7 @@ function RenderList({ blog, index }) {
           <div className='text-inner d-flex align-items-center'>
             <div className='content'>
               <header className='post-header'>
-                <h2 className='h4'>{blog.title}</h2>
+                <h2 className='h4'><Link to={`${blog.type}/${blog.id}`}>{blog.title}</Link></h2>
               </header>
               <p>{blog.description}</p>
               <footer className=' post-footer d-flex align-items-center'>

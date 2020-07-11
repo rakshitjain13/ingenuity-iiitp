@@ -1,1 +1,0 @@
-export const baseUrl="https://my-json-server.typicode.com/rakshitjain13/data-smb-iiitp/";
