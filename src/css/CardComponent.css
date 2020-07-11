@@ -26,8 +26,7 @@ section.latest-posts header {
   text-decoration: none;
 }
 
-.post a:hover,
-.post a:focus {
+.post a:hover, .post a:focus {
   text-decoration: none;
 }
 
@@ -44,7 +43,7 @@ section.latest-posts header {
 }
 
 .post .category a {
-  color: #ef5285;
+  color: #999;
   letter-spacing: 0.05em;
   font-weight: 700;
   text-transform: uppercase;
@@ -112,9 +111,9 @@ section.latest-posts header {
 }
 
 .post .post-tags .tag:hover {
-  background: #ef5285;
+  background: #999;
   color: #fff;
-  border-color: #ef5285;
+  border-color: #999;
 }
 
 .post .meta-last::after {
