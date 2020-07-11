@@ -16,6 +16,7 @@ class Home extends Component {
       exprience: intern,
     };
   }
+
   render() {
     const content = this.state.exprience.filter((item) => item.slider);
     const carddata = this.state.exprience.filter((item) => item.card);
@@ -23,6 +24,7 @@ class Home extends Component {
     console.log(content);
     return (
       <div>
+        <Background />
         <div className='container'>
           <div className='row justify-content-center' style={{ margin: 10 }}>
             <div className='col-12 col-md-10 '>
@@ -52,7 +54,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
         <Slab />
         <Featured featured={featured} />
         <Slab />

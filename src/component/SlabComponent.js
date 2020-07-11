@@ -12,7 +12,7 @@ class Slab extends Component {
         }}
       >
         <div className='container '>
-          <div className='row' style={{ padding: '100px' }}>
+          <div className='row' style={{ padding: '70px' }}>
             <div className='col-md-7'>
               <h2>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

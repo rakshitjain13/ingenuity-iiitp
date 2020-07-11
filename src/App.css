@@ -1,8 +1,7 @@
 /*HEADER*/
 
 .header-bg {
-  background-color: #E7717D;
-
+  background-image: url('./assets/images/clouds.png');
 }
 .row-header {
   margin: 0px auto;
