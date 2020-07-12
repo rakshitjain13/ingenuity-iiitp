@@ -3,19 +3,20 @@ import axios from 'axios';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import '../css/styles.css';
-import'../css/slider-animations.css';
+import '../css/slider-animations.css';
 import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';
 import PicGallery from './PictureGalleryComponent';
-import {data} from '../shared/source';
-import{Link} from 'react-router-dom';
+import Background from './BackgroundComponent';
+import { data } from '../shared/source';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data
+      data,
     };
   }
 
@@ -42,7 +43,9 @@ class Home extends Component {
                     <div className='inner'>
                       <h1>{item.title}</h1>
                       <p>{item.description}</p>
-                      <Link to={`${item.type}/${item.id}`}><button>{item.button}</button></Link>
+                      <Link to={`${item.type}/${item.id}`}>
+                        <button>{item.button}</button>
+                      </Link>
                     </div>
                     <section>
                       <img src={item.userProfile} alt={item.user} />

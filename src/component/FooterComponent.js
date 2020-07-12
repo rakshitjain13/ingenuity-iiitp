@@ -8,7 +8,6 @@ function Footer(props) {
       style={{
         backgroundImage: 'url(' + require('../assets/images/clouds.png') + ')',
         color: 'white',
-        marginTop: '100px',
       }}
     >
       <div className='container footer-font'>
