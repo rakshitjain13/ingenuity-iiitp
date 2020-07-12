@@ -2,6 +2,7 @@
 
 .header-bg {
   background-image: url('./assets/images/clouds.png');
+  background-color: black;
 }
 .row-header {
   margin: 0px auto;

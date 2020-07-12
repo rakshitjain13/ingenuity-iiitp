@@ -6,7 +6,6 @@ import{Link} from 'react-router-dom';
 class Gallery extends Component {
   render() {
     const list=this.props.data;
-    console.log(list);
     return (
 
       <section className='latest-posts' style={{ marginTop: '100px' }}>

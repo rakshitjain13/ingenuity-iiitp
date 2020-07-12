@@ -7,7 +7,7 @@ export var data=[
 		likes:3,
 		date:'02 July 2020',
 		title: 'Internship Experience',
-		type:'Experience',
+		type:'experience',
 		description:
 		'I am Karra Nagasaikiran ,4th year CSE.I did internship with the FINIQ for 1 month . I always work alone but  this internship taught me about the importance of working in teams .',
 		button: 'Read More',
@@ -29,7 +29,7 @@ export var data=[
 		card:true,
 		likes:3,
 		date:'02 July 2020',
-		type:'Experience',
+		type:'experience',
 		title:'FinIQ Consulting Pvt. Ltd',
 		description:
 		'I had learnt HTML5, CSS3, JavaScript and Bootstrap basics in the first and second year of college. I was learning more about Data Structure and Algorithm and also working on a conference paper. ',
@@ -54,7 +54,7 @@ export var data=[
 		card: true,
 		likes: 3,
 		date: "02 July 2020",
-		type: "Experience",
+		type: "experience",
 		title: "Internship Experience",
 		description: "I am Dhanashree Revagade, a final-year computer science undergraduate student at Indian Institute of Information Technology Pune(IIIT Pune). ",
 		button: "Read More",

@@ -13,12 +13,13 @@ class Show extends Component{
         const nextblog=this.props.nextdata;
         return(
         // <div className="bg-white" style={{padding:10}}>{parse(this.props.data.content)}</div>
-        <div className="container bg-white" style={{padding:10}}>
+        <div className="bg-white">
+        <div className="container" style={{padding:10}}>
             <div className="row">
             <main className="post blog-post col-lg-8"> 
           <div className="container">
             <div className="post-single">
-              <div className="post-thumbnail"><img src={blog.image} alt="..." class="img-fluid"/></div>
+              <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid" style={{'border-radius': 25}}/></div>
               <div className="post-details">
                 <div className="post-meta d-flex justify-content-between">
                   <div className="category"><a href="#">{blog.type}</a></div>
@@ -55,6 +56,7 @@ class Show extends Component{
           </div>
         </main>
             </div>
+        </div>
         </div>
         );
     }

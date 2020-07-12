@@ -27,10 +27,10 @@ class Header extends Component {
     return (
       <div
         className='header-bg'
-        style={{
-          backgroundImage:
-            'url(' + require('../assets/images/clouds.png') + ')',
-        }}
+        // style={{
+        //   backgroundImage:
+        //     'url(' + require('../assets/images/clouds.png') + ')',
+        // }}
       >
         <Navbar expand='md'>
           <div className='container nav-font '>
@@ -48,18 +48,18 @@ class Header extends Component {
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav className='ml-auto' navbar>
                 <NavItem>
-                  <NavLink className='nav-link nav-font' to='/home'>
-                    Blogs
-                  </NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink className='nav-link nav-font' to='/editorials'>
                     Editorials
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className='nav-link nav-font' to='/home'>
-                    Success Stories
+                  <NavLink className='nav-link nav-font' to='/achievments'>
+                    Achievments
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className='nav-link nav-font' to='/experience'>
+                    Intern Views
                   </NavLink>
                 </NavItem>
                 <NavItem>
