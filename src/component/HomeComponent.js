@@ -27,6 +27,7 @@ class Home extends Component {
     console.log(content);
     return (
       <div>
+        <Background />
         <div className='container'>
           <div className='row justify-content-center' style={{ margin: 10 }}>
             <div className='col-12 col-md-10 '>
