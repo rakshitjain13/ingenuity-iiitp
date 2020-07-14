@@ -112,3 +112,13 @@ a {
 .cover-excerpt {
   margin-top: 12px;
 }
+.date{
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color: #e7ce00;
+}
+.img-size{
+  height: 150px;
+  width: 300px;
+}

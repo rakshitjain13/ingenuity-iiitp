@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import parse from 'html-react-parser';
 import '../css/Show.css';
 import{Link} from 'react-router-dom';
+;
 
 class Show extends Component{
     constructor(props){
@@ -19,7 +20,7 @@ class Show extends Component{
             <main className="post blog-post col-lg-8"> 
           <div className="container">
             <div className="post-single">
-              <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid" style={{'border-radius': 25}}/></div>
+              <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid view-image" style={{'border-radius': 25}}/></div>
               <div className="post-details">
                 <div className="post-meta d-flex justify-content-between">
                   <div className="category"><a href="#">{blog.type}</a></div>

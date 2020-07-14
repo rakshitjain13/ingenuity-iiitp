@@ -239,3 +239,7 @@
       margin-bottom: 10px;
     }
   }
+  .view-image{
+    border-radius: 25px;
+    height: 370px;
+  }
