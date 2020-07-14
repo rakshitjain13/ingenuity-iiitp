@@ -8,6 +8,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Show from './ShowComponent';
 import { data } from '../shared/source';
 import Background from './BackgroundComponent';
+import TeamPage from './AboutUsComponent';
 
 class Main extends Component {
   constructor(props) {
@@ -44,7 +45,6 @@ class Main extends Component {
     };
     return (
       <div>
-        <Background />
         <Header />
         <Switch location={this.props.location}>
           <Route path='/home' exact component={() => <Home />} />
@@ -66,6 +66,7 @@ class Main extends Component {
             exact
             component={() => <View type='achievments' />}
           />
+          <Route exact path='/ourteam' component={() => <TeamPage />} />
           <Route path='/home' component={() => <Home />} />
           <Route exact path='/experience/:articleId' component={ShowwithId} />
           <Redirect to='/home' />
