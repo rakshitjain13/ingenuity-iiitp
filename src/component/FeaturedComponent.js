@@ -3,6 +3,7 @@ import { Fade, Stagger } from 'react-animation-components';
 import { Card, CardHeader, CardBody, Media } from 'reactstrap';
 import '../css/styles.css';
 import{Link} from 'react-router-dom';
+import ReactTimeAgo from 'react-time-ago';
 
 function RenderList({ blog, index }) {
   console.log(index);
@@ -34,7 +35,7 @@ function RenderList({ blog, index }) {
                   </div>
                 </a>
                 <div className='date'>
-                  <i className='fa fa-clock-o'></i> 2 months ago
+                  <i className='fa fa-clock-o'></i><ReactTimeAgo date={new Date(blog.date)}/>
                 </div>
                 <div className='comments'>
                   <i className='fa fa-heart' style={{ color: 'red' }}></i>
@@ -79,7 +80,7 @@ function RenderList({ blog, index }) {
                   </div>
                 </a>
                 <div className='date'>
-                  <i className='fa fa-clock-o'></i> 2 months ago
+                  <i className='fa fa-clock-o'></i> <ReactTimeAgo date={new Date(blog.date)}/>
                 </div>
                 <div className='comments'>
                   <i className='fa fa-heart' style={{ color: 'red' }}></i>

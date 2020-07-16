@@ -5,7 +5,7 @@ export var data=[
 		featured:true,
 		card:true,
 		likes:3,
-		date:'02 July 2020',
+		date:'2020-07-14T20:11:00',
 		title: 'Internship Experience',
 		type:'experience',
 		description:
@@ -28,7 +28,7 @@ export var data=[
 		featured:true,
 		card:true,
 		likes:3,
-		date:'02 July 2020',
+		date:'2020-07-10T20:11:00',
 		type:'experience',
 		title:'FinIQ Consulting Pvt. Ltd',
 		description:
@@ -53,7 +53,7 @@ export var data=[
 		featured: true,
 		card: true,
 		likes: 3,
-		date: "02 July 2020",
+		date: '2020-07-12T20:11:00',
 		type: "experience",
 		title: "Internship Experience",
 		description: "I am Dhanashree Revagade, a final-year computer science undergraduate student at Indian Institute of Information Technology Pune(IIIT Pune). ",
@@ -122,5 +122,88 @@ export var data=[
 		Regards,</br>
 		Dhanashree`
 
-	}
+	},
+	{
+        id:4,
+        slider:true,
+		featured:true,
+		card:false,
+		likes:3,
+		date:'2020-07-14T20:11:00',
+		type:'experience',
+		title:'FinIQ Consulting Pvt. Ltd',
+		description:
+		'First Semester marks the beginning of Internship season at IIIT Pune. Most of us had no past corporate experience but possess a decent research experience at top-notch research institutes like IIT’s, IIIT’s, NIT’s, DRDO, CDAC, etc.',
+		button: 'Read More',
+		image: 'https://www.iesabroad.org/files/blog/images/vbruick/2017-12-05/default_featured_image_7.jpg',
+		user: 'Karan Khanna',
+		userProfile: 'https://media-exp1.licdn.com/dms/image/C5103AQFzbR_NO9KReA/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=Y64BDWVN7T2MxWAfAqusXOZzuWTgl7fo1j61X-RVWew',
+		quote:"My favorite things in life don’t cost any money. It’s really clear that the most precious resource we all have is time.",
+		quoteby:"Steve Jobs",
+		content:`    <div style="margin:10px">
+        The Third Year - First Semester marks the beginning of Internship season at IIIT Pune. Most of
+        us had no past corporate experience but possess a decent research experience at top-notch research
+        institutes like IIT’s, IIIT’s, NIT’s, DRDO, CDAC, etc. while some are excellent with programming skills and
+        software development. Now, this is the most perplexed situation where we have to narrow down our
+        interests. Same for me, so I decided to dive into Computer Science, as I became less interested in
+        Electronics stuff(being an ECE student). It was not a sudden decision but I learnt from experiences of my
+        past. After an unsuccessful interview at GoJek, I decided to completely devote my time to improving my
+        knowledge in the field of Computer Science particularly in Data Structures, Algorithms and other core
+        subjects.<br>
+        And then I started applying for Software Companies through Campus Internship drives.
+    </div><div style="margin:10px">
+        <h3 class="ml-0">The Selection Day</h3>
+             FinIQ , The Financial Engineering Company came to our campus to conduct an internship drive
+        in mid-December. I believed in the phrase,<br>
+        <h6 style="color: gray;">“Whatsoever be the scenario, we always have a possibility to improve.”</h6>
+        The selection procedure went into several phases including Aptitude Test, Coding Round,
+        Business Planning, Technical and Managerial Interviews.
+        Aptitude Test was mainly focused on Quants and Basics of Programming. Basic questions on Linear Data
+        Structures were asked. Later round includes Business Planning and Brainstorming, we were given an
+        idea with a virtual budget and were supposed to pen our ideas on paper keeping in mind the ways to
+        expand, promote, and access the product providing innovative facilities. Technical Round revolved
+        around basics of Data Structures and puzzles.<br>
+        At the end of the day, 8 students got selected including me. All my friends jumped into joy
+        celebrating the happiness.
+    </div>
+    <div style="margin:10px">
+        <h3 class="ml-0">Location</h3>
+        I was based at the main Developer center at FinIQ, Pune. Although due to amid spread of the
+        novel Coronavirus, we were onboarded virtually for 2 months. Though the experience was virtual, we
+        learnt and enjoyed it a lot.
+    </div>
+    <div style="margin:10px">
+        <h3 class="ml-0">Work Culture:</h3>
+        FinIQ, being a financial engineering company, hires engineering and management interns at the
+        same time. On the very first day, we were divided into a group of five, two of us were from management
+        and the rest were from engineering. Each group is allotted a mentor. The mentors were the go-to
+        persons to discuss problems, clear doubts and they would be guiding us for the given task. The mentors
+        were really helpful, being only interns, our ideas were given worth.
+    </div>
+    <div style="margin:10px">
+        <h3 class="ml-0">The Projects I worked on:</h3>
+                We worked on three different projects each of which was completely different and exciting.
+        Initially, we were given to develop a webpage particularly the landing page which contains
+        necessary details about the portfolio, stocks, etc. of the account holder. But the interesting thing was
+        not to develop it classically like old-boring websites containing usual tabular structures rather it should
+        be more interactive and more-like social media websites to deliver a user interface for providing
+        innovative experience to the Regional Managers. It gave me a chance to get my hands dirty into webdevelopment stuff.<br>
+        The second project was the most interesting and however, challenging. It includes building an
+        application which fetches daily financial news feed articles related to the highly fluctuating stocks for
+        various Financial Instruments. The algorithm had to first find such stocks and then fetch related news
+        articles from the web with necessary article details and finally filter those articles based on interest.
+        Moreover, stocks’ past history has also to be fetched in order to plot interactive financial graphs.<br>
+        The last project was based on the NLP and Clustering. There were thousands of financial
+        documents which had to be clustered based on the similarity of their contextual information. This
+        would be helpful to create templates for similar types of documents. I worked on Text cleaning, preprocessing, feature selection, forming clusters and judging the quality of clusters based on standard
+        metrics. Gladly, the overall work experience for me was fun and insightful.
+
+    </div>
+    <div style="margin:10px">
+        <h3 class="ml-0">My Takeaways:</h3>
+                Apart from the various technologies I explored, I found more important is communicating,
+        discussing and making friends where you work, learn from your mistakes and love what you do.
+    </div>`
+		
+    },
 	]

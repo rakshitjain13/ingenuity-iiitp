@@ -2,10 +2,10 @@ import React from 'react';
 import '../css/AboutUsComponent.css';
 const TeamPage = () => {
   return (
-    <div>
+    <div className="bg-white">
       <section id='team' class='pb-5'>
         <div class='container'>
-          <h5 class='section-title h1'>Content Team</h5>
+          <h5 class='section-title h1'>Editor</h5>
           <div class='row justify-content-center'>
             <div class='col-xs-12 col-sm-6 col-md-4'>
               <div class='image-flip'>
@@ -22,8 +22,7 @@ const TeamPage = () => {
                         </p>
                         <h4 class='card-title'>Saksham Mahajan</h4>
                         <p class='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.
+                          Editorial Manager
                         </p>
                         <a
                           href='https://www.fiverr.com/share/qb8D02'
@@ -103,8 +102,7 @@ const TeamPage = () => {
                         </p>
                         <h4 class='card-title'>Mukhrit Gupta</h4>
                         <p class='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.
+                         Web Manager
                         </p>
                         <a
                           href='https://www.fiverr.com/share/qb8D02'
@@ -180,8 +178,7 @@ const TeamPage = () => {
                         </p>
                         <h4 class='card-title'>Rakshit Jain</h4>
                         <p class='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.
+                         Web Manager
                         </p>
                         <a
                           href='https://www.fiverr.com/share/qb8D02'

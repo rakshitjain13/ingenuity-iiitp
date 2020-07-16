@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/CardComponent.css';
 import{Link} from 'react-router-dom';
-
+import ReactTimeAgo from 'react-time-ago';
 
 class Gallery extends Component {
   render() {
@@ -31,7 +31,7 @@ class Gallery extends Component {
                    </div>
                    <div className='post-details'>
                      <div className='post-meta d-flex justify-content-between'>
-                       <div className='date'>{item.date}</div>
+                       <div className='date'><ReactTimeAgo date={new Date(item.date)}/></div>
                        <div className='category'>
                          <a href='#'>{item.type}</a>
                        </div>
