@@ -14,7 +14,7 @@ function Footer(props) {
             <br/>
             <a href="mailto:ingenuity@iiitp.ac.in">ingenuity@iiitp.ac.in</a>
             <br/>
-            <Link to='\ourteam'>About us</Link>
+            <Link to='/ourteam'>About us</Link>
 
             {/* <h3>Links</h3>
             <ul className='list-unstyled'>

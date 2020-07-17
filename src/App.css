@@ -1,5 +1,7 @@
 /*HEADER*/
-
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .header-bg {
   background-image: url('./assets/images/clouds.png');
   background-color: black;
