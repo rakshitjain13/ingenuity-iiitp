@@ -16,7 +16,7 @@ class View extends Component {
 
     return (
       <div className='bg-white'>
-        <div id='header' class='container category-header'>
+        <div id='header' class='container c-header'>
           <div class='row'>
             <div
               class='col-md-8 tinted cover-image center-fill-container'
@@ -40,8 +40,8 @@ class View extends Component {
                   <h1 class='title'>{firstitem.title}</h1>
                 </Link>
               </div>
-              <div class='date'>{firstitem.date}</div>
-              <div class='date'>Reading Time : {firstitem.time}</div>
+              <div class='dt'>{firstitem.date}</div>
+              <div class='dt'>Reading Time : {firstitem.time}</div>
               <div class='cover-excerpt'>{firstitem.description}</div>
             </div>
           </div>
@@ -65,8 +65,8 @@ class View extends Component {
                     <h3 class='title mb-1 ml-0'>
                       <Link to={`${item.type}/${item.id}`}>{item.title}</Link>
                     </h3>
-                    <div className='date ml-1'> {item.date}</div>
-                    <div class='date ml-1'>Reading Time : {item.time}</div>
+                    <div className='dt ml-1'> {item.date}</div>
+                    <div class='dt ml-1'>Reading Time : {item.time}</div>
                     <div class='intro ml-1'>{item.description}</div>
                     {/* <a class='more-link' href='pages/blog-post.php'>
                       Read more →

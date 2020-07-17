@@ -50,13 +50,13 @@ a {
   margin-bottom: 0;
   list-style: none;
 }
-#header.category-header {
+#header.c-header {
   font-size: 16px;
 }
 #header .row {
   margin-left: 0;
 }
-#header.category-header .cover-image {
+#header.c-header .cover-image {
   border-radius: 10px;
 }
 #header .cover-image {
@@ -103,7 +103,7 @@ a {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#header.category-header .date {
+#header.c-header .dt {
   font-size: 12px;
   font-weight: bold;
   font-style: italic;
@@ -112,13 +112,13 @@ a {
 .cover-excerpt {
   margin-top: 12px;
 }
-.date{
+.dt {
   font-size: 12px;
   font-weight: bold;
   font-style: italic;
   color: #e7ce00;
 }
-.img-size{
+.img-size {
   height: 150px;
   width: 300px;
 }

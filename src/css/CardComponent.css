@@ -21,10 +21,6 @@ section.latest-posts header {
   color: #777;
   font-size: 0.95em;
 }
-.text-muted {
-  color: white !important;
-  font-family: 'Ubuntu', sans-serif;
-}
 
 .post a {
   text-decoration: none;
@@ -48,7 +44,7 @@ section.latest-posts header {
 }
 
 .post .category a {
-  color: yellow;
+  color: #999;
   letter-spacing: 0.05em;
   font-weight: 700;
   text-transform: uppercase;
@@ -59,7 +55,7 @@ section.latest-posts header {
   letter-spacing: 0.05em;
   font-weight: 400;
   text-transform: uppercase;
-  color: white;
+  color: #aaa;
 }
 
 .post .avatar {
@@ -76,7 +72,7 @@ section.latest-posts header {
 .post .comments,
 .post .views {
   font-weight: 400;
-  color: white;
+  color: #999;
   text-transform: capitalize;
 }
 
@@ -96,7 +92,7 @@ section.latest-posts header {
   display: inline-block;
   margin: 0 7px;
   font-size: 0.9em;
-  color: white;
+  color: #ccc;
 }
 
 .post .post-tags {
@@ -105,9 +101,9 @@ section.latest-posts header {
 
 .post .post-tags .tag {
   padding: 5px 25px;
-  border: 1px solid white;
+  border: 1px solid #ddd;
   margin: 5px;
-  color: white;
+  color: #777;
   font-size: 0.75em;
   text-transform: uppercase;
   font-weight: 600;
@@ -116,9 +112,9 @@ section.latest-posts header {
 }
 
 .post .post-tags .tag:hover {
-  background: white;
-  color: white;
-  border-color: white;
+  background: #999;
+  color: #fff;
+  border-color: #999;
 }
 
 .post .meta-last::after {
