@@ -41,7 +41,8 @@ class Home extends Component {
                   >
                     <div className='inner'>
                       <h1>{item.title}</h1>
-                      <p>{item.description}</p>
+                      <p className="d-md-none  d-xs-block">{item.short}</p>
+                      <p className="d-none d-md-block">{item.description}</p>
                       <Link to={`${item.type}/${item.id}`}>
                         <button>{item.button}</button>
                       </Link>

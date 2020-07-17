@@ -80,6 +80,9 @@ footer.main-footer .latest-posts .date {
 }
 
 .Slab {
-  background-color: white !important;
+  /* background-color: white !important; */
   position: relative;
+  background: url(https://st.depositphotos.com/2171279/4790/i/950/depositphotos_47908325-stock-photo-high-resolution-white-brick-wall.jpg); 
+  background-size: cover; 
+  background-position: center bottom;
 }

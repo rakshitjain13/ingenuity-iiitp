@@ -5,19 +5,18 @@ class Slab extends Component {
   render() {
     return (
       <section
-        className='Slab'
+        className='Slab mt-5'
         style={{
           color: 'Black',
           margin: '10px 0',
         }}
       >
         <div className='container '>
-          <div className='row' style={{ padding: '70px' }}>
-            <div className='col-md-7'>
-              <h2>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </h2>
+          <div className='row' style={{ padding: '10px' }}>
+            <div className='col-md-8 col-12'>
+              <h2><strong>
+              “I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life and that is why I succeed.” – Michael Jordan
+              </strong></h2>
             </div>
           </div>
         </div>

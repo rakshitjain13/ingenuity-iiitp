@@ -10,6 +10,7 @@ export var data=[
 		type:'experience',
 		description:
 		'I am Karra Nagasaikiran ,4th year CSE.I did internship with the FINIQ for 1 month . I always work alone but  this internship taught me about the importance of working in teams .',
+		short:'I am Karra Nagasaikiran ,4th year CSE. I always work alone but  this internship taught me about the importance of working in teams .',
 		button: 'Read More',
 		image: 'https://www.hult.edu/blog/media/uploads/2018/07/HNews-Internship.png',
 		user: 'Karra Nagasaikiran',
@@ -33,6 +34,7 @@ export var data=[
 		title:'FinIQ Consulting Pvt. Ltd',
 		description:
 		'I had learnt HTML5, CSS3, JavaScript and Bootstrap basics in the first and second year of college. I was learning more about Data Structure and Algorithm and also working on a conference paper. ',
+		short:'I had learnt HTML5, CSS3, JavaScript and Bootstrap basics in the first and second year of college and later on DSA',
 		button: 'Read More',
 		image: 'https://i0.wp.com/d8it4huxumps7.cloudfront.net/bites/wp-content/uploads/2020/05/16134358/What-an-internship-at-Amazon-is-like-By-Debadutta-Deb-from-IIM-Bangalore.png?resize=356%2C364&ssl=1',
 		user: 'Rutuja Umesh Madhure',
@@ -57,6 +59,7 @@ export var data=[
 		type: "experience",
 		title: "Internship Experience",
 		description: "I am Dhanashree Revagade, a final-year computer science undergraduate student at Indian Institute of Information Technology Pune(IIIT Pune). ",
+		short:'A final-year computer science undergraduate student at Indian Institute of Information Technology Pune(IIIT Pune).',
 		button: "Read More",
 		image: "https://www.hult.edu/blog/media/uploads/2018/07/HNews-Internship.png",
 		user: "Dhanashree Revagade",
@@ -134,6 +137,7 @@ export var data=[
 		title:'FinIQ Consulting Pvt. Ltd',
 		description:
 		'First Semester marks the beginning of Internship season at IIIT Pune. Most of us had no past corporate experience but possess a decent research experience at top-notch research institutes like IIT’s, IIIT’s, NIT’s, DRDO, CDAC, etc.',
+		short:'Most of us had no past corporate experience but possess a decent research experience at top-notch research institutes like IIT’s, IIIT’s, NIT’s, DRDO, CDAC, etc.',
 		button: 'Read More',
 		image: 'https://www.iesabroad.org/files/blog/images/vbruick/2017-12-05/default_featured_image_7.jpg',
 		user: 'Karan Khanna',
