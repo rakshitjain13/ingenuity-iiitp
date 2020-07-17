@@ -44,7 +44,7 @@
   .blog-post .post-body p {
     font-size: 1em;
     line-height: 1.7em;
-    color: #555;
+    color: #555 !important;
   }
   
   .blog-post .posts-nav {
@@ -133,7 +133,7 @@
   
   .blog-post .post-comments span.date {
     font-size: 0.8em;
-    color: #999;
+    color: #999 ;
   }
   
   .blog-post .post-comments span.date::after {

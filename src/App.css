@@ -1,7 +1,4 @@
 /*HEADER*/
-body{
-  font-family: Arial, Helvetica, sans-serif;
-}
 .header-bg {
   background-image: url('./assets/images/clouds.png');
   background-color: black;
@@ -34,7 +31,8 @@ body{
 .nav-font {
   color: #f2f4f7;
   font-weight: bold;
-  font-size: 36;
+  font-size: 20px;
+  font-family: 'Serif';
 }
 .nav-font:hover {
   color: #737a85;
@@ -50,12 +48,16 @@ body{
 a {
   /* color: white; */
   margin: 5px 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .footer-font {
   color: #f2f4f7;
-  font-weight: bold;
-  font-size: 36;
+  font-size: 17px;
 }
 .logo-text {
   margin-left: 10px;
@@ -96,4 +98,7 @@ h3 {
 .bg-white {
   background-color: white !important;
   position: relative;
+}
+p {
+  font-family: 'Ubuntu', sans-serif;
 }

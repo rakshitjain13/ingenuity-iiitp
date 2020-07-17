@@ -1,6 +1,5 @@
-
 section.featured-posts .row:nth-of-type(odd) .text {
-  background:#595656;
+  background: black;
 }
 
 section.featured-posts .row:last-of-type {
@@ -9,7 +8,7 @@ section.featured-posts .row:last-of-type {
 
 section.featured-posts p {
   font-weight: 400;
-  color:#FFFFFF;
+  color: #ffffff;
   font-size: 0.95em;
 }
 
@@ -33,7 +32,7 @@ section.featured-posts h2 {
 }
 
 section.featured-posts h2:hover {
-  color: #555;
+  color: yellow;
 }
 
 section.featured-posts .avatar {
@@ -50,7 +49,7 @@ section.featured-posts .date,
 section.featured-posts .comments {
   font-size: 0.8em;
   font-weight: 400;
-  color: #999;
+  color:#ccc;
 }
 
 section.featured-posts .title i,
@@ -82,7 +81,7 @@ section.featured-posts .image {
 
 section.featured-posts .image img {
   height: 270px;
-  width:300px;
+  width: 300px;
 }
 
 section.featured-posts .post-header {

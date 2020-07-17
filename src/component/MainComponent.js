@@ -65,11 +65,12 @@ class Main extends Component {
             exact
             path='/achievments'
             exact
-            component={() => <View type='achievments' />}
+            component={() => <View type='experience' />}
           />
           <Route exact path='/ourteam' component={() => <TeamPage />} />
           <Route path='/home' component={() => <Home />} />
           <Route exact path='/experience/:articleId' component={ShowwithId} />
+          <Route exact path='/editorials/:articleId' component={ShowwithId} />
           <Redirect to='/home' />
         </Switch>
         <Footer />

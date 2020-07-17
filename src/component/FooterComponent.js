@@ -3,19 +3,15 @@ import { Link } from 'react-router-dom';
 
 function Footer(props) {
   return (
-    <div
-      className='footer mt-5'
-    >
+    <div className='footer mt-5' style={{ padding: '40px' }}>
       <div className='container footer-font'>
         <div className='row justify-content-center'>
           <div className='col-12 col-sm-4 '>
-            <h6>CONTACT US</h6>
-            Email
-            <br/>
-            <a href="mailto:ingenuity@iiitp.ac.in">ingenuity@iiitp.ac.in</a>
-            <br/>
+            <h6>CONTACT US :</h6>
+            Email:
+            <a href='mailto:ingenuity@iiitp.ac.in'>ingenuity@iiitp.ac.in</a>
+            <br />
             <Link to='/ourteam'>About us</Link>
-
             {/* <h3>Links</h3>
             <ul className='list-unstyled'>
               <li className="mb-1" >
@@ -39,15 +35,16 @@ function Footer(props) {
                 </Link>
               </li>
             </ul>*/}
-          </div> 
+          </div>
 
           <div className='col-12 col-sm-4 justify-content-center align-self-center'>
-            <a href="/home">
-            <img
-              
-              src={require('../assets/images/logo2.png')}
-              width='300'
-            ></img></a>
+            <a href='/home'>
+              <img
+                src={require('../assets/images/logo2.png')}
+                width='300'
+              ></img>
+            </a>
+
             {/* <div className='ml-5 name-container'>
               <div class='name'>Watch Out!</div> 
               <div className='desc' >

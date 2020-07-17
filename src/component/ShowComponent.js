@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import parse from 'html-react-parser';
 import '../css/Show.css';
-import ReactTimeAgo from 'react-time-ago';
+
+
 import{Link} from 'react-router-dom';
 ;
 
@@ -31,8 +32,8 @@ class Show extends Component{
                     <div className="avatar"><img src={blog.userProfile} alt="..." className="img-fluid"/></div>
                       <div className="title"><span>{blog.user}</span></div></a>
                   <div className="d-flex align-items-center flex-wrap">       
-                    <div className="date"><i className="fa fa-clock-o"></i> <ReactTimeAgo date={new Date(blog.date)}/></div>
-                    <div className="views"><i className='fa fa-heart' style={{ color: 'red' }}></i> {blog.likes}</div>
+                    <div className="date"><i className="fa fa-clock-o"></i>{blog.date} </div>
+                    <div className="views"><i className='fa fa-book' ></i> {blog.time}</div>
                   </div>
                 </div>
                 <div className="post-body">
