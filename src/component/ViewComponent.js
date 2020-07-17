@@ -3,7 +3,6 @@ import '../css/ViewComponent.css';
 import { data } from '../shared/source';
 import { Link } from 'react-router-dom';
 
-
 class View extends Component {
   constructor(props) {
     super(props);
@@ -11,12 +10,12 @@ class View extends Component {
 
   render() {
     var list = data.filter((item) => item.type == this.props.type);
-    var firstitem=list[0];
-
-
+    var firstitem = list[0];
     var otheritem = list.slice(1);
+    console.log(list);
+
     return (
-      <div className="bg-white">
+      <div className='bg-white'>
         <div id='header' class='container category-header'>
           <div class='row'>
             <div
@@ -51,29 +50,29 @@ class View extends Component {
         <section class='blog-list px-3 py-5 p-md-5'>
           <div class='container'>
             {otheritem.map((item) => (
-              <div className="row">
-                <div className="col-12 col-md-3">
-                <div class='media'>
-                  <img
-                    class='mr-1 img-fluid img-size'
-                    src={item.image}
-                    alt='website template image'
-                  />
+              <div className='row'>
+                <div className='col-12 col-md-3'>
+                  <div class='media'>
+                    <img
+                      class='mr-1 img-fluid img-size'
+                      src={item.image}
+                      alt='website template image'
+                    />
                   </div>
                 </div>
-                <div className="col-12 col-md-5 mb-5">
+                <div className='col-12 col-md-5 mb-5'>
                   <div class='media-body'>
                     <h3 class='title mb-1 ml-0'>
                       <Link to={`${item.type}/${item.id}`}>{item.title}</Link>
                     </h3>
-                    <div className="date ml-1"> {item.date}</div>
+                    <div className='date ml-1'> {item.date}</div>
                     <div class='date ml-1'>Reading Time : {item.time}</div>
                     <div class='intro ml-1'>{item.description}</div>
                     {/* <a class='more-link' href='pages/blog-post.php'>
                       Read more →
                     </a> */}
                   </div>
-                  </div>
+                </div>
               </div>
             ))}
             {/* <nav class='blog-nav nav nav-justified my-5'>

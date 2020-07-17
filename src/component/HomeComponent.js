@@ -11,6 +11,7 @@ import PicGallery from './PictureGalleryComponent';
 import Background from './BackgroundComponent';
 import { data } from '../shared/source';
 import { Link } from 'react-router-dom';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Home extends Component {
   constructor(props) {
@@ -30,35 +31,38 @@ class Home extends Component {
         <div className='container'>
           <div className='row justify-content-center' style={{ margin: 10 }}>
             <div className='col-12 col-md-10 '>
-              <Slider className='slider-wrapper' autoplay={3000}>
-                {content.map((item, index) => (
-                  <div
-                    key={index}
-                    className='slider-content'
-                    style={{
-                      background: `url('${item.image}') no-repeat center center`,
-                    }}
-                  >
-                    <div className='inner'>
-                      <h1>{item.title}</h1>
-                      <p className="d-md-none  d-xs-block">{item.short}</p>
-                      <p className="d-none d-md-block">{item.description}</p>
-                      <Link to={`${item.type}/${item.id}`}>
-                        <button>{item.button}</button>
-                      </Link>
+              <ScrollAnimation animateIn='animate__lightSpeedInRight'>
+                <Slider autoplay={3000}>
+                  {content.map((item, index) => (
+                    <div
+                      key={index}
+                      className='slider-content'
+                      style={{
+                        background: `url('${item.image}') no-repeat center center`,
+                      }}
+                    >
+                      <div className='inner'>
+                        <h1>{item.title}</h1>
+                        <p className='d-md-none  d-xs-block'>{item.short}</p>
+                        <p className='d-none d-md-block'>{item.description}</p>
+                        <Link to={`${item.type}/${item.id}`}>
+                          <button>{item.button}</button>
+                        </Link>
+                      </div>
+                      <section>
+                        <img src={item.userProfile} alt={item.user} />
+                        <span>
+                          Posted by <strong>{item.user}</strong>
+                        </span>
+                      </section>
                     </div>
-                    <section>
-                      <img src={item.userProfile} alt={item.user} />
-                      <span>
-                        Posted by <strong>{item.user}</strong>
-                      </span>
-                    </section>
-                  </div>
-                ))}
-              </Slider>
+                  ))}
+                </Slider>
+              </ScrollAnimation>
             </div>
           </div>
         </div>
+
         <Slab />
         <Featured featured={featured} />
         <Slab />

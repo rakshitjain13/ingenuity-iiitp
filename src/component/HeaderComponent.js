@@ -42,27 +42,37 @@ class Header extends Component {
                 src={require('../assets/images/logo2.png')}
                 height='70'
                 alt='Ingenuity'
+                className='hvr-push'
               />
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav className='ml-auto' navbar>
                 <NavItem>
-                  <NavLink className='nav-link nav-font' to='/editorials'>
+                  <NavLink
+                    className='nav-link nav-font hvr-push'
+                    to='/editorials'
+                  >
                     Editorials
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className='nav-link nav-font' to='/achievments'>
+                  <NavLink
+                    className='nav-link nav-font hvr-push'
+                    to='/achievments'
+                  >
                     Achievments
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className='nav-link nav-font' to='/experience'>
+                  <NavLink
+                    className='nav-link nav-font hvr-push'
+                    to='/experience'
+                  >
                     Intern Views
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className='nav-link nav-font' to='/ourteam'>
+                  <NavLink className='nav-link nav-font hvr-push' to='/ourteam'>
                     Our Team
                   </NavLink>
                 </NavItem>

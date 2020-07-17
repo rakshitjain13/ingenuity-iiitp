@@ -53,7 +53,7 @@ class Main extends Component {
             exact
             path='/editorials'
             exact
-            component={() => <View type='editorials' />}
+            component={() => <View type='experience' />}
           />
           <Route
             exact
@@ -65,7 +65,7 @@ class Main extends Component {
             exact
             path='/achievments'
             exact
-            component={() => <View type='achievments' />}
+            component={() => <View type='experience' />}
           />
           <Route exact path='/ourteam' component={() => <TeamPage />} />
           <Route path='/home' component={() => <Home />} />
