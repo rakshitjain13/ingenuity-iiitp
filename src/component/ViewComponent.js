@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import '../css/ViewComponent.css';
 import { data } from '../shared/source';
 import { Link } from 'react-router-dom';
-import ReactTimeAgo from 'react-time-ago';
-import { Button } from 'reactstrap';
+
 
 class View extends Component {
   constructor(props) {
@@ -42,7 +41,8 @@ class View extends Component {
                   <h1 class='title'>{firstitem.title}</h1>
                 </Link>
               </div>
-              <div class='date'> <ReactTimeAgo date={new Date(firstitem.date)}/></div>
+              <div class='date'>{firstitem.date}</div>
+              <div class='date'>Reading Time : {firstitem.time}</div>
               <div class='cover-excerpt'>{firstitem.description}</div>
             </div>
           </div>
@@ -66,7 +66,8 @@ class View extends Component {
                     <h3 class='title mb-1 ml-0'>
                       <Link to={`${item.type}/${item.id}`}>{item.title}</Link>
                     </h3>
-                    <div className="date ml-1"> <ReactTimeAgo date={new Date(item.date)}/></div>
+                    <div className="date ml-1"> {item.date}</div>
+                    <div class='date ml-1'>Reading Time : {item.time}</div>
                     <div class='intro ml-1'>{item.description}</div>
                     {/* <a class='more-link' href='pages/blog-post.php'>
                       Read more →

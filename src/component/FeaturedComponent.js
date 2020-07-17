@@ -3,7 +3,6 @@ import { Fade, Stagger } from 'react-animation-components';
 import { Card, CardHeader, CardBody, Media } from 'reactstrap';
 import '../css/styles.css';
 import{Link} from 'react-router-dom';
-import ReactTimeAgo from 'react-time-ago';
 
 function RenderList({ blog, index }) {
   console.log(index);
@@ -18,11 +17,13 @@ function RenderList({ blog, index }) {
               </header>
               <p>{blog.description}</p>
               <footer className=' post-footer d-flex align-items-center'>
-                
+        
                 <a
-                  href='#'
+                  href={blog.link}
+                  target="_blank"
                   className='author d-flex align-items-center flex-wrap '
                 >
+                  
                   <div className='avatar'>
                     <img
                       src={blog.userProfile}
@@ -35,11 +36,11 @@ function RenderList({ blog, index }) {
                   </div>
                 </a>
                 <div className='date'>
-                  <i className='fa fa-clock-o'></i><ReactTimeAgo date={new Date(blog.date)}/>
+                  <i className='fa fa-clock-o'></i>{blog.date}
                 </div>
                 <div className='comments'>
-                  <i className='fa fa-heart' style={{ color: 'red' }}></i>
-                  {blog.likes}
+                  <i className='fa fa-book'></i>
+                  {blog.time}
                 </div>
               </footer>
             </div>
@@ -65,7 +66,8 @@ function RenderList({ blog, index }) {
               <p>{blog.description}</p>
               <footer className=' post-footer d-flex align-items-center'>
                 <a
-                  href='#'
+                  href={blog.link}
+                  target="_blank"
                   className='author d-flex align-items-center flex-wrap'
                 >
                   <div className='avatar'>
@@ -80,11 +82,11 @@ function RenderList({ blog, index }) {
                   </div>
                 </a>
                 <div className='date'>
-                  <i className='fa fa-clock-o'></i> <ReactTimeAgo date={new Date(blog.date)}/>
+                  <i className='fa fa-clock-o'></i> {blog.date}
                 </div>
                 <div className='comments'>
-                  <i className='fa fa-heart' style={{ color: 'red' }}></i>
-                  {blog.likes}
+                  <i className='fa fa-book' ></i>
+                  {blog.time}
                 </div>
               </footer>
             </div>
