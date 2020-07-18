@@ -45,13 +45,13 @@
 .footer {
   background-color: #1b1d21;
 }
-a {
+.footer a{
   /* color: white; */
-  margin: 5px 5px;
-  font-family: 'Ubuntu', sans-serif;
-}
-a:hover {
   color: white;
+  margin: 5px 5px;
+}
+.footer a:hover {
+  color:'gray';
   text-decoration: none;
 }
 
@@ -99,6 +99,12 @@ h3 {
   background-color: white !important;
   position: relative;
 }
-p {
-  font-family: 'Ubuntu', sans-serif;
+.p-home{
+  font-family:'Ubuntu',sans-serif;
+}
+p  {
+  font-family:  sans-serif,'Ubuntu';
+}
+div{
+  font-family:  sans-serif,'Ubuntu';
 }

@@ -7,11 +7,9 @@ function Footer(props) {
       <div className='container footer-font'>
         <div className='row justify-content-center'>
           <div className='col-12 col-sm-4 '>
-            <h6>CONTACT US :</h6>
-            Email:
-            <a href='mailto:ingenuity@iiitp.ac.in'>ingenuity@iiitp.ac.in</a>
-            <br />
-            <Link to='/ourteam'>About us</Link>
+            <div style={{fontFamily:'San serif'}}>CONTACT US : <br/>
+            Email: <a href='mailto:ingenuity@iiitp.ac.in'>ingenuity@iiitp.ac.in</a></div>
+            <div className="ml-0"><Link  to='/ourteam' >About us</Link></div>
             {/* <h3>Links</h3>
             <ul className='list-unstyled'>
               <li className="mb-1" >
@@ -105,7 +103,7 @@ function Footer(props) {
         </div>
         <div className='row justify-content-center mt-5'>
           <div className='col-auto'>
-            <p> Copyright © 2020 Ingenuity, IIIT Pune </p>
+            <p> Copyright © 2020 Ingenuity Student Media Body , IIIT Pune </p>
           </div>
         </div>
       </div>

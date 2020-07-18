@@ -26,10 +26,10 @@ class Home extends Component {
     const featured = this.state.data.filter((item) => item.featured);
     console.log(content);
     return (
-      <div>
+      <div className="bg-white">
         <div className='container'>
           <div className='row justify-content-center' style={{ margin: 10 }}>
-            <div className='col-12 col-md-10 '>
+            <div className='col-12 col-lg-10 ' style={{margin:10}} >
                 <Slider autoplay={3000}>
                   {content.map((item, index) => (
                     <div
@@ -39,15 +39,15 @@ class Home extends Component {
                         background: `url('${item.image}') no-repeat center center`,
                       }}
                     >
-                      <div className='inner'>
+                      <div className='inner '>
                         <h1>{item.title}</h1>
-                        <p className='d-md-none  d-xs-block'>{item.short}</p>
+                        {/* <p className='d-md-none  d-xs-block'>{item.short}</p> */}
                         <p className='d-none d-md-block'>{item.description}</p>
                         <Link to={`${item.type}/${item.id}`}>
-                          <button>{item.button}</button>
+                          <button className="mt-2">{item.button}</button>
                         </Link>
                       </div>
-                      <section>
+                      <section className="mt-2">
                         <img src={item.userProfile} alt={item.user} />
                         <span>
                           Posted by <strong>{item.user}</strong>

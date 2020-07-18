@@ -39,7 +39,7 @@ class Show extends Component{
                 <div className="post-body">
                 {parse(blog.content)}
                   <blockquote className="blockquote">
-                    <p>"{blog.quote}"</p>
+                    <div>"{blog.quote}"</div>
                     <footer className="blockquote-footer">{blog.quoteby}
                       <cite title="Source Title"></cite>
                     </footer>

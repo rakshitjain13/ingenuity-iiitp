@@ -160,6 +160,7 @@ const TeamPage = () => {
               </div>
             </div>
           </div>
+          <hr/>
           <h5 class='section-title h1'>Editor</h5>
           <div class='row justify-content-center'>
             <div class='col-xs-12 col-sm-6 col-md-4'>
@@ -236,7 +237,7 @@ const TeamPage = () => {
               </div>
             </div>
           </div>
-
+          <hr/>
           <h5 class='section-title h1'>Web Development Team</h5>
           <div class='row justify-content-center'>
             <div class='col-xs-12 col-sm-6 col-md-4'>
@@ -390,6 +391,13 @@ const TeamPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <hr/>
+        <div className="container">
+          <div className="title-about">About Us</div>
+          <div className="about-body">
+          Ingenuity is the official campus media body of the Indian Institute of Informaton Technology,Pune run by students under the patronage of Government of India and industry partners as Not-for-profit Public Private Partnership (N-PPP)  ROLTA Ltd. and HUBTOWN Ltd.After 4 years of development,Ingenuity has rolled out as student media body to offer news and your needs for betterment of all around of campus through this website.
           </div>
         </div>
       </section>

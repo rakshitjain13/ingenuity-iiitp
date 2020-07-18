@@ -127,3 +127,14 @@ section .section-title {
   height: 120px;
   border-radius: 50%;
 }
+.title-about{
+  color: #007b5e;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+
+}
+.about-body{
+  font-family: sans-serif;
+  font-weight:600;
+}

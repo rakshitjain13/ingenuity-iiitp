@@ -13,11 +13,11 @@ function RenderList({ blog, index }) {
           <div className='text-inner d-flex align-items-center'>
             <div className='content'>
               <header className='post-header'>
-                <h2 className='h4'>
+                <h2 className='h4 p-home ml-0'>
                   <Link to={`${blog.type}/${blog.id}`}>{blog.title}</Link>
                 </h2>
               </header>
-              <p>{blog.description}</p>
+              <p className="p-home">{blog.description}</p>
               <footer className=' post-footer d-flex align-items-center'>
                 <a
                   href={blog.link}
@@ -35,7 +35,7 @@ function RenderList({ blog, index }) {
                     <span>{blog.user}</span>
                   </div>
                 </a>
-                <div className='date'>
+                <div className='date d-none d-md-block'>
                   <i className='fa fa-clock-o'></i>
                   {blog.date}
                 </div>
@@ -66,7 +66,7 @@ function RenderList({ blog, index }) {
                   <Link to={`${blog.type}/${blog.id}`}>{blog.title}</Link>
                 </h2>
               </header>
-              <p>{blog.description}</p>
+              <p className="p-home">{blog.description}</p>
               <footer className=' post-footer d-flex align-items-center'>
                 <a
                   href={blog.link}
@@ -84,7 +84,7 @@ function RenderList({ blog, index }) {
                     <span>{blog.user}</span>
                   </div>
                 </a>
-                <div className='date'>
+                <div className='date d-none d-md-block'>
                   <i className='fa fa-clock-o'></i> {blog.date}
                 </div>
                 <div className='comments'>

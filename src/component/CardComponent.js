@@ -15,7 +15,7 @@ class Gallery extends Component {
             {list.map((item) => (
               <div className='post col-md-4'>
                 <div className='post-thumbnail'>
-                  <a href='post.html'>
+                  <a href={`${item.type}/${item.id}`}>
                     <img
                       src={item.image}
                       alt='...'
@@ -31,17 +31,17 @@ class Gallery extends Component {
                   <div className='post-meta d-flex justify-content-between'>
                     <div className='date'>{item.date}</div>
                     <div className='category'>
-                      <a style={{ color: 'yellow' }} href={item.type}>
+                      <a style={{ color: 'yellow' }} href={item.type} className="p-home">
                         {item.type}
                       </a>
                     </div>
                   </div>
 
                   <Link to={`${item.type}/${item.id}`}>
-                    <h3 className='h4'>{item.title}</h3>
+                    <h3 className='h4 ml-0'>{item.title}</h3>
                   </Link>
 
-                  <p style={{ color: 'white' }}>{item.description}</p>
+                  <p className="p-home" style={{ color: 'white' }}>{item.description}</p>
                 </div>
               </div>
             ))}

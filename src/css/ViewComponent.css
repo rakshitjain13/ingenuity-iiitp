@@ -25,10 +25,19 @@
 .blog-list .item .more-link {
   font-size: 0.8125rem;
 }
-a {
-  color: #5fcb71;
+a{
+  color: #000000;;
+   text-decoration: none;
+  background-color: transparent;
+  font-family: 'San Serif';
+  font-weight: bold;
+}
+a:hover {
+  color: #6f7370;
   text-decoration: none;
   background-color: transparent;
+  font-family: 'San Serif';
+  font-weight: bold;
 }
 *,
 *::before,

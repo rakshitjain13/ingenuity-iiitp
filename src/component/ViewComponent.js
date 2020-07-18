@@ -33,15 +33,17 @@ class View extends Component {
             </div>
 
             <div class='col-md-4 cover-details'>
-              <div class='cover-title'>
+              <div class='mt-4'>
+              <h1>
                 <Link
                   to={`${firstitem.type}/${firstitem.id}`}
                   className='cover-link'
                 >
-                  <h1 class='title'>{firstitem.title}</h1>
+                  {firstitem.title}
                 </Link>
-              </div>
-              <div class='dt'>{firstitem.date}</div>
+                </h1>
+            </div>
+              <div class='dt'>{firstitem.date} <span style={{color:'blue'}}>|</span> {firstitem.user}</div>
               <div class='dt'>Reading Time : {firstitem.time}</div>
               <div class='cover-excerpt'>{firstitem.description}</div>
             </div>
@@ -66,7 +68,7 @@ class View extends Component {
                     <h3 class='title mb-1 ml-0'>
                       <Link to={`${item.type}/${item.id}`}>{item.title}</Link>
                     </h3>
-                    <div className='dt ml-1'> {item.date}</div>
+                    <div className='dt ml-1'> {item.date} <span style={{color:'blue'}}>|</span> {item.user}</div>
                     <div class='dt ml-1'>Reading Time : {item.time}</div>
                     <div class='intro ml-1'>{item.description}</div>
                     {/* <a class='more-link' href='pages/blog-post.php'>

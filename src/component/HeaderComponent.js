@@ -73,7 +73,7 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink className='nav-link nav-font hvr-push' to='/ourteam'>
-                    Our Team
+                    About Us
                   </NavLink>
                 </NavItem>
               </Nav>
