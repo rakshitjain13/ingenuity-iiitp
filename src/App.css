@@ -1,4 +1,4 @@
-/*HEADER*/
+{/*HEADER
 .header-bg {
   background-image: url('./assets/images/clouds.png');
   background-color: black;
@@ -39,14 +39,13 @@
   font-weight: bold;
   font-size: 36;
 }
-
+*/}
 /*Footer*/
-
+{/*
 .footer {
   background-color: #1b1d21;
 }
 .footer a{
-  /* color: white; */
   color: white;
   margin: 5px 5px;
 }
@@ -81,20 +80,20 @@ h3 {
 }
 
 .zoom {
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s; 
 }
 
 .zoom:hover {
   transform: scale(1.5);
 }
 .shrink {
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s; 
 }
 
 .shrink:hover {
   transform: scale(0.9);
 }
-/*Background white*/
+
 .bg-white {
   background-color: white !important;
   position: relative;
@@ -107,4 +106,18 @@ p  {
 }
 div{
   font-family:  sans-serif,'Ubuntu';
+}
+*/}
+.slider-sh{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.slab-style{
+  background: url('assets/images/divider-bg.jpg');
+   background-size: cover; 
+   background-position: center bottom
+}
+.zoom{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
 }

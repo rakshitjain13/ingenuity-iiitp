@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import parse from 'html-react-parser';
-import '../css/Show.css';
+// import '../css/Show.css';
 
 
 import{Link} from 'react-router-dom';

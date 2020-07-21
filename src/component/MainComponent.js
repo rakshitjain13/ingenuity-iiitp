@@ -45,7 +45,6 @@ class Main extends Component {
     };
     return (
       <div>
-        <Background />
         <Header />
         <Switch location={this.props.location}>
           <Route path='/home' exact component={() => <Home />} />

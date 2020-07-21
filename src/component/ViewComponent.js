@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/ViewComponent.css';
+// import '../css/ViewComponent.css';
 import { data } from '../shared/source';
 import { Link } from 'react-router-dom';
 

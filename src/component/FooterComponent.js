@@ -3,14 +3,50 @@ import { Link } from 'react-router-dom';
 
 function Footer(props) {
   return (
-    <div className='footer mt-5' style={{ padding: '40px' }}>
-      <div className='container footer-font'>
+    <div >
+      <footer className="main-footer">
+        <div className="container">
+          <div className="row">
+          <div class="col-md-4">
+            <div class="logo">
+              <h6 class="text-white">Ingenuity</h6>
+            </div>
+            <div class="contact-details">
+              <p>Near Bopdev Ghat, Kondhwa Annexe, Yewalewadi, Pune, Maharashtra 411048</p>
+              <p>Phone: </p>
+              <p>Email: <a href="mailto:ingenuity@iiitp.ac.in">ingenuity@iiitp.ac.in</a></p>
+              <ul class="social-menu">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 justify-content-center align-self-center">
+              <img src={require('../assets/images/logo2.png')}
+              width='300'></img>
+          </div>
+          <div class="col-md-4">
+          </div>
+          </div>
+        </div>
+        <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2020 Ingenuity Student Media Body , IIIT Pune</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+      {/* <div className='container footer-font'>
         <div className='row justify-content-center'>
           <div className='col-12 col-sm-4 '>
             <div style={{fontFamily:'San serif'}}>CONTACT US : <br/>
             Email: <a href='mailto:ingenuity@iiitp.ac.in'>ingenuity@iiitp.ac.in</a></div>
             <div className="ml-0"><Link  to='/ourteam' >About us</Link></div>
-            {/* <h3>Links</h3>
+            <h3>Links</h3>
             <ul className='list-unstyled'>
               <li className="mb-1" >
                 <Link className='footer-link-name ' to='/home'>
@@ -20,7 +56,7 @@ function Footer(props) {
               <li className="mb-1">
                 <Link className='footer-link-name' to='/aboutus'>
                   About Us
-                </Link>
+                </Link>,
               </li>
               <li className="mb-1">
                 <Link className='footer-link-name' to='/menu'>
@@ -32,7 +68,7 @@ function Footer(props) {
                   Contact Us
                 </Link>
               </li>
-            </ul>*/}
+            </ul>
           </div>
 
           <div className='col-12 col-sm-4 justify-content-center align-self-center'>
@@ -43,25 +79,9 @@ function Footer(props) {
               ></img>
             </a>
 
-            {/* <div className='ml-5 name-container'>
-              <div class='name'>Watch Out!</div> 
-              <div className='desc' >
-                <br />
-                <span className='logo-text'>Student Media</span>
-                <br /> Body of IIIT Pune
-              </div>
-            </div> */}
           </div>
-
-          {/* <div className='col-7 col-sm-5'></div> */}
           <div className='col-12 col-sm-4 align-self-center'>
             <div className='text-center'>
-              {/* <a
-                className='btn btn-social-icon btn-google'
-                href='http://google.com/+'
-              >
-                <i className='fa fa-google-plus'></i>
-              </a> */}
               <a
                 className='btn btn-social-icon zoom '
                 href='http://www.facebook.com/profile.php?id='
@@ -92,12 +112,12 @@ function Footer(props) {
                   aria-hidden='true'
                 ></i>
               </a>
-              {/* <a
+              <a
                 className='btn btn-social-icon btn-google'
                 href='http://youtube.com/'
               >
                 <i className='fa fa-youtube'></i>
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
@@ -106,7 +126,7 @@ function Footer(props) {
             <p> Copyright © 2020 Ingenuity Student Media Body , IIIT Pune </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
