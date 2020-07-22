@@ -1,8 +1,96 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
+import { Breadcrumb, BreadcrumbItem,
+  Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '../shared/baseUrl';
+function ValidationMessage(props) {
+  if (!props.valid) {
+    return(
+      <div className='error-msg'>{props.message}</div>
+    )
+  }
+  return null;
+}
 
-function Footer(props) {
-  return (
+class Footer extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      name: '',
+      message: '',
+      formValid:false,
+      validname: false,
+      validmessage: false,
+      errmessage:{}
+  };
+  this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  validateForm = () => {
+    const {validname,validmessage} = this.state;
+    this.setState({
+      formValid: validmessage&& validname
+    })
+  }
+  updatename = (name) => {
+    this.setState({name}, this.validatename)
+  }
+  updatemessage = (message) => {
+    this.setState({message}, this.validatemessage)
+  }
+  validatename = () => {
+    const {name} = this.state;
+    let validname = true;
+    let errmessage = {...this.state.errmessage}
+
+    if (name.length < 3) {
+      validname = false;
+      errmessage.name = 'Must be at least 3 characters long'
+    }
+
+    this.setState({validname, errmessage}, this.validateForm)
+  }
+  validatemessage = () => {
+    const {message} = this.state;
+    let validmessage = true;
+    let errmessage = {...this.state.errmessage}
+
+    if (message.length < 3) {
+      validmessage = false;
+      errmessage.message = 'Must be at least 3 characters long'
+    }
+
+    this.setState({validmessage, errmessage}, this.validateForm)
+  }
+  // handleInputChange(event) {
+  //   const target = event.target;
+  //   const value =  target.value;
+  //   const name = target.name;
+
+  //   this.setState({
+  //     [name]: value
+  //   });
+  //   }
+    // handleBlur = (field)=>(event) => {
+    //     this.setState({
+    //         touched: { ...this.state.touched, [field]: true}
+    //     });
+    // }
+
+    handleSubmit(event) {
+        console.log('Current State is: ' + JSON.stringify(this.state));
+        alert('Thank you for your valuable time .Your feeback has received ');
+        axios.post(baseUrl+'feedback', { name:this.state.name,message:this.state.message })
+        .then(res => {
+          console.log(res.data);
+        })
+        // alert('Current State is: ' + JSON.stringify(this.state));
+        event.preventDefault();
+    }
+
+
+  render (){
+    return (
     <div >
       <footer className="main-footer">
         <div className="container">
@@ -27,6 +115,37 @@ function Footer(props) {
               width='300'></img>
           </div>
           <div class="col-md-4">
+            <h6>Share your thoughts or Report problems</h6>
+            <Form onSubmit={this.handleSubmit}>
+            <FormGroup row>
+                  <Label htmlFor="name" md={3}>Name*</Label>
+                  <Col md={9}>
+                      <Input type="text" id="name" name="name"
+                          placeholder="Name"
+                          value={this.state.name}
+                          onChange={(e) => this.updatename(e.target.value)} />
+                      < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} />
+                  </Col>
+              </FormGroup>
+              <FormGroup row>
+                  <Label htmlFor="message" md={3}>Message*</Label>
+                  <Col md={9}>
+                      <Input type="textarea" id="message" name="message"
+                          rows="5"
+                          placeholder="Your message"
+                          value={this.state.message}
+                          onChange={(e) => this.updatemessage(e.target.value)}></Input>
+                  < ValidationMessage valid={this.state.validmessage} message={this.state.errmessage.message} />
+                  </Col>
+              </FormGroup>
+              <FormGroup row>
+                  <Col md={{size: 10, offset: 3}}>
+                      <Button type="submit" color="primary" disabled={!this.state.formValid}>
+                          Feedback
+                      </Button>
+                  </Col>
+              </FormGroup>
+            </Form>
           </div>
           </div>
         </div>
@@ -129,6 +248,7 @@ function Footer(props) {
       </div> */}
     </div>
   );
+    }
 }
 
 export default Footer;
