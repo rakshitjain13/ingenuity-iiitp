@@ -4,17 +4,28 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import View from './ViewComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
-
+import axios from 'axios';
 import Show from './ShowComponent';
 import { data } from '../shared/source';
 import Background from './BackgroundComponent';
 import TeamPage from './AboutUsComponent';
-
+import { baseUrl } from '../shared/baseUrl';
 class Main extends Component {
   constructor(props) {
     super(props);
+    this.state={
+      store:[]
+    }
+  }
+  componentDidMount() {
+    axios.get(baseUrl+'home')
+      .then(res => {
+        const store = res.data;
+        this.setState({ store });
+      });
   }
   render() {
+    console.log(this.state.store);
     const ShowwithId = ({ match }) => {
       const index = parseInt(match.params.articleId, 10);
       if (index == 1) {
@@ -43,6 +54,11 @@ class Main extends Component {
         );
       }
     };
+    const Homepage=()=>{
+      if(this.state.store!=null){
+        return(<Home home={this.state.store}/>);
+      }
+    }
     return (
       <div>
         <Header />
@@ -66,8 +82,8 @@ class Main extends Component {
             exact
             component={() => <View type='achievements' />}
           />
-          <Route exact path='/ourteam' component={() => <TeamPage />} />
-          <Route path='/home' component={() => <Home />} />
+          <Route exact path='/ourteam'   component={() => <TeamPage /> } />
+          <Route path='/home'  component={Homepage} />
           <Route exact path='/experience/:articleId' component={ShowwithId} />
           <Route exact path='/editorials/:articleId' component={ShowwithId} />
           <Redirect to='/home' />
