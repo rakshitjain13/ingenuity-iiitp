@@ -7,22 +7,23 @@ import Gallery from './CardComponent';
 import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';
 import PicGallery from './PictureGalleryComponent';
-import { data } from '../shared/source';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '../shared/baseUrl';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data,
+      data:[]
     };
   }
 
   render() {
+    console.log(this.props.home);
+    if(this.state.data!=null){
     const content = this.state.data.filter((item) => item.slider);
     const carddata = this.state.data.filter((item) => item.card);
     const featured = this.state.data.filter((item) => item.featured);
-    console.log(content);
     return (
       <div >
         <div className='container'>
@@ -57,30 +58,30 @@ class Home extends Component {
                 </Slider>
                 </div>
             </div>
-            <div className="col-12 col-lg-5" style={{margin:10}}>
+            {/* <div className="col-12 col-lg-5" style={{margin:10}}>
             <div class="card-group slider-sh" >
                 <div class="card">
-                  <img class="card-img-top" src={data[0].image} alt="Card image cap"/>
+                  <img class="card-img-top" src={this.state.data[0].image} alt="Card image cap"/>
                   <div class="card-body">
-                    <h5 class="card-title">{data[0].title}</h5>
-                    <p class="card-text">{data[0].short}</p>
+                    <h5 class="card-title">{this.state.data[0].title}</h5>
+                    <p class="card-text">{this.state.data[0].short}</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">{data[0].date}</small>
+                    <small class="text-muted">{this.state.data[0].date}</small>
                   </div>
                 </div>
                 <div class="card" >
-                  <img class="card-img-top" src={data[1].image} alt="Card image cap"/>
+                  <img class="card-img-top" src={this.state.data[1].image} alt="Card image cap"/>
                   <div class="card-body">
-                    <h5 class="card-title">{data[1].title}</h5>
-                    <p class="card-text">{data[1].short}</p>
+                    <h5 class="card-title">{this.state.data[1].title}</h5>
+                    <p class="card-text">{this.state.data[1].short}</p>
                   </div>
                   <div class="card-footer">
-                    <small class="text-muted">{data[1].date}</small>
+                    <small class="text-muted">{this.state.data[1].date}</small>
                   </div>
                 </div>
             </div>
-          </div>
+          </div> */}
         </div>
         </div>
 
@@ -89,7 +90,9 @@ class Home extends Component {
         <Gallery key={carddata.id} data={carddata} />
         <PicGallery />
       </div>
-    );
+    );}
+    else
+          return(<div></div>);
   }
 }
 export default Home;
