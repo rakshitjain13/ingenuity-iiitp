@@ -1,123 +1,13 @@
-{/*HEADER
-.header-bg {
-  background-image: url('./assets/images/clouds.png');
-  background-color: black;
-}
-.row-header {
-  margin: 0px auto;
-  padding: 0px auto;
-}
-.moving-clouds {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  top: 20px;
-  width: 250.625em;
-  height: 43.75em;
-  -webkit-animation: cloudLoop 50s linear infinite;
-  animation: cloudLoop 50s linear infinite;
-}
-@keyframes cloudLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-.nav-font {
-  color: #f2f4f7;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: 'Serif';
-}
-.nav-font:hover {
-  color: #737a85;
-  font-weight: bold;
-  font-size: 36;
-}
-*/}
-/*Footer*/
-{/*
-.footer {
-  background-color: #1b1d21;
-}
-.footer a{
-  color: white;
-  margin: 5px 5px;
-}
-.footer a:hover {
-  color:'gray';
-  text-decoration: none;
-}
-
-.footer-font {
-  color: #f2f4f7;
-  font-size: 17px;
-}
-.logo-text {
-  margin-left: 10px;
-}
-h3 {
-  margin-left: 10px;
-}
-.Link-class {
-  margin-top: 40px;
-  font-size: large;
-}
-.logo-footer {
-  border-radius: 25px;
-}
-.footer-link-name {
-  color: white;
-}
-.footer-link-name:hover {
-  color: #737a85;
-  text-decoration: none;
-}
-
-.zoom {
-  transition: transform 0.2s; 
-}
-
-.zoom:hover {
-  transform: scale(1.5);
-}
-.shrink {
-  transition: transform 0.2s; 
-}
-
-.shrink:hover {
-  transform: scale(0.9);
-}
-
-.bg-white {
-  background-color: white !important;
-  position: relative;
-}
-.p-home{
-  font-family:'Ubuntu',sans-serif;
-}
-p  {
-  font-family:  sans-serif,'Ubuntu';
-}
-div{
-  font-family:  sans-serif,'Ubuntu';
-}
-*/}
-.slider-sh{
+.slider-sh {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.slab-style{
+.slab-style {
   background: url('assets/images/divider-bg.jpg');
-   background-size: cover; 
-   background-position: center bottom
+  background-size: cover;
+  background-position: center bottom;
 }
-.zoom{
--webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
+.zoom {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
