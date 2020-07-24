@@ -14,12 +14,11 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
+      data: this.props.home,
     };
   }
 
   render() {
-    console.log(this.props.home);
     if (this.state.data != null) {
       const content = this.state.data.filter((item) => item.slider);
       const carddata = this.state.data.filter((item) => item.card);

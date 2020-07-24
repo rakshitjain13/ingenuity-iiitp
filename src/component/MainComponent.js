@@ -6,15 +6,15 @@ import View from './ViewComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import axios from 'axios';
 import Show from './ShowComponent';
-import { data } from '../shared/source';
-import Background from './BackgroundComponent';
+import Postblog from './PostComponent';
+// import { data } from '../shared/source';
 import TeamPage from './AboutUsComponent';
 import { baseUrl } from '../shared/baseUrl';
 class Main extends Component {
   constructor(props) {
     super(props);
     this.state={
-      store:[]
+      store:this.props.store
     }
   }
   componentDidMount() {
@@ -25,9 +25,10 @@ class Main extends Component {
       });
   }
   render() {
-    console.log(this.state.store);
     const ShowwithId = ({ match }) => {
       const index = parseInt(match.params.articleId, 10);
+      const data=this.state.store;
+      if(data!=null){
       if (index == 1) {
         return (
           <Show
@@ -53,39 +54,35 @@ class Main extends Component {
           />
         );
       }
+    }
+    else{
+      return(<div></div>);
+    }
     };
     const Homepage=()=>{
       if(this.state.store!=null){
-        return(<Home home={this.state.store}/>);
-      }
+        return(<Home home={this.state.store} />);
+      }else
+      return(<Home/>)
     }
     return (
       <div>
         <Header />
         <Switch location={this.props.location}>
-          <Route path='/home' exact component={() => <Home />} />
           <Route
-            exact
-            path='/editorials'
-            exact
-            component={() => <View type='editorials' />}
+            exact path='/editorials' component={() => <View type='editorials' content={this.state.store} />}
           />
           <Route
-            exact
-            path='/experience'
-            exact
-            component={() => <View type='experience' />}
+            exact path='/experience' component={() => <View type='experience' content={this.state.store} />}
           />
           <Route
-            exact
-            path='/achievments'
-            exact
-            component={() => <View type='achievements' />}
+            exact path='/achievments' component={() => <View type='achievements' content={this.state.store} />}
           />
           <Route exact path='/ourteam'   component={() => <TeamPage /> } />
           <Route path='/home'  component={Homepage} />
           <Route exact path='/experience/:articleId' component={ShowwithId} />
           <Route exact path='/editorials/:articleId' component={ShowwithId} />
+          <Route exact path='/postBlog' component={()=><Postblog/>}/>
           <Redirect to='/home' />
         </Switch>
         <Footer />

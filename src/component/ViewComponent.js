@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../css/ViewComponent.css';
-import { data } from '../shared/source';
 import { Link } from 'react-router-dom';
-import Edit from './RichTextEditor';
 
 class View extends Component {
   constructor(props) {
@@ -10,14 +8,13 @@ class View extends Component {
   }
 
   render() {
-    var list = data.filter((item) => item.type == this.props.type);
-    var firstitem = list[0];
-    var otheritem = list.slice(1);
-    console.log(list);
-
-    return (
-      <div>
-        <Edit />;
+    if (this.props.content != null) {
+      var list = this.props.content.filter(
+        (item) => item.type == this.props.type
+      );
+      var firstitem = list[0];
+      var otheritem = list.slice(1);
+      return (
         <div className='bg-white'>
           <div id='header' class='container c-header'>
             <div class='row'>
@@ -38,12 +35,12 @@ class View extends Component {
                 <div class='mt-4'>
                   <div className='a-parent'>
                     <h1>
-                      <Link
-                        to={`${firstitem.type}/${firstitem.id}`}
+                      <a
+                        href={`${firstitem.type}/${firstitem.id}`}
                         className='cover-link'
                       >
                         {firstitem.title}
-                      </Link>
+                      </a>
                     </h1>
                   </div>
                 </div>
@@ -74,9 +71,7 @@ class View extends Component {
                     <div class='media-body'>
                       <h3 class='title mb-1 ml-0'>
                         <div className='a-parent'>
-                          <Link to={`${item.type}/${item.id}`}>
-                            {item.title}
-                          </Link>
+                          <a href={`${item.type}/${item.id}`}>{item.title}</a>
                         </div>
                       </h3>
                       <div className='dt ml-1'>
@@ -96,8 +91,10 @@ class View extends Component {
             </div>
           </section>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return <div></div>;
+    }
   }
 }
 

@@ -14,8 +14,8 @@ function RenderList({ blog, index }) {
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-              <div class="category"><a href="#">{blog.type}</a></div><a href={`${blog.type}/${blog.id}`}>
-                <h2 class="h4">{blog.title}</h2></a>
+              <div class="category"><Link href="#">{blog.type}</Link></div><Link href={`${blog.type}/${blog.id}`}>
+                <h2 class="h4">{blog.title}</h2></Link>
             </header>
             <p>{blog.description}</p>
             <footer class="post-footer d-flex align-items-center"><a href={blog.link} class="author d-flex align-items-center flex-wrap">
@@ -79,8 +79,8 @@ function RenderList({ blog, index }) {
         <div class="text-inner d-flex align-items-center">
           <div class="content">
             <header class="post-header">
-           <div class="category"><a href={blog.type}>{blog.type}</a></div><a href={`${blog.type}/${blog.id}`}>
-                <h2 class="h4">{blog.title}</h2></a>
+           <div class="category"><Link href={blog.type}>{blog.type}</Link></div><Link href={`${blog.type}/${blog.id}`}>
+                <h2 class="h4">{blog.title}</h2></Link>
             </header>
             <p>{blog.description}</p>
             <footer class="post-footer d-flex align-items-center"><a href={blog.link} class="author d-flex align-items-center flex-wrap">

@@ -14,6 +14,7 @@ class Show extends Component{
         const blog=this.props.data;
         const prevblog=this.props.prevdata;
         const nextblog=this.props.nextdata;
+        if(blog!=null && prevblog!=null && nextblog!=null)
         return(
         // <div className="bg-white" style={{padding:10}}>{parse(this.props.data.content)}</div>
         <div className="bg-white">
@@ -25,10 +26,10 @@ class Show extends Component{
               <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid view-image" style={{'border-radius': 25}}/></div>
               <div className="post-details">
                 <div className="post-meta d-flex justify-content-between">
-                  <div className="category"><a href="#">{blog.type}</a></div>
+                  <div className="category"><a href={blog.type}>{blog.type}</a></div>
                 </div>
                 <h1>{blog.title}</h1>
-                <div className="post-footer d-flex align-items-center flex-column flex-sm-row"><a href="#" className="author d-flex align-items-center flex-wrap">
+                <div className="post-footer d-flex align-items-center flex-column flex-sm-row"><a href={blog.link} className="author d-flex align-items-center flex-wrap">
                     <div className="avatar"><img src={blog.userProfile} alt="..." className="img-fluid"/></div>
                       <div className="title"><span>{blog.user}</span></div></a>
                   <div className="d-flex align-items-center flex-wrap">       
@@ -62,6 +63,8 @@ class Show extends Component{
         </div>
         </div>
         );
+        else
+        return(<div></div>);
     }
 }
 export default Show;
