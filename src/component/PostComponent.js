@@ -31,8 +31,6 @@ class Postblog extends Component {
       link: '',
       contentState,
     };
-  }
-  componentDidMount() {
     // this.check = this.check.bind(this);
     this.onContentStateChange = this.onContentStateChange.bind(this);
     // this.onEditorStateChange = this.onEditorStateChange.bind(this);
