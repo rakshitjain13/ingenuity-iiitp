@@ -44,8 +44,8 @@ class Home extends Component {
                         }}
                       >
                         <div className='inner '>
-                          <a href={`${item.type}/${item.id}`}>
-                            <h1>{item.title}</h1>{' '}
+                          <a href={`${item.type}/${item.id}`} >
+                            <h1 className="anch-hover">{item.title}</h1>
                           </a>
                           {/* <p className='d-md-none  d-xs-block'>{item.short}</p> */}
                           <p className=''>{item.description}</p>

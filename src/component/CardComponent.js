@@ -13,13 +13,13 @@ class Gallery extends Component {
           <div className='row'>
             {list.map((item) => (
                   <div class="post col-md-4">
-                <div class="post-thumbnail"><Link to={`${item.type}/${item.id}`}><img style={{width:'350px',height:'300px'}} src={item.image} alt="..." class="img-fluid"/></Link></div>
+                <div class="post-thumbnail"><a to={`${item.type}/${item.id}`}><img style={{width:'350px',height:'300px'}} src={item.image} alt="..." class="img-fluid"/></a></div>
                 <div class="post-details">
                   <div class="post-meta d-flex justify-content-between">
                     <div class="date">{item.date}</div>
-                    <div class="category"><Link href={item.type}>{item.type}</Link></div>
-                  </div><Link to={`${item.type}/${item.id}`}>
-                    <h3 class="h4">{item.title}</h3></Link>
+                    <div class="category"><a href={item.type}>{item.type}</a></div>
+                  </div><a href={`${item.type}/${item.id}`}>
+                    <h3 className="h4">{item.title}</h3></a>
                   <p class="text-muted">{item.description}</p>
                 </div>
               </div>

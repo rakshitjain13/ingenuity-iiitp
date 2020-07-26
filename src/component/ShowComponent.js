@@ -23,7 +23,7 @@ class Show extends Component{
             <main className="post blog-post col-lg-8"> 
           <div className="container">
             <div className="post-single">
-              <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid view-image" style={{'border-radius': 25}}/></div>
+              <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid view-image" style={{'border-radius': 25,'height':'350px'}} /></div>
               <div className="post-details">
                 <div className="post-meta d-flex justify-content-between">
                   <div className="category"><a href={'/'+blog.type}>{blog.type}</a></div>

@@ -222,6 +222,9 @@ button:hover {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1;
 }
+.anch-hover:hover {
+  color:#a0a8a1;
+}
 
 .slider-content .inner p {
   color: #ffffff;

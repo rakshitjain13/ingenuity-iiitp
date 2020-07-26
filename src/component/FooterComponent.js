@@ -111,8 +111,8 @@ class Footer extends Component {
             </div>
           </div>
           <div class="col-md-4 justify-content-center mt-5 ">
-              <img src={require('../assets/images/logo2.png') }
-              width='300'></img>
+              <a href={'/home'}><img src={require('../assets/images/logo2.png') }
+              width='300'></img></a>
           </div>
           <div class="col-md-4">
             <h6>Share your thoughts or Report problems</h6>
