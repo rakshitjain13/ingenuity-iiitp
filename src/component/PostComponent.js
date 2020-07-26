@@ -6,42 +6,70 @@ import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
 import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-const content = {
-  entityMap: {},
-  blocks: [
-    {
-      key: '637gr',
-      text: 'Initialized from content state.',
-      type: 'unstyled',
-      depth: 0,
-      inlineStyleRanges: [],
-      entityRanges: [],
-      data: {},
-    },
-  ],
-};
 
+function ValidationMessage(props) {
+  if (!props.valid) {
+    return <div className='error-msg'>{props.message}</div>;
+  }
+  return null;
+}
 class Postblog extends Component {
   constructor(props) {
     super(props);
-    const contentState = convertFromRaw(content);
     this.state = {
       name: '',
       email: '',
       link: '',
-      contentState,
+      editorState: EditorState.createEmpty(),
+      nameValid: false,
+      emailValid: false,
+      formValid: false,
+      errorMsg: {},
     };
-    // this.check = this.check.bind(this);
-    this.onContentStateChange = this.onContentStateChange.bind(this);
-    // this.onEditorStateChange = this.onEditorStateChange.bind(this);
+    this.onEditorStateChange = this.onEditorStateChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  onContentStateChange(contentState) {
+  onEditorStateChange(editorState) {
     this.setState({
-      contentState,
+      editorState,
     });
   }
+  validateForm = () => {
+    const { nameValid, emailValid } = this.state;
+    this.setState({
+      formValid: nameValid && emailValid,
+    });
+  };
+  validatename = () => {
+    const { name } = this.state;
+    let nameValid = true;
+    let errorMsg = { ...this.state.errorMsg };
+
+    if (name.length < 3) {
+      nameValid = false;
+      errorMsg.name = 'Must be at least 3 characters long';
+    }
+
+    this.setState({ nameValid, errorMsg }, this.validateForm);
+  };
+  validateEmail = () => {
+    const { email } = this.state;
+    let emailValid = true;
+    let errorMsg = { ...this.state.errorMsg };
+
+    // checks for format _@_._
+    if (
+      !/^[^\s@]+@[^\s@]+iiitp.ac.in$/.test(email) &&
+      !/^[^\s@]+@iiitp.ac.in$/.test(email)
+    ) {
+      emailValid = false;
+      errorMsg.email = 'Invalid email format and use your iiitp domain email ';
+    }
+
+    this.setState({ emailValid, errorMsg }, this.validateForm);
+  };
+
   //   onEditorStateChange(editorState) {
   //     this.setState({
   //       some: editorState,
@@ -60,15 +88,19 @@ class Postblog extends Component {
   handleSubmit(event) {
     event.preventDefault();
     alert('Thank you for your entry!');
-    axios.post(baseUrl + 'postBlog', {
+    axios.post(baseUrl + 'Blog', {
       name: this.state.name,
       email: this.state.email,
-      link: this.state.email,
-      contentState: this.state.contentState.blocks[0].text,
+      link: this.state.link,
+      content: draftToHtml(
+        convertToRaw(this.state.editorState.getCurrentContent())
+      ),
     });
     // alert('Current State is: ' + JSON.stringify(this.state));
-    console.log(this.state);
-    console.log(this.state.contentState.blocks[0].text);
+    // console.log(this.state);
+    console.log(
+      draftToHtml(convertToRaw(this.state.editorState.getCurrentContent()))
+    );
   }
 
   render() {
@@ -89,7 +121,13 @@ class Postblog extends Component {
                     name='name'
                     placeholder='Name'
                     value={this.state.name}
-                    onChange={(e) => this.setState({ name: e.target.value })}
+                    onChange={(e) =>
+                      this.setState({ name: e.target.value }, this.validatename)
+                    }
+                  />
+                  <ValidationMessage
+                    valid={this.state.nameValid}
+                    message={this.state.errorMsg.name}
                   />
                   {/*< ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
                 </Col>
@@ -105,7 +143,16 @@ class Postblog extends Component {
                     name='email'
                     placeholder='Your iiitp email'
                     value={this.state.email}
-                    onChange={(e) => this.setState({ email: e.target.value })}
+                    onChange={(e) =>
+                      this.setState(
+                        { email: e.target.value },
+                        this.validateEmail
+                      )
+                    }
+                  />
+                  <ValidationMessage
+                    valid={this.state.emailValid}
+                    message={this.state.errorMsg.email}
                   />
                   {/* onChange={(e) => this.updatename(e.target.value)}  
                                  < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
@@ -132,21 +179,26 @@ class Postblog extends Component {
                 <Label htmlFor='post' md={2}>
                   Post<span style={{ color: 'red' }}>*</span>
                 </Label>
-                <Col md={8} style={{ border: '1px solid' }}>
+                <Col md={10}>
                   <Editor
-                    wrapperClassName='demo-wrapper'
-                    editorClassName='demo-editor'
+                    placeholder='Start creating your post...'
+                    wrapperClassName='check'
+                    editorClassName=''
                     onContentStateChange={this.onContentStateChange}
+                    onEditorStateChange={this.onEditorStateChange}
                   />
 
-                  {/* <Input type="textarea" id="post" name="post" rows={6}
-                                    placeholder="Start creating your post"
-                                    value={this.state.post}/> */}
                   {/* onChange={(e) => this.updatename(e.target.value)}  
                                  < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
                 </Col>
               </FormGroup>
-              <Button type='submit'>Check</Button>
+              <Button
+                type='submit'
+                color='primary'
+                disabled={!this.state.formValid}
+              >
+                Check
+              </Button>
             </Form>
           </div>
         </div>
