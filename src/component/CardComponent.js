@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import '../css/CardComponent.css';
 import { Link } from 'react-router-dom';
+import '../css/hover-min.css';
 class Gallery extends Component {
   render() {
     const list = this.props.data;
@@ -12,15 +13,28 @@ class Gallery extends Component {
           </header>
           <div className='row'>
             {list.map((item) => (
-                  <div class="post col-md-4">
-                <div class="post-thumbnail"><Link to={`${item.type}/${item.id}`}><img style={{width:'350px',height:'300px'}} src={item.image} alt="..." class="img-fluid"/></Link></div>
-                <div class="post-details">
-                  <div class="post-meta d-flex justify-content-between">
-                    <div class="date">{item.date}</div>
-                    <div class="category"><Link href={item.type}>{item.type}</Link></div>
-                  </div><Link to={`${item.type}/${item.id}`}>
-                    <h3 class="h4">{item.title}</h3></Link>
-                  <p class="text-muted">{item.description}</p>
+              <div class='post col-md-4 hvr-grow'>
+                <div class='post-thumbnail'>
+                  <Link to={`${item.type}/${item.id}`}>
+                    <img
+                      style={{ width: '350px', height: '300px' }}
+                      src={item.image}
+                      alt='...'
+                      class='img-fluid'
+                    />
+                  </Link>
+                </div>
+                <div class='post-details'>
+                  <div class='post-meta d-flex justify-content-between'>
+                    <div class='date'>{item.date}</div>
+                    <div class='category'>
+                      <Link href={item.type}>{item.type}</Link>
+                    </div>
+                  </div>
+                  <Link to={`${item.type}/${item.id}`}>
+                    <h3 class='h4'>{item.title}</h3>
+                  </Link>
+                  <p class='text-muted'>{item.description}</p>
                 </div>
               </div>
               // <div className='post col-md-4'>

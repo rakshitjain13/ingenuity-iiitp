@@ -107,6 +107,9 @@ class Postblog extends Component {
     const { contentState } = this.state;
     return (
       <div className='container'>
+        <div className='row mt-5'>
+          <h1>Feature yourself,create your own Blog!</h1>
+        </div>
         <div className='row'>
           <div className='col-12 col-md-10 mt-5'>
             <Form onSubmit={this.handleSubmit}>
