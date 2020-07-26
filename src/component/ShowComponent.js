@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import parse from 'html-react-parser';
 // import '../css/Show.css';
-
+import Load from'./LoaderComponent';
 
 import{Link} from 'react-router-dom';
 ;
@@ -26,7 +26,7 @@ class Show extends Component{
               <div className="post-thumbnail" ><img src={blog.image} alt="..." className="img-fluid view-image" style={{'border-radius': 25}}/></div>
               <div className="post-details">
                 <div className="post-meta d-flex justify-content-between">
-                  <div className="category"><a href={blog.type}>{blog.type}</a></div>
+                  <div className="category"><a href={'/'+blog.type}>{blog.type}</a></div>
                 </div>
                 <h1>{blog.title}</h1>
                 <div className="post-footer d-flex align-items-center flex-column flex-sm-row"><a href={blog.link} className="author d-flex align-items-center flex-wrap">
@@ -46,11 +46,11 @@ class Show extends Component{
                     </footer>
                   </blockquote>
                 </div>
-                <div className="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row"><a href={`${prevblog.id}`} className="prev-post text-left d-flex align-items-center">
+                <div className="posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row"><a href={'/'+`${prevblog.type}/${prevblog.id}`} className="prev-post text-left d-flex align-items-center">
                     <div className="icon prev"><i className="fa fa-angle-left"></i></div>
                     <div className="text"><strong className="text-primary">Previous Post </strong>
                         <h6>{prevblog.title}</h6>
-                    </div></a><a href={`${nextblog.id}`} className="next-post text-right d-flex align-items-center justify-content-end">
+                    </div></a><a href={'/'+`${nextblog.type}/${nextblog.id}`} className="next-post text-right d-flex align-items-center justify-content-end">
                     <div className="text"><strong className="text-primary">Next Post </strong>
                       <h6>{nextblog.title}</h6>
                     </div>
@@ -64,7 +64,7 @@ class Show extends Component{
         </div>
         );
         else
-        return(<div></div>);
+        return(<Load/>);
     }
 }
 export default Show;

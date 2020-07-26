@@ -110,8 +110,8 @@ class Footer extends Component {
               </ul>
             </div>
           </div>
-          <div class="col-md-4 justify-content-center align-self-center">
-              <img src={require('../assets/images/logo2.png')}
+          <div class="col-md-4 justify-content-center mt-5 ">
+              <img src={require('../assets/images/logo2.png') }
               width='300'></img>
           </div>
           <div class="col-md-4">

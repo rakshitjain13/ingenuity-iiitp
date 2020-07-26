@@ -171,6 +171,8 @@ button:hover {
   height: 100%;
   bottom: 0;
   left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 }
 
 .previousButton {
@@ -294,7 +296,7 @@ button:hover {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: url('https://e7.pngegg.com/pngimages/120/417/png-clipart-font-awesome-arrow-web-typography-computer-icons-left-arrow-cdr-angle.png')
+  background: url('https://image.flaticon.com/icons/png/512/60/60965.png')
     no-repeat center center / 16px;
   width: 32px;
   height: 32px;
@@ -306,7 +308,7 @@ button:hover {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: url('https://p7.hiclipart.com/preview/327/148/46/arrow-encapsulated-postscript-computer-icons-next-button.jpg')
+  background: url('https://image.flaticon.com/icons/svg/32/32213.svg')
     no-repeat center center / 16px;
   width: 32px;
   height: 32px;
@@ -315,10 +317,10 @@ button:hover {
 }
 
 .previousButton:hover {
-  background: url('https://e7.pngegg.com/pngimages/120/417/png-clipart-font-awesome-arrow-web-typography-computer-icons-left-arrow-cdr-angle.png')
+  background: url('https://image.flaticon.com/icons/png/512/60/60965.png')
     no-repeat center center / 16px;
 }
 .nextButton:hover {
-  background: url('https://p7.hiclipart.com/preview/327/148/46/arrow-encapsulated-postscript-computer-icons-next-button.jpg')
+  background: url('https://image.flaticon.com/icons/svg/32/32213.svg')
     no-repeat center center / 16px;
 }

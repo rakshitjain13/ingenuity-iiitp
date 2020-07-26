@@ -76,7 +76,7 @@ class Main extends Component {
             exact path='/experience' component={() => <View type='experience' content={this.state.store} />}
           />
           <Route
-            exact path='/achievments' component={() => <View type='achievements' content={this.state.store} />}
+            exact path='/achievements' component={() => <View type='achievements' content={this.state.store} />}
           />
           <Route exact path='/ourteam'   component={() => <TeamPage /> } />
           <Route path='/home'  component={Homepage} />

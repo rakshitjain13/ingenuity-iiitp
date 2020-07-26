@@ -58,17 +58,17 @@ class Header extends Component {
     //   </nav>
     // </header>
     // </div>
-      <div
-      >
-        <Navbar color="dark" expand='md'>
-          <div className='container'>
+      <div >
+        <Navbar style={{backgroundColor: '#0e0e0e'}} expand='md' >
+          <div className='container '>
             <NavbarToggler onClick={this.toggleNav}>
               <span className='fa fa-bars' style={{color:'white'}}></span>
             </NavbarToggler>
             <NavbarBrand href='\'>
               <img
                 src={require('../assets/images/logo2.png')}
-                height='70'
+                height='45'
+               
                 alt='Ingenuity'
                 className='hvr-push'
               />
@@ -86,9 +86,9 @@ class Header extends Component {
                 <NavItem>
                   <NavLink
                     className='nav-link nav-font hvr-push'
-                    to='/achievments'
+                    to='/achievements'
                   >
-                    Achievments
+                    Achievements
                   </NavLink>
                 </NavItem>
                 <NavItem>

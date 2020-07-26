@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/ViewComponent.css';
 import { Link } from 'react-router-dom';
-
+import Load from'./LoaderComponent';
 class View extends Component {
   constructor(props) {
     super(props);
@@ -93,7 +93,7 @@ class View extends Component {
         </div>
       );
     } else {
-      return <div></div>;
+      return <Load/>;
     }
   }
 }

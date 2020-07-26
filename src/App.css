@@ -16,7 +16,7 @@
   box-sizing: border-box;
   border:1px solid ;
   line-height: normal;
-  min-height: 200px;
+  min-height: 300px;
   padding: 5px;
   border-radius: 5px;
 }
@@ -27,4 +27,7 @@
   color: red;
   margin: 5px 0;
   font-weight: bold;
+}
+.header-bg{
+  background-color: #0e0e0e;
 }
