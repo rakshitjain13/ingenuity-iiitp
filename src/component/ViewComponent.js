@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/ViewComponent.css';
-import { Link } from 'react-router-dom';
-import Load from'./LoaderComponent';
+import { Fade, Stagger } from 'react-animation-components';
+import Load from './LoaderComponent';
 class View extends Component {
   constructor(props) {
     super(props);
@@ -53,10 +53,11 @@ class View extends Component {
               </div>
             </div>
           </div>
-
           <section class='blog-list px-3 py-5 p-md-5'>
             <div class='container'>
+              <Stagger in>
               {otheritem.map((item) => (
+                <Fade>
                 <div className='row'>
                   <div className='col-12 col-md-3'>
                     <div class='media'>
@@ -87,13 +88,15 @@ class View extends Component {
                     </div>
                   </div>
                 </div>
+                </Fade>
               ))}
+              </Stagger>
             </div>
           </section>
         </div>
       );
     } else {
-      return <Load/>;
+      return <Load />;
     }
   }
 }

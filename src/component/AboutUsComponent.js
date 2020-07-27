@@ -4,10 +4,17 @@ const TeamPage = () => {
   return (
     <div className="bg-white">
       <section id='team' class='pb-5'>
+      <div className="container">
+          <div className="title-about section-title">About Us</div>
+          <div className="about-body">
+          Ingenuity is the official campus media body of the Indian Institute of Informaton Technology,Pune run by students under the patronage of Government of India.After 4 years of development,Ingenuity has rolled out as student media body to offer news and your needs for betterment of all around of campus through this website.
+          </div>
+          <hr/>
+        </div>
         <div class='container'>
         <h5 class='section-title h1'>Founders</h5>
         <div class='row justify-content-center'>
-            <div class='col-xs-12 col-sm-6 col-md-4'>
+            <div class='col-xs-12 col-sm-6 col-md-4 ' >
               <div
                 class='image-flip'
                 ontouchstart="this.classList.toggle('hover');"
@@ -101,7 +108,7 @@ const TeamPage = () => {
                         </p>
                         <h4 class='card-title'>Saksham Mahajan</h4>
                         <p class='card-text'>
-                        Co-Founder
+                        Co-Founder and Chief Editor
                         </p>
                         <a
                           href='#'
@@ -113,84 +120,7 @@ const TeamPage = () => {
                     </div>
                   </div>
                   <div class='backside'>
-                    <div class='card'>
-                      <div class='card-body text-center mt-4'>
-                        <h4 class='card-title'>Saksham Mahajan</h4>
-                        <p class='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.This is basic card with image
-                          on top, title, description and button.This is basic
-                          card with image on top, title, description and button.
-                        </p>
-                        <ul class='list-inline'>
-                          <li class='list-inline-item'>
-                            <a
-                              class='social-icon text-xs-center'
-                              target='_blank'
-                              href='https://www.instagram.com/sakshammahajan_/'
-                            >
-                              <i class='fa fa-instagram'></i>
-                            </a>
-                          </li>
-
-                          <li class='list-inline-item'>
-                            <a
-                              class='social-icon text-xs-center'
-                              target='_blank'
-                              href='https://www.linkedin.com/in/saksham-mahajan/'
-                            >
-                              <i class='fa fa-linkedin'></i>
-                            </a>
-                          </li>
-
-                          <li class='list-inline-item'>
-                            <a
-                              class='social-icon text-xs-center'
-                              target='_blank'
-                              href='https://github.com/mahajansaksham'
-                            >
-                              <i class='fa fa-github'></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr/>
-          <h5 class='section-title h1'>Editor</h5>
-          <div class='row justify-content-center'>
-            <div class='col-xs-12 col-sm-6 col-md-4'>
-              <div class='image-flip'>
-                <div class='mainflip flip-0'>
-                  <div class='frontside'>
-                    <div class='card'>
-                      <div class='card-body text-center'>
-                        <p>
-                          <img
-                            class=' img-fluid'
-                            src='https://media-exp1.licdn.com/dms/image/C5603AQF0ZRwy3frltQ/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=FuyUjHDboI6c7KAVpqrMhjSBcNV6R3k42w-_GukrAYs'
-                            alt='card image'
-                          />
-                        </p>
-                        <h4 class='card-title'>Saksham Mahajan</h4>
-                        <p class='card-text'>
-                          Editorial Manager
-                        </p>
-                        <a
-                          href='#'
-                          class='btn btn-primary btn-sm'
-                        >
-                          <i class='fa fa-plus'></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class='backside'>
-                    <div class='card'>
+                    <div class='card '>
                       <div class='card-body text-center mt-4'>
                         <h4 class='card-title'>Saksham Mahajan</h4>
                         <p class='card-text'>
@@ -394,12 +324,6 @@ const TeamPage = () => {
           </div>
         </div>
         <hr/>
-        <div className="container">
-          <div className="title-about">About Us</div>
-          <div className="about-body">
-          Ingenuity is the official campus media body of the Indian Institute of Informaton Technology,Pune run by students under the patronage of Government of India and industry partners as Not-for-profit Public Private Partnership (N-PPP)  ROLTA Ltd. and HUBTOWN Ltd.After 4 years of development,Ingenuity has rolled out as student media body to offer news and your needs for betterment of all around of campus through this website.
-          </div>
-        </div>
       </section>
     </div>
   );

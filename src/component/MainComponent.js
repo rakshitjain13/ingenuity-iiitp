@@ -7,7 +7,6 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import axios from 'axios';
 import Show from './ShowComponent';
 import Postblog from './PostComponent';
-// import { data } from '../shared/source';
 import TeamPage from './AboutUsComponent';
 import { baseUrl } from '../shared/baseUrl';
 class Main extends Component {
@@ -18,7 +17,7 @@ class Main extends Component {
     }
   }
   componentDidMount() {
-    axios.get(baseUrl+'home')
+    axios.get(baseUrl+'data')
       .then(res => {
         const store = res.data;
         this.setState({ store });

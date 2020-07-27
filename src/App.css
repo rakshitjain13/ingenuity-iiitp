@@ -11,23 +11,27 @@
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.check{
+.check {
   width: 100%;
   box-sizing: border-box;
-  border:1px solid ;
+  border: 1px solid;
   line-height: normal;
   min-height: 300px;
   padding: 5px;
   border-radius: 5px;
 }
-.check:visited{
+.check:visited {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .error-msg {
   color: red;
   margin: 5px 0;
   font-weight: bold;
+  font-size: 15px;
 }
-.header-bg{
+.header-bg {
   background-color: #0e0e0e;
+}
+.body-bg{
+  background: #eee!important;
 }

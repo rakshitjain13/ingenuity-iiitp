@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import '../css/CardComponent.css';
-import { Link } from 'react-router-dom';
+import '../css/hover-min.css';
 class Gallery extends Component {
   render() {
     const list = this.props.data;
@@ -13,7 +12,7 @@ class Gallery extends Component {
           <div className='row'>
             {list.map((item) => (
                   <div class="post col-md-4">
-                <div class="post-thumbnail"><a to={`${item.type}/${item.id}`}><img style={{width:'350px',height:'300px'}} src={item.image} alt="..." class="img-fluid"/></a></div>
+                <div class="post-thumbnail hvr-grow"><a href={`${item.type}/${item.id}`}><img style={{width:'350px',height:'300px'}} src={item.image} alt="..." class="img-fluid"/></a></div>
                 <div class="post-details">
                   <div class="post-meta d-flex justify-content-between">
                     <div class="date">{item.date}</div>

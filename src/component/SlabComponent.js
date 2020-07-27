@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../css/SlabComponent.css';
 class Slab extends Component {
   render() {
     return (

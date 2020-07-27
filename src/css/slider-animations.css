@@ -159,7 +159,6 @@ button:hover {
 }
 
 .slide {
-  
   background-size: cover !important;
 }
 
@@ -171,7 +170,13 @@ button:hover {
   height: 100%;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.9))
+  );
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
 }
 
@@ -311,8 +316,8 @@ button:hover {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  background: url('https://image.flaticon.com/icons/svg/32/32213.svg')
-    no-repeat center center / 16px;
+  background: url('https://image.flaticon.com/icons/svg/32/32213.svg') no-repeat
+    center center / 16px;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
@@ -324,6 +329,6 @@ button:hover {
     no-repeat center center / 16px;
 }
 .nextButton:hover {
-  background: url('https://image.flaticon.com/icons/svg/32/32213.svg')
-    no-repeat center center / 16px;
+  background: url('https://image.flaticon.com/icons/svg/32/32213.svg') no-repeat
+    center center / 16px;
 }

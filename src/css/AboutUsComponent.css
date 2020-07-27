@@ -16,6 +16,9 @@
   background-color: #007b5e;
   border-color: #007b5e;
 }
+.card-text{
+  font-family: 'Ubuntu';
+}
 
 section {
   padding: 60px 0;
@@ -26,6 +29,7 @@ section .section-title {
   color: #007b5e;
   margin-bottom: 50px;
   text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #team .card {
@@ -120,12 +124,14 @@ section .section-title {
 .frontside .card .card-title,
 .backside .card .card-title {
   color: #007b5e !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .frontside .card .card-body img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  font-family: 'Ubuntu';
 }
 .title-about{
   color: #007b5e;
@@ -136,5 +142,5 @@ section .section-title {
 }
 .about-body{
   font-family: sans-serif;
-  font-weight:600;
+  font-weight:550;
 }
