@@ -32,7 +32,7 @@ class Home extends Component {
       const carddata = this.state.data.filter((item) => item.card);
       const featured = this.state.data.filter((item) => item.featured);
       return (
-        <div >
+        <div>
           <div className='container'>
             <div className='row '>
               <div className='col-12 col-lg-8 mt-5'>
@@ -47,8 +47,11 @@ class Home extends Component {
                         }}
                       >
                         <div className='inner '>
-                          <a href={`${item.type}/${item.id}`} >
-                            <h1 className="anch-hover">{item.title}</h1>
+                          <a
+                            href={`${item.type}/${item.id}`}
+                            style={{ textDecoration: 'none' }}
+                          >
+                            <h1 className='anch-hover'>{item.title}</h1>
                           </a>
                           {/* <p className='d-md-none  d-xs-block'>{item.short}</p> */}
                           <p className=''>{item.description}</p>
@@ -67,17 +70,22 @@ class Home extends Component {
                   </Slider>
                 </div>
               </div>
-              <div className='col-md-4 mt-5 d-none d-md-block hvr-grow'>
-                <Card className='slider-sh'>
+              <div className='col-md-4 mt-5 d-none d-md-block '>
+                <Card className='slider-sh hvr-grow' style={{ border: 'none' }}>
                   <CardHeader
                     style={{ 'background-color': ' #0e0e0e' }}
                     tag='h6'
                   >
                     <span style={{ color: 'white' }}>A Place for you..</span>
                   </CardHeader>
-                  <CardBody style={{ 'background-color': '#dce0dd','font-family':'Montserrat' }}>
+                  <CardBody
+                    style={{
+                      'background-color': '#dce0dd',
+                      'font-family': 'Montserrat',
+                    }}
+                  >
                     <CardTitle>Create your own Blog!</CardTitle>
-                    <CardText style={{'font-family':'Montserrat'}}>
+                    <CardText style={{ 'font-family': 'Montserrat' }}>
                       Show your support to enrich the environment and culture of
                       the community.{' '}
                     </CardText>
@@ -123,9 +131,14 @@ class Home extends Component {
               <CardHeader style={{ 'background-color': ' #0e0e0e' }} tag='h6'>
                 <span style={{ color: 'white' }}>A Place for you..</span>
               </CardHeader>
-              <CardBody style={{ 'background-color': '#dce0dd','font-family':'Montserrat' }}>
+              <CardBody
+                style={{
+                  'background-color': '#dce0dd',
+                  'font-family': 'Montserrat',
+                }}
+              >
                 <CardTitle>Create your own Blog!</CardTitle>
-                <CardText style={{'font-family':'Montserrat'}}>
+                <CardText style={{ 'font-family': 'Montserrat' }}>
                   Show your support to enrich the environment and culture of the
                   community.{' '}
                 </CardText>

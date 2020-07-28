@@ -2,84 +2,97 @@ import React from 'react';
 import '../css/AboutUsComponent.css';
 const TeamPage = () => {
   return (
-    <div className="bg-white">
-      <section id='team' class='pb-5'>
-      <div className="container">
-          <div className="title-about section-title">About Us</div>
-          <div className="about-body">
-          Ingenuity is the official campus media body of the Indian Institute of Informaton Technology,Pune run by students under the patronage of Government of India.After 4 years of development,Ingenuity has rolled out as student media body to offer news and your needs for betterment of all around of campus through this website.
+    <div className='bg-white'>
+      <section id='team' className='pb-5'>
+        <div className='container'>
+          <div
+            className='title-about section-title'
+            style={{ fontFamily: 'Ubuntu' }}
+          >
+            About Us
           </div>
-          <hr/>
+          <div
+            className='about-body'
+            style={{
+              fontFamily: 'Ubuntu ,san-serif',
+              fontSize: '20px',
+              textAlign: 'center',
+            }}
+          >
+            Ingenuity is the official campus media body of the Indian Institute
+            of Informaton Technology,Pune run by students under the patronage of
+            Government of India.After 4 years of development,Ingenuity has
+            rolled out as student media body to offer news and your needs for
+            betterment of all around of campus through this website.
+          </div>
+          <hr />
         </div>
-        <div class='container'>
-        <h5 class='section-title h1'>Founders</h5>
-        <div class='row justify-content-center'>
-            <div class='col-xs-12 col-sm-6 col-md-4 ' >
+        <div className='container'>
+          <h5 className='section-title h1' style={{ fontFamily: 'Ubuntu' }}>
+            Founders
+          </h5>
+          <div className='row justify-content-center'>
+            <div className='col-xs-12 col-sm-6 col-md-4 '>
               <div
-                class='image-flip'
-                ontouchstart="this.classList.toggle('hover');"
+                className='image-flip'
+                ontouchstart="this.classNameList.toggle('hover');"
               >
-                <div class='mainflip'>
-                  <div class='frontside'>
-                    <div class='card'>
-                      <div class='card-body text-center'>
+                <div className='mainflip'>
+                  <div className='frontside'>
+                    <div className='card'>
+                      <div className='card-body text-center'>
                         <p>
                           <img
-                            class=' img-fluid'
+                            className=' img-fluid'
                             src='https://media-exp1.licdn.com/dms/image/C5103AQEfuswPxV6Gyw/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=pqPi-uT4qWUH0TTo6ZoO3QVa5kHzrwIUaWPu0Sq4rc8'
                             alt='card image'
                           />
                         </p>
-                        <h4 class='card-title'>Rohan Lekhwani </h4>
-                        <p class='card-text'>
-                         Co-Founder
-                        </p>
-                        <a
-                          href='#'
-                          class='btn btn-primary btn-sm'
-                        >
-                          <i class='fa fa-plus'></i>
+                        <h4 className='card-title'>Rohan Lekhwani </h4>
+                        <p className='card-text'>Co-Founder</p>
+                        <a href='#' className='btn btn-primary btn-sm'>
+                          <i className='fa fa-plus'></i>
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class='backside'>
-                    <div class='card'>
-                      <div class='card-body text-center mt-4'>
-                        <h4 class='card-title'>Rohan Lekhwani</h4>
-                        <p class='card-text'>
+                  <div className='backside'>
+                    <div className='card'>
+                      <div className='card-body text-center mt-4'>
+                        <h4 className='card-title'>Rohan Lekhwani</h4>
+                        <p className='card-text'>
                           This is basic card with image on top, title,
                           description and button.This is basic card with image
                           on top, title, description and button.This is basic
                           card with image on top, title, description and button.
                         </p>
-                        <ul class='list-inline'>
-                          <li class='list-inline-item'>
+                        <ul className='list-inline'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='#'
                             >
-                              <i class='fa fa-instagram'></i>
+                              <i className='fa fa-instagram'></i>
                             </a>
                           </li>
 
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.linkedin.com/in/rohanlekhwani/'
                             >
-                              <i class='fa fa-linkedin'></i>
+                              <i className='fa fa-linkedin'></i>
                             </a>
                           </li>
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://github.com/RonLek'
                             >
-                              <i class='fa fa-github'></i>
+                              <i className='fa fa-github'></i>
                             </a>
                           </li>
                         </ul>
@@ -90,73 +103,68 @@ const TeamPage = () => {
               </div>
             </div>
 
-            <div class='col-xs-12 col-sm-6 col-md-4'>
+            <div className='col-xs-12 col-sm-6 col-md-4'>
               <div
-                class='image-flip'
-                ontouchstart="this.classList.toggle('hover');"
+                className='image-flip'
+                ontouchstart="this.classNameList.toggle('hover');"
               >
-                <div class='mainflip'>
-                  <div class='frontside'>
-                    <div class='card'>
-                      <div class='card-body text-center'>
+                <div className='mainflip'>
+                  <div className='frontside'>
+                    <div className='card'>
+                      <div className='card-body text-center'>
                         <p>
                           <img
-                            class=' img-fluid'
+                            className=' img-fluid'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQF0ZRwy3frltQ/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=FuyUjHDboI6c7KAVpqrMhjSBcNV6R3k42w-_GukrAYs'
                             alt='card image'
                           />
                         </p>
-                        <h4 class='card-title'>Saksham Mahajan</h4>
-                        <p class='card-text'>
-                        Co-Founder and Chief Editor
-                        </p>
-                        <a
-                          href='#'
-                          class='btn btn-primary btn-sm'
-                        >
-                          <i class='fa fa-plus'></i>
+                        <h4 className='card-title'>Saksham Mahajan</h4>
+                        <p className='card-text'>Co-Founder and Chief Editor</p>
+                        <a href='#' className='btn btn-primary btn-sm'>
+                          <i className='fa fa-plus'></i>
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class='backside'>
-                    <div class='card '>
-                      <div class='card-body text-center mt-4'>
-                        <h4 class='card-title'>Saksham Mahajan</h4>
-                        <p class='card-text'>
+                  <div className='backside'>
+                    <div className='card '>
+                      <div className='card-body text-center mt-4'>
+                        <h4 className='card-title'>Saksham Mahajan</h4>
+                        <p className='card-text'>
                           This is basic card with image on top, title,
                           description and button.This is basic card with image
                           on top, title, description and button.This is basic
                           card with image on top, title, description and button.
                         </p>
-                        <ul class='list-inline'>
-                          <li class='list-inline-item'>
+                        <ul className='list-inline'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.instagram.com/sakshammahajan_/'
                             >
-                              <i class='fa fa-instagram'></i>
+                              <i className='fa fa-instagram'></i>
                             </a>
                           </li>
 
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.linkedin.com/in/saksham-mahajan/'
                             >
-                              <i class='fa fa-linkedin'></i>
+                              <i className='fa fa-linkedin'></i>
                             </a>
                           </li>
 
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://github.com/mahajansaksham'
                             >
-                              <i class='fa fa-github'></i>
+                              <i className='fa fa-github'></i>
                             </a>
                           </li>
                         </ul>
@@ -167,75 +175,72 @@ const TeamPage = () => {
               </div>
             </div>
           </div>
-          <hr/>
-          <h5 class='section-title h1'>Web Development Team</h5>
-          <div class='row justify-content-center'>
-            <div class='col-xs-12 col-sm-6 col-md-4'>
+          <hr />
+          <h5 className='section-title h1' style={{ fontFamily: 'Ubuntu' }}>
+            Web Development Team
+          </h5>
+          <div className='row justify-content-center'>
+            <div className='col-xs-12 col-sm-6 col-md-4'>
               <div
-                class='image-flip'
-                ontouchstart="this.classList.toggle('hover');"
+                className='image-flip'
+                ontouchstart="this.classNameList.toggle('hover');"
               >
-                <div class='mainflip'>
-                  <div class='frontside'>
-                    <div class='card'>
-                      <div class='card-body text-center'>
+                <div className='mainflip'>
+                  <div className='frontside'>
+                    <div className='card'>
+                      <div className='card-body text-center'>
                         <p>
                           <img
-                            class=' img-fluid'
+                            className=' img-fluid'
                             src='https://media-exp1.licdn.com/dms/image/C4E03AQHXhha9zl_AhA/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=vOb-gAmKOkoqHVZqHFTgDewYeCyhRvM5BN-8OXstfa0'
                             alt='card image'
                           />
                         </p>
-                        <h4 class='card-title'>Mukhrit Gupta</h4>
-                        <p class='card-text'>
-                         Web Manager
-                        </p>
-                        <a
-                          href='#'
-                          class='btn btn-primary btn-sm'
-                        >
-                          <i class='fa fa-plus'></i>
+                        <h4 className='card-title'>Mukhrit Gupta</h4>
+                        <p className='card-text'>Web Manager</p>
+                        <a href='#' className='btn btn-primary btn-sm'>
+                          <i className='fa fa-plus'></i>
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class='backside'>
-                    <div class='card'>
-                      <div class='card-body text-center mt-4'>
-                        <h4 class='card-title'>Mukhrit Gupta</h4>
-                        <p class='card-text'>
+                  <div className='backside'>
+                    <div className='card'>
+                      <div className='card-body text-center mt-4'>
+                        <h4 className='card-title'>Mukhrit Gupta</h4>
+                        <p className='card-text'>
                           This is basic card with image on top, title,
                           description and button.This is basic card with image
                           on top, title, description and button.This is basic
                           card with image on top, title, description and button.
                         </p>
-                        <ul class='list-inline'>
-                          <li class='list-inline-item'>
+                        <ul className='list-inline'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.instagram.com/mukuboi/'
                             >
-                              <i class='fa fa-instagram'></i>
+                              <i className='fa fa-instagram'></i>
                             </a>
                           </li>
 
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.linkedin.com/in/mukhrit-gupta-553196194/'
                             >
-                              <i class='fa fa-linkedin'></i>
+                              <i className='fa fa-linkedin'></i>
                             </a>
                           </li>
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://github.com/Mukhrit'
                             >
-                              <i class='fa fa-github'></i>
+                              <i className='fa fa-github'></i>
                             </a>
                           </li>
                         </ul>
@@ -246,72 +251,70 @@ const TeamPage = () => {
               </div>
             </div>
 
-            <div class='col-xs-12 col-sm-6 col-md-4'>
+            <div className='col-xs-12 col-sm-6 col-md-4'>
               <div
-                class='image-flip'
-                ontouchstart="this.classList.toggle('hover');"
+                className='image-flip'
+                ontouchstart="this.classNameList.toggle('hover');"
               >
-                <div class='mainflip'>
-                  <div class='frontside'>
-                    <div class='card'>
-                      <div class='card-body text-center'>
+                <div className='mainflip'>
+                  <div className='frontside'>
+                    <div className='card'>
+                      <div className='card-body text-center'>
                         <p>
                           <img
-                            class=' img-fluid'
+                            className=' img-fluid'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQEMeG2ptsblrw/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=jQgVIWIucHtBr6dRBwBAnHnN1Nl4m2Wmc29T56xDzhA'
                             alt='card image'
                           />
                         </p>
-                        <h4 class='card-title'>Rakshit Jain</h4>
-                        <p class='card-text'>
-                         Web Manager
-                        </p>
+                        <h4 className='card-title'>Rakshit Jain</h4>
+                        <p className='card-text'>Web Manager</p>
                         <a
                           href='https://www.fiverr.com/share/qb8D02'
-                          class='btn btn-primary btn-sm'
+                          className='btn btn-primary btn-sm'
                         >
-                          <i class='fa fa-plus'></i>
+                          <i className='fa fa-plus'></i>
                         </a>
                       </div>
                     </div>
                   </div>
-                  <div class='backside'>
-                    <div class='card'>
-                      <div class='card-body text-center mt-4'>
-                        <h4 class='card-title'>Rakshit Jain</h4>
-                        <p class='card-text'>
+                  <div className='backside'>
+                    <div className='card'>
+                      <div className='card-body text-center mt-4'>
+                        <h4 className='card-title'>Rakshit Jain</h4>
+                        <p className='card-text'>
                           This is basic card with image on top, title,
                           description and button.This is basic card with image
                           on top, title, description and button.This is basic
                           card with image on top, title, description and button.
                         </p>
-                        <ul class='list-inline'>
-                          <li class='list-inline-item'>
+                        <ul className='list-inline'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.instagram.com/rakshitjain13/'
                             >
-                              <i class='fa fa-instagram'></i>
+                              <i className='fa fa-instagram'></i>
                             </a>
                           </li>
 
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://www.linkedin.com/in/rakshit-jain-9b83b5170/?originalSubdomain=in'
                             >
-                              <i class='fa fa-linkedin'></i>
+                              <i className='fa fa-linkedin'></i>
                             </a>
                           </li>
-                          <li class='list-inline-item'>
+                          <li className='list-inline-item'>
                             <a
-                              class='social-icon text-xs-center'
+                              className='social-icon text-xs-center'
                               target='_blank'
                               href='https://github.com/rakshitjain13'
                             >
-                              <i class='fa fa-github'></i>
+                              <i className='fa fa-github'></i>
                             </a>
                           </li>
                         </ul>
@@ -323,7 +326,7 @@ const TeamPage = () => {
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
       </section>
     </div>
   );

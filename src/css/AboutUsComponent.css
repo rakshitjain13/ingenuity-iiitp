@@ -1,4 +1,3 @@
-
 #team {
   background: #eee !important;
 }
@@ -16,8 +15,8 @@
   background-color: #007b5e;
   border-color: #007b5e;
 }
-.card-text{
-  font-family: 'Ubuntu';
+.card-text {
+  font-family: 'Ubuntu' !important;
 }
 
 section {
@@ -133,14 +132,13 @@ section .section-title {
   border-radius: 50%;
   font-family: 'Ubuntu';
 }
-.title-about{
+.title-about {
   color: #007b5e;
   font-family: sans-serif;
   font-weight: bold;
   font-size: 36px;
-
 }
-.about-body{
+.about-body {
   font-family: sans-serif;
-  font-weight:550;
+  font-weight: 550;
 }

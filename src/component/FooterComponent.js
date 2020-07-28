@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import {
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  Col,
-} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { baseUrl } from '../shared/baseUrl';
 function ValidationMessage(props) {
@@ -98,57 +91,103 @@ class Footer extends Component {
 
   render() {
     return (
-    <div >
-      <footer className="main-footer">
-        <div className="container">
-          <div className="row">
-          <div class="col-md-4">
-            <div class="logo">
-              <h6 class="text-white">Ingenuity</h6>
-            </div>
-            <div class="contact-details">
-              <p>Near Bopdev Ghat, Kondhwa Annexe, Yewalewadi, Pune, Maharashtra 411048</p>
-              <p>Phone: </p>
-              <p>Email: <a href="mailto:ingenuity@iiitp.ac.in">ingenuity@iiitp.ac.in</a></p>
-              <ul class="social-menu">
-                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 justify-content-center mt-5 ">
-              <a href={'/home'}><img src={require('../assets/images/logo2.png') }
-              width='300'></img></a>
-          </div>
-          <div class="col-md-4">
-            <h6>Share your thoughts or Report problems</h6>
-            <Form onSubmit={this.handleSubmit}>
-            <FormGroup row>
-                  <Label htmlFor="name" md={3}>Name*</Label>
-                  <Col md={9}>
-                      <Input type="text" id="name" name="name"
-                          placeholder="Name"
-                          value={this.state.name}
-                          onChange={(e) => this.updatename(e.target.value)} />
-                      < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} />
-                  </Col>
-              </FormGroup>
-              <FormGroup row>
-                  <Label htmlFor="message" md={3}>Message*</Label>
-                  <Col md={9}>
-                      <Input type="textarea" id="message" name="message"
-                          rows="5"
-                          placeholder="Your message"
-                          value={this.state.message}
-                          onChange={(e) => this.updatemessage(e.target.value)}></Input>
-                  < ValidationMessage valid={this.state.validmessage} message={this.state.errmessage.message} />
-                  </Col>
-              </FormGroup>
-              <FormGroup row>
-                  <Col md={{size: 10, offset: 3}}>
-                      <Button type="submit" color="primary" disabled={!this.state.formValid}>
-                          Feedback
+      <div>
+        <footer className='main-footer'>
+          <div className='container'>
+            <div className='row'>
+              <div class='col-md-4'>
+                <div class='logo'>
+                  <h6 class='text-white'>Ingenuity</h6>
+                </div>
+                <div class='contact-details'>
+                  <p>
+                    Near Bopdev Ghat, Kondhwa Annexe, Yewalewadi, Pune,
+                    Maharashtra 411048
+                  </p>
+                  <p>Phone: </p>
+                  <p>
+                    Email:{' '}
+                    <a href='mailto:ingenuity@iiitp.ac.in'>
+                      ingenuity@iiitp.ac.in
+                    </a>
+                  </p>
+                  <ul class='social-menu'>
+                    <li class='list-inline-item'>
+                      <a href='#'>
+                        <i class='fa fa-facebook'></i>
+                      </a>
+                    </li>
+                    <li class='list-inline-item'>
+                      <a href='#'>
+                        <i class='fa fa-twitter'></i>
+                      </a>
+                    </li>
+                    <li class='list-inline-item'>
+                      <a href='#'>
+                        <i class='fa fa-instagram'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='col-md-4 justify-content-center mt-5 '>
+                <a href={'/home'}>
+                  <img
+                    src={require('../assets/images/logo2.png')}
+                    width='300'
+                  ></img>
+                </a>
+              </div>
+              <div class='col-md-4'>
+                <h6>Share your thoughts or Report problems</h6>
+                <Form onSubmit={this.handleSubmit}>
+                  <FormGroup row>
+                    <Label htmlFor='name' md={3}>
+                      Name*
+                    </Label>
+                    <Col md={9}>
+                      <Input
+                        type='text'
+                        id='name'
+                        name='name'
+                        placeholder='Name'
+                        value={this.state.name}
+                        onChange={(e) => this.updatename(e.target.value)}
+                      />
+                      <ValidationMessage
+                        valid={this.state.validname}
+                        message={this.state.errmessage.name}
+                      />
+                    </Col>
+                  </FormGroup>
+                  <FormGroup row>
+                    <Label htmlFor='message' md={3}>
+                      Message*
+                    </Label>
+                    <Col md={9}>
+                      <Input
+                        type='textarea'
+                        id='message'
+                        name='message'
+                        rows='5'
+                        placeholder='Your message'
+                        value={this.state.message}
+                        onChange={(e) => this.updatemessage(e.target.value)}
+                      ></Input>
+                      <ValidationMessage
+                        valid={this.state.validmessage}
+                        message={this.state.errmessage.message}
+                      />
+                    </Col>
+                  </FormGroup>
+                  <FormGroup row>
+                    <Col md={{ size: 10, offset: 3 }}>
+                      <Button
+                        type='submit'
+                        color='primary'
+                        disabled={!this.state.formValid}
+                      >
+                        Feedback
                       </Button>
                     </Col>
                   </FormGroup>
