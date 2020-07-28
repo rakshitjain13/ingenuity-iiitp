@@ -25,7 +25,7 @@ class Show extends Component {
                         src={blog.image}
                         alt='...'
                         className='img-fluid view-image'
-                        style={{ 'border-radius': 25 ,'height':'350px'}}
+                        style={{ 'border-radius': 25 ,'height':'370px'}}
                       />
                     </div>
                     <div className='post-details'>
