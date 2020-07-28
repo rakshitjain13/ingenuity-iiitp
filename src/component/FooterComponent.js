@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
+
 import { baseUrl } from '../shared/baseUrl';
 function ValidationMessage(props) {
   if (!props.valid) {
@@ -95,11 +95,11 @@ class Footer extends Component {
         <footer className='main-footer'>
           <div className='container'>
             <div className='row'>
-              <div class='col-md-4'>
-                <div class='logo'>
-                  <h6 class='text-white'>Ingenuity</h6>
+              <div className='col-md-4'>
+                <div className='logo'>
+                  <h6 className='text-white'>Ingenuity</h6>
                 </div>
-                <div class='contact-details'>
+                <div className='contact-details'>
                   <p>
                     Near Bopdev Ghat, Kondhwa Annexe, Yewalewadi, Pune,
                     Maharashtra 411048
@@ -111,34 +111,35 @@ class Footer extends Component {
                       ingenuity@iiitp.ac.in
                     </a>
                   </p>
-                  <ul class='social-menu'>
-                    <li class='list-inline-item'>
+                  <ul className='social-menu'>
+                    <li className='list-inline-item'>
                       <a href='#'>
-                        <i class='fa fa-facebook'></i>
+                        <i className='fa fa-facebook'></i>
                       </a>
                     </li>
-                    <li class='list-inline-item'>
+                    <li className='list-inline-item'>
                       <a href='#'>
-                        <i class='fa fa-twitter'></i>
+                        <i className='fa fa-twitter'></i>
                       </a>
                     </li>
-                    <li class='list-inline-item'>
+                    <li className='list-inline-item'>
                       <a href='#'>
-                        <i class='fa fa-instagram'></i>
+                        <i className='fa fa-instagram'></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class='col-md-4 justify-content-center mt-5 '>
+              <div className='col-md-4 justify-content-center mt-5 '>
                 <a href={'/home'}>
                   <img
                     src={require('../assets/images/logo2.png')}
                     width='300'
+                    alt='img'
                   ></img>
                 </a>
               </div>
-              <div class='col-md-4'>
+              <div className='col-md-4'>
                 <h6>Share your thoughts or Report problems</h6>
                 <Form onSubmit={this.handleSubmit}>
                   <FormGroup row>
@@ -195,10 +196,10 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div class='copyrights'>
-            <div class='container'>
-              <div class='row'>
-                <div class='col-md-6'>
+          <div className='copyrights'>
+            <div className='container'>
+              <div className='row'>
+                <div className='col-md-6'>
                   <p>&copy; 2020 Ingenuity Student Media Body , IIIT Pune</p>
                 </div>
               </div>

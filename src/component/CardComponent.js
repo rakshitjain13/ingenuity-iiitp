@@ -13,9 +13,9 @@ class Gallery extends Component {
           </header>
           <div className='row'>
             {list.map((item) => (
-              <div class='post col-md-4'>
+              <div className='post col-md-4'>
                 <div
-                  class='post-thumbnail hvr-grow'
+                  className='post-thumbnail hvr-grow'
                   style={{
                     boxShadow:
                       ' 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
@@ -26,57 +26,26 @@ class Gallery extends Component {
                       style={{ width: '350px', height: '300px' }}
                       src={item.image}
                       alt='...'
-                      class='img-fluid'
+                      className='img-fluid'
                     />
                   </a>
                 </div>
                 <div
-                  class='post-details'
+                  className='post-details'
                   style={{ fontFamily: 'Ubuntu,sans-serif' }}
                 >
-                  <div class='post-meta d-flex justify-content-between'>
-                    <div class='date'>{item.date}</div>
-                    <div class='category'>
+                  <div className='post-meta d-flex justify-content-between'>
+                    <div className='date'>{item.date}</div>
+                    <div className='category'>
                       <a href={item.type}>{item.type}</a>
                     </div>
                   </div>
                   <a href={`${item.type}/${item.id}`}>
                     <h3 className='h4'>{item.title}</h3>
                   </a>
-                  <p class='text-muted'>{item.description}</p>
+                  <p className='text-muted'>{item.description}</p>
                 </div>
               </div>
-              // <div className='post col-md-4'>
-              //   <div className='post-thumbnail'>
-              //     <a href={`${item.type}/${item.id}`}>
-              //       <img
-              //         src={item.image}
-              //         alt='...'
-              //         className='img-fluid shrink'
-              //         style={{
-              //           width: '350px',
-              //           height: '300px',
-              //         }}
-              //       />
-              //     </a>
-              //   </div>
-              //   <div className='post-details'>
-              //     <div className='post-meta d-flex justify-content-between'>
-              //       <div className='date'>{item.date}</div>
-              //       <div className='category'>
-              //         <a style={{ color: 'yellow' }} href={item.type} className="p-home">
-              //           {item.type}
-              //         </a>
-              //       </div>
-              //     </div>
-
-              //     <Link to={`${item.type}/${item.id}`}>
-              //       <h3 className='h4 ml-0'>{item.title}</h3>
-              //     </Link>
-
-              //     <p className="p-home" style={{ color: 'white' }}>{item.description}</p>
-              //   </div>
-              // </div>
             ))}
           </div>
         </div>

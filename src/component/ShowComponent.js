@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import parse from 'html-react-parser';
-import Load from './LoaderComponent';
 
-import { Link } from 'react-router-dom';
 class Show extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
-    if (this.props.data!=null && this.props.prevdata!=null && this.props.nextdata!=null){
-    const blog = this.props.data;
-    const prevblog = this.props.prevdata;
-    const nextblog = this.props.nextdata;
+    if (
+      this.props.data != null &&
+      this.props.prevdata != null &&
+      this.props.nextdata != null
+    ) {
+      const blog = this.props.data;
+      const prevblog = this.props.prevdata;
+      const nextblog = this.props.nextdata;
       return (
         // <div className="bg-white" style={{padding:10}}>{parse(this.props.data.content)}</div>
         <div className='bg-white'>
@@ -25,7 +24,7 @@ class Show extends Component {
                         src={blog.image}
                         alt='...'
                         className='img-fluid view-image'
-                        style={{ 'border-radius': 25 ,'height':'370px'}}
+                        style={{ 'border-radius': 25, height: '350px' }}
                       />
                     </div>
                     <div className='post-details'>
@@ -73,7 +72,7 @@ class Show extends Component {
                       </div>
                       <div className='posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row'>
                         <a
-                          href={'/' + `${prevblog.type}/${prevblog.id}`}
+                          href={`/${prevblog.type}/${prevblog.id}`}
                           className='prev-post text-left d-flex align-items-center'
                         >
                           <div className='icon prev'>
@@ -87,7 +86,7 @@ class Show extends Component {
                           </div>
                         </a>
                         <a
-                          href={'/' + `${nextblog.type}/${nextblog.id}`}
+                          href={`/${nextblog.type}/${nextblog.id}`}
                           className='next-post text-right d-flex align-items-center justify-content-end'
                         >
                           <div className='text'>
@@ -107,7 +106,7 @@ class Show extends Component {
           </div>
         </div>
       );
-      }
+    }
   }
 }
 export default Show;

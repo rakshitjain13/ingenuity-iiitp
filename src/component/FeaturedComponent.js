@@ -6,42 +6,44 @@ function RenderList({ blog, index }) {
   console.log(index);
   if (index & 1)
     return (
-      <div class='row d-flex align-items-stretch ' key={index}>
-        <div class='image col-lg-4'>
+      <div className='row d-flex align-items-stretch ' >
+        <div className='image col-lg-4'>
           <img src={blog.image} alt='...' />
         </div>
-        <div class='text col-lg-8'>
-          <div class='text-inner d-flex align-items-center'>
-            <div class='content'>
-              <header class='post-header'>
-                <div class='category'>
+        <div className='text col-lg-8'>
+          <div className='text-inner d-flex align-items-center'>
+            <div className='content'>
+              <header className='post-header'>
+                <div className='category'>
                   <a href={blog.type}>{blog.type}</a>
                 </div>
                 <a href={`${blog.type}/${blog.id}`}>
-                  <h2 class='h4'>{blog.title}</h2>
+                  <h2 className='h4'>{blog.title}</h2>
                 </a>
               </header>
               <p>{blog.description}</p>
-              <footer class='post-footer d-flex align-items-center'>
+              <footer className='post-footer d-flex align-items-center'>
                 <a
                   href={blog.link}
-                  target='_blank'
-                  rel="noopener noreferrer" 
-                  class='author d-flex align-items-center flex-wrap'
+                  className='author d-flex align-items-center flex-wrap'
                 >
-                  <div class='avatar'>
-                    <img src={blog.userProfile} alt='...' class='img-fluid' />
+                  <div className='avatar'>
+                    <img
+                      src={blog.userProfile}
+                      alt='...'
+                      className='img-fluid'
+                    />
                   </div>
-                  <div class='title'>
+                  <div className='title'>
                     <span>{blog.user}</span>
                   </div>
                 </a>
-                <div class='date'>
-                  <i class='fa fa-clock-o'></i>
+                <div className='date'>
+                  <i className='fa fa-clock-o'></i>
                   {blog.date}
                 </div>
-                <div class='comments  d-none d-md-block'>
-                  <i class='fa fa-book'> {blog.time}</i>
+                <div className='comments  d-none d-md-block'>
+                  <i className='fa fa-book'> {blog.time}</i>
                 </div>
               </footer>
             </div>
@@ -51,46 +53,48 @@ function RenderList({ blog, index }) {
     );
   else
     return (
-      <div class='row d-flex align-items-stretch ' key={index}>
-        <div class='text col-lg-8'>
-          <div class='text-inner d-flex align-items-center'>
-            <div class='content'>
-              <header class='post-header'>
-                <div class='category'>
+      <div className='row d-flex align-items-stretch ' >
+        <div className='text col-lg-8'>
+          <div className='text-inner d-flex align-items-center'>
+            <div className='content'>
+              <header className='post-header'>
+                <div className='category'>
                   <a href={blog.type}>{blog.type}</a>
                 </div>
                 <a href={`${blog.type}/${blog.id}`}>
-                  <h2 class='h4'>{blog.title}</h2>
+                  <h2 className='h4'>{blog.title}</h2>
                 </a>
               </header>
               <p>{blog.description}</p>
-              <footer class='post-footer d-flex align-items-center'>
+              <footer className='post-footer d-flex align-items-center'>
                 <a
-                  target='_blank'
                   href={blog.link}
-                  rel="noopener noreferrer" 
-                  class='author d-flex align-items-center flex-wrap'
+                  className='author d-flex align-items-center flex-wrap'
                 >
-                  <div class='avatar'>
-                    <img src={blog.userProfile} alt='...' class='img-fluid' />
+                  <div className='avatar'>
+                    <img
+                      src={blog.userProfile}
+                      alt='...'
+                      className='img-fluid'
+                    />
                   </div>
-                  <div class='title'>
+                  <div className='title'>
                     <span>{blog.user}</span>
                   </div>
                 </a>
-                <div class='date '>
-                  <i class='fa fa-clock-o'></i>
+                <div className='date '>
+                  <i className='fa fa-clock-o'></i>
                   {blog.date}
                 </div>
-                <div class='comments  d-none d-md-block'>
-                  <i class='fa fa-book'></i>
+                <div className='comments  d-none d-md-block'>
+                  <i className='fa fa-book'></i>
                   {blog.time}
                 </div>
               </footer>
             </div>
           </div>
         </div>
-        <div class='image col-lg-4'>
+        <div className='image col-lg-4'>
           <img src={blog.image} alt='...' />
         </div>
       </div>
@@ -99,15 +103,17 @@ function RenderList({ blog, index }) {
 
 function Featured(props) {
   return (
-    <section class='featured-posts no-padding-top mt-5 '>
+    <section className='featured-posts no-padding-top mt-5 '>
       <div
-        class='container gradient-border'
+        className='container gradient-border'
         style={{ fontFamily: 'Ubuntu,sans-serif' }}
       >
         <Stagger in>
           {props.featured.map((item, index) => (
             <Fade>
-              <RenderList blog={item} index={index} key={index} />
+              <div key={item.id}>
+              <RenderList blog={item} index={index} />
+              </div>
             </Fade>
           ))}
         </Stagger>

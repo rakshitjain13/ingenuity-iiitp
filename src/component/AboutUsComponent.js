@@ -45,7 +45,7 @@ const TeamPage = () => {
                           <img
                             className=' img-fluid'
                             src='https://media-exp1.licdn.com/dms/image/C5103AQEfuswPxV6Gyw/profile-displayphoto-shrink_200_200/0?e=1600300800&v=beta&t=pqPi-uT4qWUH0TTo6ZoO3QVa5kHzrwIUaWPu0Sq4rc8'
-                            alt='card image'
+                            alt='img'
                           />
                         </p>
                         <h4 className='card-title'>Rohan Lekhwani </h4>
@@ -68,11 +68,7 @@ const TeamPage = () => {
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
-                            <a
-                              className='social-icon text-xs-center'
-                              target='_blank'
-                              href='#'
-                            >
+                            <a className='social-icon text-xs-center' href='#'>
                               <i className='fa fa-instagram'></i>
                             </a>
                           </li>
@@ -80,7 +76,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.linkedin.com/in/rohanlekhwani/'
                             >
                               <i className='fa fa-linkedin'></i>
@@ -89,7 +84,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://github.com/RonLek'
                             >
                               <i className='fa fa-github'></i>
@@ -116,7 +110,7 @@ const TeamPage = () => {
                           <img
                             className=' img-fluid'
                             src='https://media-exp1.licdn.com/dms/image/C5603AQF0ZRwy3frltQ/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=FuyUjHDboI6c7KAVpqrMhjSBcNV6R3k42w-_GukrAYs'
-                            alt='card image'
+                            alt='img'
                           />
                         </p>
                         <h4 className='card-title'>Saksham Mahajan</h4>
@@ -141,7 +135,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.instagram.com/sakshammahajan_/'
                             >
                               <i className='fa fa-instagram'></i>
@@ -151,7 +144,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.linkedin.com/in/saksham-mahajan/'
                             >
                               <i className='fa fa-linkedin'></i>
@@ -161,7 +153,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://github.com/mahajansaksham'
                             >
                               <i className='fa fa-github'></i>
@@ -218,7 +209,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.instagram.com/mukuboi/'
                             >
                               <i className='fa fa-instagram'></i>
@@ -228,7 +218,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.linkedin.com/in/mukhrit-gupta-553196194/'
                             >
                               <i className='fa fa-linkedin'></i>
@@ -237,7 +226,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://github.com/Mukhrit'
                             >
                               <i className='fa fa-github'></i>
@@ -292,7 +280,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.instagram.com/rakshitjain13/'
                             >
                               <i className='fa fa-instagram'></i>
@@ -302,7 +289,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://www.linkedin.com/in/rakshit-jain-9b83b5170/?originalSubdomain=in'
                             >
                               <i className='fa fa-linkedin'></i>
@@ -311,7 +297,6 @@ const TeamPage = () => {
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
-                              target='_blank'
                               href='https://github.com/rakshitjain13'
                             >
                               <i className='fa fa-github'></i>

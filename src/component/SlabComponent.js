@@ -3,15 +3,15 @@ class Slab extends Component {
   render() {
     return (
       <section
-        class='divider slab-style'
+        className='divider slab-style'
         style={{
           boxShadow:
             ' 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
         }}
       >
-        <div class='container'>
-          <div class='row'>
-            <div class='col-md-7'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-7'>
               <h2>
                 {' '}
                 “I’ve missed more than 9,000 shots in my career. I’ve lost
