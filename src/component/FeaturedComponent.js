@@ -110,7 +110,7 @@ function Featured(props) {
       >
         <Stagger in>
           {props.featured.map((item, index) => (
-            <Fade>
+            <Fade key={item.id}>
               <RenderList blog={item} index={index} />
             </Fade>
           ))}

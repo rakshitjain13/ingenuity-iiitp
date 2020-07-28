@@ -13,7 +13,7 @@ class Gallery extends Component {
           </header>
           <div className='row'>
             {list.map((item) => (
-              <div className='post col-md-4'>
+              <div key={item.id} className='post col-md-4'>
                 <div
                   className='post-thumbnail hvr-grow'
                   style={{
