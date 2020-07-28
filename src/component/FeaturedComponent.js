@@ -16,11 +16,11 @@ function RenderList({ blog, index }) {
                 <h2 class="h4">{blog.title}</h2></a>
             </header>
             <p>{blog.description}</p>
-            <footer class="post-footer d-flex align-items-center"><a href={blog.link} class="author d-flex align-items-center flex-wrap">
+            <footer class="post-footer d-flex align-items-center"><a href={blog.link}  target="_blank" class="author d-flex align-items-center flex-wrap">
                 <div class="avatar"><img src={blog.userProfile} alt="..." class="img-fluid"/></div>
                 <div class="title"><span>{blog.user}</span></div></a>
-              <div class="date d-none d-md-block"><i class="fa fa-clock-o"></i>{blog.date}</div>
-              <div class="comments"><i class="fa fa-book"> {blog.time}</i></div>
+              <div class="date"><i class="fa fa-clock-o"></i>{blog.date}</div>
+              <div class="comments  d-none d-md-block"><i class="fa fa-book"> {blog.time}</i></div>
             </footer>
           </div>
         </div>
@@ -40,11 +40,11 @@ function RenderList({ blog, index }) {
                 <h2 class="h4">{blog.title}</h2></a>
             </header>
             <p>{blog.description}</p>
-            <footer class="post-footer d-flex align-items-center"><a href={blog.link} class="author d-flex align-items-center flex-wrap">
+            <footer class="post-footer d-flex align-items-center"><a  target="_blank" href={blog.link} class="author d-flex align-items-center flex-wrap">
                 <div class="avatar"><img src={blog.userProfile} alt="..." class="img-fluid"/></div>
                 <div class="title"><span>{blog.user}</span></div></a>
-              <div class="date d-none d-md-block"><i class="fa fa-clock-o"></i>{blog.date}</div>
-              <div class="comments"><i class="fa fa-book"></i>{blog.time}</div>
+              <div class="date "><i class="fa fa-clock-o"></i>{blog.date}</div>
+              <div class="comments  d-none d-md-block"><i class="fa fa-book"></i>{blog.time}</div>
             </footer>
           </div>
         </div>

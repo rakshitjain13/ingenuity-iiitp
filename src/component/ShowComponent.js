@@ -8,10 +8,10 @@ class Show extends Component {
     super(props);
   }
   render() {
+    if (this.props.data!=null && this.props.prevdata!=null && this.props.nextdata!=null){
     const blog = this.props.data;
     const prevblog = this.props.prevdata;
     const nextblog = this.props.nextdata;
-    if (blog != null && prevblog != null && nextblog != null)
       return (
         // <div className="bg-white" style={{padding:10}}>{parse(this.props.data.content)}</div>
         <div className='bg-white'>
@@ -107,7 +107,7 @@ class Show extends Component {
           </div>
         </div>
       );
-    else return <Load />;
+      }
   }
 }
 export default Show;

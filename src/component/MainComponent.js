@@ -9,6 +9,7 @@ import Show from './ShowComponent';
 import Postblog from './PostComponent';
 import TeamPage from './AboutUsComponent';
 import { baseUrl } from '../shared/baseUrl';
+import Load from './LoaderComponent';
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -55,7 +56,7 @@ class Main extends Component {
       }
     }
     else{
-      return(<div></div>);
+      return(<Load/>);
     }
     };
     const Homepage=()=>{
