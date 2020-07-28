@@ -97,25 +97,25 @@ class Home extends Component {
                 </Card>
               </div>
               {/* <div className="col-12 col-lg-5" style={{margin:10}}>
-            <div class="card-group slider-sh" >
-                <div class="card">
-                  <img class="card-img-top" src={this.state.data[0].image} alt="Card image cap"/>
-                  <div class="card-body">
-                    <h5 class="card-title">{this.state.data[0].title}</h5>
-                    <p class="card-text">{this.state.data[0].short}</p>
+            <div className="card-group slider-sh" >
+                <div className="card">
+                  <img className="card-img-top" src={this.state.data[0].image} alt="Card image cap"/>
+                  <div className="card-body">
+                    <h5 className="card-title">{this.state.data[0].title}</h5>
+                    <p className="card-text">{this.state.data[0].short}</p>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">{this.state.data[0].date}</small>
+                  <div className="card-footer">
+                    <small className="text-muted">{this.state.data[0].date}</small>
                   </div>
                 </div>
-                <div class="card" >
-                  <img class="card-img-top" src={this.state.data[1].image} alt="Card image cap"/>
-                  <div class="card-body">
-                    <h5 class="card-title">{this.state.data[1].title}</h5>
-                    <p class="card-text">{this.state.data[1].short}</p>
+                <div className="card" >
+                  <img className="card-img-top" src={this.state.data[1].image} alt="Card image cap"/>
+                  <div className="card-body">
+                    <h5 className="card-title">{this.state.data[1].title}</h5>
+                    <p className="card-text">{this.state.data[1].short}</p>
                   </div>
-                  <div class="card-footer">
-                    <small class="text-muted">{this.state.data[1].date}</small>
+                  <div className="card-footer">
+                    <small className="text-muted">{this.state.data[1].date}</small>
                   </div>
                 </div>
             </div>

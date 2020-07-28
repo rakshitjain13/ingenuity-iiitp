@@ -26,31 +26,31 @@ class Header extends Component {
   render() {
     return (
       //   <div>
-      //   <header class="header">
-      //   <nav class="navbar navbar-expand-lg">
-      //     <div class="search-area">
-      //       <div class="search-area-inner d-flex align-items-center justify-content-center">
-      //         <div class="close-btn"><i class="icon-close"></i></div>
-      //         <div class="row d-flex justify-content-center">
-      //           <div class="col-md-8">
+      //   <header className="header">
+      //   <nav className="navbar navbar-expand-lg">
+      //     <div className="search-area">
+      //       <div className="search-area-inner d-flex align-items-center justify-content-center">
+      //         <div className="close-btn"><i className="icon-close"></i></div>
+      //         <div className="row d-flex justify-content-center">
+      //           <div className="col-md-8">
       //           </div>
       //         </div>
       //       </div>
       //     </div>
-      //     <div class="container">
-      //       <div class="navbar-header d-flex align-items-center justify-content-between">
-      //        <a href="index.html" class="navbar-brand">Bootstrap Blog</a>
-      //         <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+      //     <div className="container">
+      //       <div className="navbar-header d-flex align-items-center justify-content-between">
+      //        <a href="index.html" className="navbar-brand">Bootstrap Blog</a>
+      //         <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" className="navbar-toggler"><span></span><span></span><span></span></button>
       //       </div>
-      //       <div id="navbarcollapse" class="collapse navbar-collapse">
-      //         <ul class="navbar-nav ml-auto">
-      //           <li class="nav-item"><a href="index.html" class="nav-link active ">Home</a>
+      //       <div id="navbarcollapse" className="collapse navbar-collapse">
+      //         <ul className="navbar-nav ml-auto">
+      //           <li className="nav-item"><a href="index.html" className="nav-link active ">Home</a>
       //           </li>
-      //           <li class="nav-item"><a href="blog.html" class="nav-link ">Blog</a>
+      //           <li className="nav-item"><a href="blog.html" className="nav-link ">Blog</a>
       //           </li>
-      //           <li class="nav-item"><a href="post.html" class="nav-link ">Post</a>
+      //           <li className="nav-item"><a href="post.html" className="nav-link ">Post</a>
       //           </li>
-      //           <li class="nav-item"><a href="#" class="nav-link ">Contact</a>
+      //           <li className="nav-item"><a href="#" className="nav-link ">Contact</a>
       //           </li>
       //         </ul>
       //       </div>
