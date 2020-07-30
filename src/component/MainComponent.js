@@ -91,6 +91,7 @@ class Main extends Component {
           <Route path='/home' component={Homepage} />
           <Route exact path='/experience/:articleId' component={ShowwithId} />
           <Route exact path='/editorials/:articleId' component={ShowwithId} />
+          <Route exact path='/achievements/:articleId' component={ShowwithId} />
           <Route exact path='/postBlog' component={() => <Postblog />} />
           <Redirect to='/home' />
         </Switch>

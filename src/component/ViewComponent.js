@@ -16,7 +16,7 @@ class View extends Component {
             <div className='row'>
               <div
                 className='col-md-8 tinted cover-image center-fill-container'
-                style={{ margin: '70px 0' }}
+                style={{ margin: '70px 0px' }}
               >
                 <div className='img-container'>
                   <img

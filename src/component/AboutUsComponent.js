@@ -61,10 +61,7 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Rohan Lekhwani</h4>
                         <p className='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.This is basic card with image
-                          on top, title, description and button.This is basic
-                          card with image on top, title, description and button.
+                        I enjoy building cool stuff and taking part in Hackathons and have been in the Top 1% in several of them.
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
@@ -126,10 +123,7 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Saksham Mahajan</h4>
                         <p className='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.This is basic card with image
-                          on top, title, description and button.This is basic
-                          card with image on top, title, description and button.
+                        Sophomore<br/>The beginning is the end, the end is the beginning
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
@@ -271,11 +265,7 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Rakshit Jain</h4>
                         <p className='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.This is basic card with image
-                          on top, title, description and button.This is basic
-                          card with image on top, title, description and button.
-                        </p>
+                         Everthing is connected.What if everthing that came from the frontend was influenced by the backend .          </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
                             <a

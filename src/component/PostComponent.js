@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { baseUrl } from '../shared/baseUrl';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
-import { EditorState, convertToRaw } from 'draft-js';
+import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
 import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
@@ -23,13 +23,13 @@ class Postblog extends Component {
       editorState: EditorState.createEmpty(),
       nameValid: false,
       emailValid: false,
-      contentValid: false,
+      contentValid:false,
       formValid: false,
       errorMsg: {},
     };
     this.onEditorStateChange = this.onEditorStateChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.validateContent = this.validateContent.bind(this);
+    this.validateContent=this.validateContent.bind(this);
   }
 
   onEditorStateChange(editorState) {
@@ -38,23 +38,21 @@ class Postblog extends Component {
     });
     this.validateContent();
   }
-  validateContent() {
-    const { editorState } = this.state;
-    let contentValid = true;
+  validateContent(){
+    const {editorState}=this.state;
+    let contentValid=true;
     let errorMsg = { ...this.state.errorMsg };
 
-    if (
-      draftToHtml(convertToRaw(editorState.getCurrentContent())).length < 12
-    ) {
+    if ( draftToHtml(convertToRaw(editorState.getCurrentContent())).length<12) {
       contentValid = false;
       errorMsg.content = 'Must be at least 4 characters long';
     }
     this.setState({ contentValid, errorMsg }, this.validateForm);
   }
   validateForm = () => {
-    const { nameValid, emailValid, contentValid } = this.state;
+    const { nameValid, emailValid,contentValid } = this.state;
     this.setState({
-      formValid: nameValid && emailValid && contentValid,
+      formValid: nameValid && emailValid&&contentValid,
     });
   };
   validatename = () => {
@@ -86,11 +84,24 @@ class Postblog extends Component {
     this.setState({ emailValid, errorMsg }, this.validateForm);
   };
 
+  //   onEditorStateChange(editorState) {
+  //     this.setState({
+  //       some: editorState,
+  //     });
+  //   }
+
+  //   check() {
+  //     console.log(this.state.contentState);
+  //   }
+
+  //   updatepost(post) {
+  //     console.log(post);
+  //     this.setState({ post });
+  //   }
+
   handleSubmit(event) {
     event.preventDefault();
-    alert(
-      'Thank you for your entry! \n We will verfiy your blog as soon as possible'
-    );
+    alert('Thank you for your entry! \n We will verfiy your blog as soon as possible');
     // alert(draftToHtml(convertToRaw(this.state.editorState.getCurrentContent())).length);
     axios.post(baseUrl + 'Blog', {
       name: this.state.name,
@@ -100,9 +111,15 @@ class Postblog extends Component {
         convertToRaw(this.state.editorState.getCurrentContent())
       ),
     });
+    // alert('Current State is: ' + JSON.stringify(this.state));
+    // console.log(this.state);
+    // console.log(
+    //   draftToHtml(convertToRaw(this.state.editorState.getCurrentContent()))
+    // );
   }
 
   render() {
+    const { contentState } = this.state;
     return (
       <div className='container'>
         <div className='row mt-5'>
@@ -183,12 +200,12 @@ class Postblog extends Component {
                 <Col md={10}>
                   <Editor
                     placeholder='Start creating your post...'
-                    wrapperclassName='check'
-                    editorclassName='check'
+                    wrapperClassName='check'
+                    editorClassName=''
                     onContentStateChange={this.onContentStateChange}
                     onEditorStateChange={this.onEditorStateChange}
                   />
-                  <ValidationMessage
+                   <ValidationMessage
                     valid={this.state.contentValid}
                     message={this.state.errorMsg.content}
                   />
@@ -198,16 +215,16 @@ class Postblog extends Component {
                 </Col>
               </FormGroup>
               <FormGroup row>
-                <Col style={{ 'margin-left': '110px' }}>
-                  <Button
-                    type='submit'
-                    color='primary'
-                    disabled={!this.state.formValid}
-                    className='ml-5'
-                  >
-                    Post
-                  </Button>
-                </Col>
+              <Col md={{offset:2}} >
+              <Button
+                type='submit'
+                color='primary'
+                disabled={!this.state.formValid}
+               className="ml-3"
+              >
+                Post
+              </Button>
+              </Col>
               </FormGroup>
             </Form>
           </div>
