@@ -103,7 +103,7 @@ class Postblog extends Component {
     event.preventDefault();
     alert('Thank you for your entry! \n We will verfiy your blog as soon as possible');
     // alert(draftToHtml(convertToRaw(this.state.editorState.getCurrentContent())).length);
-    axios.post(baseUrl + 'Blog', {
+    axios.post(baseUrl + 'api/Blog', {
       name: this.state.name,
       email: this.state.email,
       link: this.state.link,

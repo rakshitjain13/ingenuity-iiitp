@@ -78,7 +78,7 @@ class Footer extends Component {
     console.log('Current State is: ' + JSON.stringify(this.state));
     alert('Thank you for your valuable time .Your feeback has received ');
     axios
-      .post(baseUrl + 'feedback', {
+      .post(baseUrl + 'api/feedback', {
         name: this.state.name,
         message: this.state.message,
       })

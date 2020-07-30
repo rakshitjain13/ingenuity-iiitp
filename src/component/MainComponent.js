@@ -18,7 +18,7 @@ class Main extends Component {
     };
   }
   componentDidMount() {
-    axios.get(baseUrl + 'data').then((res) => {
+    axios.get(baseUrl + 'api/data').then((res) => {
       const store = res.data;
       this.setState({ store });
     });
