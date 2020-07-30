@@ -184,7 +184,7 @@ class Postblog extends Component {
                   <Editor
                     placeholder='Start creating your post...'
                     wrapperclassName='check'
-                    editorclassName=''
+                    editorclassName='check'
                     onContentStateChange={this.onContentStateChange}
                     onEditorStateChange={this.onEditorStateChange}
                   />

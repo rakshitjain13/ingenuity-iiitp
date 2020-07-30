@@ -3,6 +3,7 @@ import Gallery from 'react-grid-gallery';
 
 const IMAGES = [
   {
+    id: 1,
     src: require('../assets/images/photo-1.jpeg'),
     thumbnail: require('../assets/images/photo-1.jpeg'),
     thumbnailWidth: 300,
@@ -11,6 +12,7 @@ const IMAGES = [
     caption: 'After Interview Preparation Fisrt Year',
   },
   {
+    id: 1,
     src: require('../assets/images/photo-2.jpeg'),
     thumbnail: require('../assets/images/photo-2.jpeg'),
     thumbnailWidth: 300,
@@ -20,6 +22,7 @@ const IMAGES = [
   },
 
   {
+    id: 1,
     src: require('../assets/images/rohan.jpeg'),
     thumbnail: require('../assets/images/rohan.jpeg'),
     thumbnailWidth: 300,
@@ -27,6 +30,7 @@ const IMAGES = [
     caption: 'Best Innovation Award - UILA 2020',
   },
   {
+    id: 1,
     src: require('../assets/images/photo-4.jpeg'),
     thumbnail: require('../assets/images/photo-4.jpeg'),
     thumbnailWidth: 300,

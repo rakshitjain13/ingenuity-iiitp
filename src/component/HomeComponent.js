@@ -35,7 +35,7 @@ class Home extends Component {
         <div>
           <div className='container'>
             <div className='row '>
-              <div className='col-12 col-lg-8 mt-5'>
+              <div className='col-12  col-lg-8 mt-5'>
                 <div className='slider-sh'>
                   <Slider autoplay={3000}>
                     {content.map((item, index) => (
@@ -72,20 +72,17 @@ class Home extends Component {
               </div>
               <div className='col-md-4 mt-5 d-none d-md-block '>
                 <Card className='slider-sh hvr-grow' style={{ border: 'none' }}>
-                  <CardHeader
-                    style={{ 'background-color': ' #0e0e0e' }}
-                    tag='h6'
-                  >
+                  <CardHeader style={{ backgroundColor: ' #0e0e0e' }} tag='h6'>
                     <span style={{ color: 'white' }}>A Place for you..</span>
                   </CardHeader>
                   <CardBody
                     style={{
-                      'background-color': '#dce0dd',
-                      'font-family': 'Montserrat',
+                      backgroundColor: '#dce0dd',
+                      fontFamily: 'Montserrat',
                     }}
                   >
                     <CardTitle>Create your own Blog!</CardTitle>
-                    <CardText style={{ 'font-family': 'Montserrat' }}>
+                    <CardText style={{ fontFamily: 'Montserrat' }}>
                       Show your support to enrich the environment and culture of
                       the community.{' '}
                     </CardText>
@@ -126,19 +123,19 @@ class Home extends Component {
           <Featured featured={featured} />
           <Slab />
           <Gallery key={carddata.id} data={carddata} />
-          <div className=' d-sm-block d-md-none' style={{ margin: 10 }}>
+          <div className=' d-sm-block d-md-none' style={{ margin: '10px' }}>
             <Card className='slider-sh'>
-              <CardHeader style={{ 'background-color': ' #0e0e0e' }} tag='h6'>
+              <CardHeader style={{ backgroundColor: ' #0e0e0e' }} tag='h6'>
                 <span style={{ color: 'white' }}>A Place for you..</span>
               </CardHeader>
               <CardBody
                 style={{
-                  'background-color': '#dce0dd',
-                  'font-family': 'Montserrat',
+                  backgroundColor: '#dce0dd',
+                  fontFamily: 'Montserrat',
                 }}
               >
                 <CardTitle>Create your own Blog!</CardTitle>
-                <CardText style={{ 'font-family': 'Montserrat' }}>
+                <CardText style={{ fontFamily: 'Montserrat' }}>
                   Show your support to enrich the environment and culture of the
                   community.{' '}
                 </CardText>

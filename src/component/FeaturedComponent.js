@@ -7,10 +7,10 @@ function RenderList({ blog, index }) {
   if (index & 1)
     return (
       <div className='row d-flex align-items-stretch ' >
-        <div className='image col-lg-4'>
+        <div className='image col-lg-4 col-12'>
           <img src={blog.image} alt='...' />
         </div>
-        <div className='text col-lg-8'>
+        <div className='text col-lg-8 col-12'>
           <div className='text-inner d-flex align-items-center'>
             <div className='content'>
               <header className='post-header'>
@@ -54,7 +54,7 @@ function RenderList({ blog, index }) {
   else
     return (
       <div className='row d-flex align-items-stretch ' >
-        <div className='text col-lg-8'>
+        <div className='text col-lg-8 col-12'>
           <div className='text-inner d-flex align-items-center'>
             <div className='content'>
               <header className='post-header'>
@@ -94,7 +94,7 @@ function RenderList({ blog, index }) {
             </div>
           </div>
         </div>
-        <div className='image col-lg-4'>
+        <div className='image col-lg-4 col-12'>
           <img src={blog.image} alt='...' />
         </div>
       </div>
@@ -110,10 +110,8 @@ function Featured(props) {
       >
         <Stagger in>
           {props.featured.map((item, index) => (
-            <Fade>
-              <div key={item.id}>
+            <Fade key={item.id}>
               <RenderList blog={item} index={index} />
-              </div>
             </Fade>
           ))}
         </Stagger>
