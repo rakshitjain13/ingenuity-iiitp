@@ -16,7 +16,7 @@
   border-color: #007b5e;
 }
 .card-text {
-  font-family: 'Ubuntu' !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 section {
@@ -25,8 +25,8 @@ section {
 
 section .section-title {
   text-align: center;
-  color: #007b5e;
-  margin-bottom: 50px;
+  color: #ff9770;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }

@@ -12,9 +12,9 @@ const TeamPage = () => {
             About Us
           </div>
           <div
-            className='about-body'
+            className='about-body mb-4'
             style={{
-              fontFamily: 'Ubuntu ,san-serif',
+              fontFamily: 'Poppins, sans-serif',
               fontSize: '20px',
               textAlign: 'center',
             }}
@@ -61,7 +61,9 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Rohan Lekhwani</h4>
                         <p className='card-text'>
-                        I enjoy building cool stuff and taking part in Hackathons and have been in the Top 1% in several of them.
+                          I enjoy building cool stuff and taking part in
+                          Hackathons and have been in the Top 1% in several of
+                          them.
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
@@ -123,7 +125,9 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Saksham Mahajan</h4>
                         <p className='card-text'>
-                        Sophomore<br/>The beginning is the end, the end is the beginning
+                          Sophomore.
+                          <br />
+                          The beginning is the end, the end is the beginning.
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
@@ -194,10 +198,8 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Mukhrit Gupta</h4>
                         <p className='card-text'>
-                          This is basic card with image on top, title,
-                          description and button.This is basic card with image
-                          on top, title, description and button.This is basic
-                          card with image on top, title, description and button.
+                          'Every act of creation is first an act of
+                          destruction.' ~Pablo Picasso
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
@@ -265,7 +267,9 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Rakshit Jain</h4>
                         <p className='card-text'>
-                         Everthing is connected.What if everthing that came from the frontend was influenced by the backend .          </p>
+                          Everthing is connected.What if everything that came
+                          from the frontend was influenced by the backend .{' '}
+                        </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
                             <a

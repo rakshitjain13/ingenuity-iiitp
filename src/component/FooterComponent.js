@@ -59,20 +59,6 @@ class Footer extends Component {
 
     this.setState({ validmessage, errmessage }, this.validateForm);
   };
-  // handleInputChange(event) {
-  //   const target = event.target;
-  //   const value =  target.value;
-  //   const name = target.name;
-
-  //   this.setState({
-  //     [name]: value
-  //   });
-  //   }
-  // handleBlur = (field)=>(event) => {
-  //     this.setState({
-  //         touched: { ...this.state.touched, [field]: true}
-  //     });
-  // }
 
   handleSubmit(event) {
     console.log('Current State is: ' + JSON.stringify(this.state));
