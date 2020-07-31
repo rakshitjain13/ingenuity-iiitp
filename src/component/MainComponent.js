@@ -10,6 +10,8 @@ import Postblog from './PostComponent';
 import TeamPage from './AboutUsComponent';
 import { baseUrl } from '../shared/baseUrl';
 import Load from './LoaderComponent';
+import {api} from '../authentication';
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -18,10 +20,16 @@ class Main extends Component {
     };
   }
   componentDidMount() {
-    axios.get(baseUrl + 'api/data').then((res) => {
+    axios.get(baseUrl + 'api/data',{
+        auth: {
+          username: api.user,
+          password: api.pass
+        }
+    }).then((res) => {
       const store = res.data;
       this.setState({ store });
     });
+    console.log(api.user,api.pass);
   }
   render() {
     const ShowwithId = ({ match }) => {

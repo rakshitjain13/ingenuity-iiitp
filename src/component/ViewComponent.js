@@ -53,7 +53,7 @@ class View extends Component {
             <div className='container'>
               <Stagger in>
                 {otheritem.map((item) => (
-                  <Fade>
+                  <Fade key={item.id}>
                     <div className='row'>
                       <div className='col-12 col-md-3'>
                         <div className='media'>

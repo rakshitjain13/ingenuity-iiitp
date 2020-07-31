@@ -6,7 +6,7 @@ import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
 import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-
+import {api} from '../authentication';
 function ValidationMessage(props) {
   if (!props.valid) {
     return <div className='error-msg'>{props.message}</div>;
@@ -99,6 +99,11 @@ class Postblog extends Component {
       content: draftToHtml(
         convertToRaw(this.state.editorState.getCurrentContent())
       ),
+    },{
+      auth:{
+        username:api.user,
+        password:api.pass
+      }
     });
   }
 

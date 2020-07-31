@@ -3,7 +3,6 @@ import { Fade, Stagger } from 'react-animation-components';
 import '../css/FeaturedComponent.css';
 
 function RenderList({ blog, index }) {
-  console.log(index);
   if (index & 1)
     return (
       <div className='row d-flex align-items-stretch ' >

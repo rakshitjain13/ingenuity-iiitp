@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
-
+import {api} from '../authentication';
 import { baseUrl } from '../shared/baseUrl';
 function ValidationMessage(props) {
   if (!props.valid) {
@@ -67,6 +67,11 @@ class Footer extends Component {
       .post(baseUrl + 'api/feedback', {
         name: this.state.name,
         message: this.state.message,
+      },{
+        auth:{
+          username:api.user,
+          password:api.pass
+        }
       })
       .then((res) => {
         console.log(res.data);
