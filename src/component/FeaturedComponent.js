@@ -16,7 +16,7 @@ function RenderList({ blog, index }) {
                 <div className='category'>
                   <a href={blog.type}>{blog.type}</a>
                 </div>
-                <a href={`${blog.type}/${blog.id}`}>
+                <a href={`${blog.type}/${blog.articleid}`}>
                   <h2 className='h4'>{blog.title}</h2>
                 </a>
               </header>
@@ -60,7 +60,7 @@ function RenderList({ blog, index }) {
                 <div className='category'>
                   <a href={blog.type}>{blog.type}</a>
                 </div>
-                <a href={`${blog.type}/${blog.id}`}>
+                <a href={`${blog.type}/${blog.articleid}`}>
                   <h2 className='h4'>{blog.title}</h2>
                 </a>
               </header>

@@ -583,14 +583,12 @@ section.featured-posts .comments::after {
 }
 
 section.featured-posts .image {
-  /* max-height: 350px;
-    width: auto; */
   overflow: hidden;
   padding: 0;
 }
 
 section.featured-posts .image img {
-  height: 320px;
+  height: 335px;
   width: 400px;
 }
 
@@ -608,7 +606,7 @@ section.featured-posts .post-footer {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    max-height: 300px;
+    /* max-height: 300px; */
     min-height: auto !important;
   }
   section.featured-posts .image img {

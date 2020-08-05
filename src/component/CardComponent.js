@@ -21,7 +21,7 @@ class Gallery extends Component {
                       ' 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
                   }}
                 >
-                  <a href={`${item.type}/${item.id}`}>
+                  <a href={`${item.type}/${item.articleid}`}>
                     <img
                       style={{ width: '350px', height: '300px' }}
                       src={item.image}
@@ -40,7 +40,7 @@ class Gallery extends Component {
                       <a href={item.type}>{item.type}</a>
                     </div>
                   </div>
-                  <a href={`${item.type}/${item.id}`}>
+                  <a href={`${item.type}/${item.articleid}`}>
                     <h3 className='h4'>{item.title}</h3>
                   </a>
                   <p className='text-muted'>{item.description}</p>

@@ -72,7 +72,7 @@ class Show extends Component {
                       </div>
                       <div className='posts-nav d-flex justify-content-between align-items-stretch flex-column flex-md-row'>
                         <a
-                          href={`/${prevblog.type}/${prevblog.id}`}
+                          href={`/${prevblog.type}/${prevblog.articleid}`}
                           className='prev-post text-left d-flex align-items-center'
                         >
                           <div className='icon prev'>
@@ -86,7 +86,7 @@ class Show extends Component {
                           </div>
                         </a>
                         <a
-                          href={`/${nextblog.type}/${nextblog.id}`}
+                          href={`/${nextblog.type}/${nextblog.articleid}`}
                           className='next-post text-right d-flex align-items-center justify-content-end'
                         >
                           <div className='text'>

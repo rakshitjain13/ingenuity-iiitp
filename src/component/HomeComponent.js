@@ -48,7 +48,7 @@ class Home extends Component {
                       >
                         <div className='inner '>
                           <a
-                            href={`${item.type}/${item.id}`}
+                            href={`${item.type}/${item.articleid}`}
                             style={{ textDecoration: 'none' }}
                           >
                             <h1 className='anch-hover'>{item.title}</h1>

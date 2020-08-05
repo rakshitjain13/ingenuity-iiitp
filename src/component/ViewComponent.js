@@ -32,7 +32,7 @@ class View extends Component {
                   <div className='a-parent'>
                     <h1>
                       <a
-                        href={`${firstitem.type}/${firstitem.id}`}
+                        href={`${firstitem.type}/${firstitem.articleid}`}
                         className='cover-link'
                       >
                         {firstitem.title}
@@ -68,7 +68,7 @@ class View extends Component {
                         <div className='media-body'>
                           <h3 className='title mb-1 ml-0'>
                             <div className='a-parent'>
-                              <a href={`${item.type}/${item.id}`}>
+                              <a href={`${item.type}/${item.articleid}`}>
                                 {item.title}
                               </a>
                             </div>

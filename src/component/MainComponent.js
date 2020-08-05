@@ -29,11 +29,11 @@ class Main extends Component {
       const store = res.data;
       this.setState({ store });
     });
-    console.log(api.user,api.pass);
   }
   render() {
     const ShowwithId = ({ match }) => {
-      const index = parseInt(match.params.articleId, 10);
+      let articleid=match.params.articleId;
+      const index = parseInt(articleid[articleid.length-1], 10);
       const data = this.state.store;
       if (data != null) {
         if (index === 1) {
