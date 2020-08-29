@@ -12,7 +12,6 @@ class Show extends Component {
       const prevblog = this.props.prevdata;
       const nextblog = this.props.nextdata;
       return (
-        // <div className="bg-white" style={{padding:10}}>{parse(this.props.data.content)}</div>
         <div className='bg-white'>
           <div className='container' style={{ padding: 10 }}>
             <div className='row'>

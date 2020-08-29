@@ -8,7 +8,7 @@ const IMAGES = [
     thumbnail: require('../assets/images/photo-1.jpeg'),
     thumbnailWidth: 300,
     thumbnailHeight: 174,
-    // isSelected: true,
+
     caption: 'After Interview Preparation Fisrt Year',
   },
   {
@@ -17,7 +17,7 @@ const IMAGES = [
     thumbnail: require('../assets/images/photo-2.jpeg'),
     thumbnailWidth: 300,
     thumbnailHeight: 212,
-    // tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
+
     caption: 'A visit to Trichy ',
   },
 

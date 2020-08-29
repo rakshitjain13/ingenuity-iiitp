@@ -6,7 +6,7 @@ import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
 import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import {api} from '../authentication';
+import { api } from '../authentication';
 function ValidationMessage(props) {
   if (!props.valid) {
     return <div className='error-msg'>{props.message}</div>;
@@ -91,20 +91,24 @@ class Postblog extends Component {
     alert(
       'Thank you for your entry! \n We will verfiy your blog as soon as possible'
     );
-    // alert(draftToHtml(convertToRaw(this.state.editorState.getCurrentContent())).length);
-    axios.post(baseUrl + 'api/Blog', {
-      name: this.state.name,
-      email: this.state.email,
-      link: this.state.link,
-      content: draftToHtml(
-        convertToRaw(this.state.editorState.getCurrentContent())
-      ),
-    },{
-      auth:{
-        username:api.user,
-        password:api.pass
+
+    axios.post(
+      baseUrl + 'api/Blog',
+      {
+        name: this.state.name,
+        email: this.state.email,
+        link: this.state.link,
+        content: draftToHtml(
+          convertToRaw(this.state.editorState.getCurrentContent())
+        ),
+      },
+      {
+        auth: {
+          username: api.user,
+          password: api.pass,
+        },
       }
-    });
+    );
   }
 
   render() {
@@ -136,7 +140,6 @@ class Postblog extends Component {
                     valid={this.state.nameValid}
                     message={this.state.errorMsg.name}
                   />
-                  {/*< ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
                 </Col>
               </FormGroup>
               <FormGroup row>
@@ -161,8 +164,6 @@ class Postblog extends Component {
                     valid={this.state.emailValid}
                     message={this.state.errorMsg.email}
                   />
-                  {/* onChange={(e) => this.updatename(e.target.value)}  
-                                 < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
                 </Col>
               </FormGroup>
               <FormGroup row>
@@ -178,8 +179,6 @@ class Postblog extends Component {
                     value={this.state.link}
                     onChange={(e) => this.setState({ link: e.target.value })}
                   />
-                  {/* onChange={(e) => this.updatename(e.target.value)}  
-                                 < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
                 </Col>
               </FormGroup>
               <FormGroup row>
@@ -198,9 +197,6 @@ class Postblog extends Component {
                     valid={this.state.contentValid}
                     message={this.state.errorMsg.content}
                   />
-
-                  {/* onChange={(e) => this.updatename(e.target.value)}  
-                                 < ValidationMessage valid={this.state.validname} message={this.state.errmessage.name} /> */}
                 </Col>
               </FormGroup>
               <FormGroup row>

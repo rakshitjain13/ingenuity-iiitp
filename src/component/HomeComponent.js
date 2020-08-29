@@ -53,11 +53,8 @@ class Home extends Component {
                           >
                             <h1 className='anch-hover'>{item.title}</h1>
                           </a>
-                          {/* <p className='d-md-none  d-xs-block'>{item.short}</p> */}
+
                           <p className=''>{item.description}</p>
-                          {/* <Link to={`${item.type}/${item.id}`}>
-                          <button className="mt-2">{item.button}</button>
-                        </Link> */}
                         </div>
                         <section className='mt-2'>
                           <img src={item.userProfile} alt={item.user} />

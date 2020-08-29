@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-// import './css/hover-min.css';
+
 import 'animate.css/animate.min.css';
 import './App.css';
 import './index.css';

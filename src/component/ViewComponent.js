@@ -82,9 +82,6 @@ class View extends Component {
                             Reading Time : {item.time}
                           </div>
                           <div className='intro ml-1'>{item.description}</div>
-                          {/* <a className='more-link' href='pages/blog-post.php'>
-                      Read more →
-                    </a> */}
                         </div>
                       </div>
                     </div>
