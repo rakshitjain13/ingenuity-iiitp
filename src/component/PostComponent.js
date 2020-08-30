@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { baseUrl } from '../shared/baseUrl';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
-import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
+import { EditorState, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import draftToHtml from 'draftjs-to-html';
-import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import { api } from '../authentication';
 function ValidationMessage(props) {
   if (!props.valid) {
@@ -112,7 +111,6 @@ class Postblog extends Component {
   }
 
   render() {
-    const { contentState } = this.state;
     return (
       <div className='container'>
         <div className='row mt-5'>
@@ -189,8 +187,6 @@ class Postblog extends Component {
                   <Editor
                     placeholder='Start creating your post...'
                     wrapperClassName='check'
-                    editorClassName=''
-                    onContentStateChange={this.onContentStateChange}
                     onEditorStateChange={this.onEditorStateChange}
                   />
                   <ValidationMessage

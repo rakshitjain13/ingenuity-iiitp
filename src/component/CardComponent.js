@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/hover-min.css';
-class Gallery extends Component {
-  render() {
-    const list = this.props.data;
+const Gallery =(props)=> {
+    const list = props.data;
     return (
       <section className='latest-posts' style={{ marginTop: '100px' }}>
         <div className='container'>
@@ -51,7 +50,6 @@ class Gallery extends Component {
         </div>
       </section>
     );
-  }
 }
 
 export default Gallery;
