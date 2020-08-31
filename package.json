@@ -65,6 +65,23 @@
     ]
   },
   "devDependencies": {
+    "@snowpack/plugin-babel": "^2.1.0",
     "terser-brunch": "^4.0.0"
+  },
+  "babel": {
+    "env": {
+      "production": {
+        "plugins": [
+          "transform-react-constant-elements",
+          "transform-react-inline-elements",
+          [
+            [
+              "@snowpack/plugin-webpack",
+              {}
+            ]
+          ]
+        ]
+      }
+    }
   }
 }
