@@ -108,7 +108,7 @@ const TeamPage = () => {
                         <p>
                           <img
                             className=' img-fluid'
-                            src='https://media-exp1.licdn.com/dms/image/C5603AQF0ZRwy3frltQ/profile-displayphoto-shrink_400_400/0?e=1600300800&v=beta&t=FuyUjHDboI6c7KAVpqrMhjSBcNV6R3k42w-_GukrAYs'
+                            src="https://media-exp1.licdn.com/dms/image/C4E03AQHOIvwKW4Srsg/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=4fC3ezjh7hRw2oIMqCc97NhlsSAa2mSwUFlFVPHJPgk"
                             alt='img'
                           />
                         </p>

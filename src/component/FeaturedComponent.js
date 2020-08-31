@@ -3,7 +3,8 @@ import { Fade, Stagger } from 'react-animation-components';
 import '../css/FeaturedComponent.css';
 
 function RenderList({ blog, index }) {
-  if (index & 1)
+
+  if (index & 1){
     return (
       <div className='row d-flex align-items-stretch ' >
         <div className='image col-lg-4 col-12'>
@@ -50,6 +51,7 @@ function RenderList({ blog, index }) {
         </div>
       </div>
     );
+  }
   else
     return (
       <div className='row d-flex align-items-stretch ' >
