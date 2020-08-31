@@ -7,7 +7,7 @@ import {
   Collapse,
   NavItem,
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink ,Link} from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
@@ -31,12 +31,14 @@ class Header extends Component {
             <NavbarToggler onClick={this.toggleNav}>
               <span className='fa fa-bars' style={{ color: 'white' }}></span>
             </NavbarToggler>
-            <NavbarBrand href='\'>
+            <NavbarBrand >
+              <Link to='/'>
               <img
                 src={require('../assets/images/logo2.png')}
                 height='45'
                 alt='Ingenuity'
               />
+              </Link>
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav className='ml-auto' style={{ fontSize: '17px' }} navbar>
