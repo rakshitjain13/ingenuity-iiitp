@@ -37,7 +37,7 @@ class Home extends Component {
             <div className='row '>
               <div className='col-12  col-lg-8 mt-5'>
                 <div className='slider-sh'>
-                  <Slider autoplay={3000}>
+                  <Slider autoplay={3000} touchDisabled={true}>
                     {content.map((item, index) => (
                       <div
                         key={index}

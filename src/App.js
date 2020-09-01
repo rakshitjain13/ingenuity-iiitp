@@ -1,4 +1,4 @@
-import React,{Suspense} from 'react';
+import React, { Suspense } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
@@ -6,14 +6,16 @@ import './App.css';
 import './index.css';
 import './default.css';
 import { BrowserRouter } from 'react-router-dom';
-const Main=React.lazy(()=>import('./component/MainComponent.js'));
+import Load from './component/LoaderComponent';
+const Main = React.lazy(() => import('./component/MainComponent.js'));
 
 function App() {
   return (
     <BrowserRouter>
       <div>
         <Suspense fallback={<div></div>}>
-        <Main />
+          {' '}
+          <Main />
         </Suspense>
       </div>
     </BrowserRouter>
