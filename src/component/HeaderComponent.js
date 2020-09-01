@@ -31,7 +31,6 @@ class Header extends Component {
             <NavbarToggler onClick={this.toggleNav}>
               <span className='fa fa-bars' style={{ color: 'white' }}></span>
             </NavbarToggler>
-            <NavbarBrand >
               <Link to='/'>
               <img
                 src={require('../assets/images/logo2.png')}
@@ -39,7 +38,7 @@ class Header extends Component {
                 alt='Ingenuity'
               />
               </Link>
-            </NavbarBrand>
+
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav className='ml-auto' style={{ fontSize: '17px' }} navbar>
                 <NavItem>
