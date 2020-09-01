@@ -9,8 +9,8 @@ import Show from './ShowComponent';
 import Postblog from './PostComponent';
 import TeamPage from './AboutUsComponent';
 import { baseUrl } from '../shared/baseUrl';
-import Load from './LoaderComponent';
-import {api} from '../authentication';
+import { api } from '../authentication';
+import Load from '../component/LoaderComponent';
 
 class Main extends Component {
   constructor(props) {
@@ -20,20 +20,22 @@ class Main extends Component {
     };
   }
   componentDidMount() {
-    axios.get(baseUrl + 'api/data',{
+    axios
+      .get(baseUrl + 'api/data', {
         auth: {
           username: api.user,
-          password: api.pass
-        }
-    }).then((res) => {
-      const store = res.data;
-      this.setState({ store });
-    });
+          password: api.pass,
+        },
+      })
+      .then((res) => {
+        const store = res.data;
+        this.setState({ store });
+      });
   }
   render() {
     const ShowwithId = ({ match }) => {
-      let articleid=match.params.articleId;
-      const index = parseInt(articleid[articleid.length-1], 10);
+      let articleid = match.params.articleId;
+      const index = parseInt(articleid[articleid.length - 1], 10);
       const data = this.state.store;
       if (data != null) {
         if (index === 1) {
@@ -70,42 +72,54 @@ class Main extends Component {
         return <Home home={this.state.store} />;
       } else return <Home />;
     };
-    return (
-      <div>
-        <Header />
-        <Switch location={this.props.location}>
-          <Route
-            exact
-            path='/editorials'
-            component={() => (
-              <View type='editorials' content={this.state.store} />
-            )}
-          />
-          <Route
-            exact
-            path='/experience'
-            component={() => (
-              <View type='experience' content={this.state.store} />
-            )}
-          />
-          <Route
-            exact
-            path='/achievements'
-            component={() => (
-              <View type='achievements' content={this.state.store} />
-            )}
-          />
-          <Route exact path='/ourteam' component={() => <TeamPage />} />
-          <Route path='/home' component={Homepage} />
-          <Route exact path='/experience/:articleId' component={ShowwithId} />
-          <Route exact path='/editorials/:articleId' component={ShowwithId} />
-          <Route exact path='/achievements/:articleId' component={ShowwithId} />
-          <Route exact path='/postBlog' component={() => <Postblog />} />
-          <Redirect to='/home' />
-        </Switch>
-        <Footer />
-      </div>
-    );
+    if (this.state.store) {
+      return (
+        <div>
+          <Header />
+          <Switch location={this.props.location}>
+            <Route
+              exact
+              path='/editorials'
+              component={() => (
+                <View type='editorials' content={this.state.store} />
+              )}
+            />
+            <Route
+              exact
+              path='/experience'
+              component={() => (
+                <View type='experience' content={this.state.store} />
+              )}
+            />
+            <Route
+              exact
+              path='/achievements'
+              component={() => (
+                <View type='achievements' content={this.state.store} />
+              )}
+            />
+            <Route exact path='/ourteam' component={() => <TeamPage />} />
+            <Route path='/home' component={Homepage} />
+            <Route exact path='/experience/:articleId' component={ShowwithId} />
+            <Route exact path='/editorials/:articleId' component={ShowwithId} />
+            <Route
+              exact
+              path='/achievements/:articleId'
+              component={ShowwithId}
+            />
+            <Route exact path='/postBlog' component={() => <Postblog />} />
+            <Redirect to='/home' />
+          </Switch>
+          <Footer />
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <Load />
+        </div>
+      );
+    }
   }
 }
 export default withRouter(Main);

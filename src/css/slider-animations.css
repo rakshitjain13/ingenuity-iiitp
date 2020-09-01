@@ -5,7 +5,6 @@
   opacity: 0;
 }
 
-
 .slide p {
   transition: all 0.3s ease;
   -webkit-transform: translateY(20px);
@@ -104,7 +103,6 @@
   transition-delay: 0s;
 }
 
-
 .wrapper {
   max-width: 1335px;
   box-sizing: border-box;
@@ -182,7 +180,6 @@
   transform: translate(-50%, -50%);
 }
 
-
 .slider-content .inner h1 {
   font-weight: 900;
   margin: 0 auto;
@@ -235,8 +232,6 @@
   font-size: 14px;
   display: block;
 }
-
-
 
 @media (max-height: 600px) {
   .slider-content .inner h1 {
