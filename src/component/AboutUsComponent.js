@@ -8,7 +8,7 @@ import Helmet from 'react-helmet';
 const TeamPage = () => {
   return (
     <div className='bg-white'>
-      <Helmet title="About Us"/>
+      <Helmet title='About Us' />
       <section id='team' className='pb-5'>
         <div className='container'>
           <div
@@ -57,7 +57,7 @@ const TeamPage = () => {
                         <h4 className='card-title'>Rohan Lekhwani </h4>
                         <p className='card-text'>Co-Founder</p>
                         <a href='#' className='btn btn-primary btn-sm'>
-                        <AddIcon/>
+                          <AddIcon />
                         </a>
                       </div>
                     </div>
@@ -73,8 +73,12 @@ const TeamPage = () => {
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
-                            <a className='social-icon text-xs-center' href='https://www.instagram.com/rohanlekhwani/' target='_blank'>
-                              <InstagramIcon/>
+                            <a
+                              className='social-icon text-xs-center'
+                              href='https://www.instagram.com/rohanlekhwani/'
+                              target='_blank'
+                            >
+                              <InstagramIcon />
                             </a>
                           </li>
 
@@ -84,7 +88,7 @@ const TeamPage = () => {
                               href='https://www.linkedin.com/in/rohanlekhwani/'
                               target='_blank'
                             >
-                             <LinkedInIcon/>
+                              <LinkedInIcon />
                             </a>
                           </li>
                           <li className='list-inline-item'>
@@ -93,7 +97,7 @@ const TeamPage = () => {
                               href='https://github.com/RonLek'
                               target='_blank'
                             >
-                             <GitHubIcon/>
+                              <GitHubIcon />
                             </a>
                           </li>
                         </ul>
@@ -116,14 +120,14 @@ const TeamPage = () => {
                         <p>
                           <img
                             className=' img-fluid'
-                            src="https://media-exp1.licdn.com/dms/image/C4E03AQHOIvwKW4Srsg/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=4fC3ezjh7hRw2oIMqCc97NhlsSAa2mSwUFlFVPHJPgk"
+                            src='https://media-exp1.licdn.com/dms/image/C4E03AQHOIvwKW4Srsg/profile-displayphoto-shrink_200_200/0?e=1603929600&v=beta&t=4fC3ezjh7hRw2oIMqCc97NhlsSAa2mSwUFlFVPHJPgk'
                             alt='img'
                           />
                         </p>
                         <h4 className='card-title'>Saksham Mahajan</h4>
                         <p className='card-text'>Co-Founder and Chief Editor</p>
                         <a href='#' className='btn btn-primary btn-sm'>
-                         <AddIcon/>
+                          <AddIcon />
                         </a>
                       </div>
                     </div>
@@ -133,9 +137,8 @@ const TeamPage = () => {
                       <div className='card-body text-center mt-4'>
                         <h4 className='card-title'>Saksham Mahajan</h4>
                         <p className='card-text'>
-                          Sophomore.
                           <br />
-                          The beginning is the end, the end is the beginning.
+                          Just another Sophomore who's exploring new things.
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
@@ -144,7 +147,7 @@ const TeamPage = () => {
                               href='https://www.instagram.com/sakshammahajan_/'
                               target='_blank'
                             >
-                              <InstagramIcon/>
+                              <InstagramIcon />
                             </a>
                           </li>
 
@@ -154,7 +157,7 @@ const TeamPage = () => {
                               href='https://www.linkedin.com/in/saksham-mahajan/'
                               target='_blank'
                             >
-                             <LinkedInIcon/>
+                              <LinkedInIcon />
                             </a>
                           </li>
 
@@ -164,7 +167,7 @@ const TeamPage = () => {
                               href='https://github.com/mahajansaksham'
                               target='_blank'
                             >
-                            <GitHubIcon/>
+                              <GitHubIcon />
                             </a>
                           </li>
                         </ul>
@@ -199,7 +202,7 @@ const TeamPage = () => {
                         <h4 className='card-title'>Mukhrit Gupta</h4>
                         <p className='card-text'>Web Manager</p>
                         <a href='#' className='btn btn-primary btn-sm'>
-                        <AddIcon/>
+                          <AddIcon />
                         </a>
                       </div>
                     </div>
@@ -219,7 +222,7 @@ const TeamPage = () => {
                               href='https://www.instagram.com/mukuboi/'
                               target='_blank'
                             >
-                             <InstagramIcon/>
+                              <InstagramIcon />
                             </a>
                           </li>
 
@@ -229,7 +232,7 @@ const TeamPage = () => {
                               href='https://www.linkedin.com/in/mukhrit-gupta-553196194/'
                               target='_blank'
                             >
-                             <LinkedInIcon/>
+                              <LinkedInIcon />
                             </a>
                           </li>
                           <li className='list-inline-item'>
@@ -238,7 +241,7 @@ const TeamPage = () => {
                               href='https://github.com/Mukhrit'
                               target='_blank'
                             >
-                             <GitHubIcon/>
+                              <GitHubIcon />
                             </a>
                           </li>
                         </ul>
@@ -267,11 +270,8 @@ const TeamPage = () => {
                         </p>
                         <h4 className='card-title'>Rakshit Jain</h4>
                         <p className='card-text'>Web Manager</p>
-                        <a
-                          href='#'
-                          className='btn btn-primary btn-sm'
-                        >
-                         <AddIcon/>
+                        <a href='#' className='btn btn-primary btn-sm'>
+                          <AddIcon />
                         </a>
                       </div>
                     </div>
@@ -291,7 +291,7 @@ const TeamPage = () => {
                               href='https://www.instagram.com/rakshitjain13/'
                               target='_blank'
                             >
-                             <InstagramIcon/>
+                              <InstagramIcon />
                             </a>
                           </li>
 
@@ -301,7 +301,7 @@ const TeamPage = () => {
                               href='https://www.linkedin.com/in/rakshit-jain-9b83b5170/?originalSubdomain=in'
                               target='_blank'
                             >
-                             <LinkedInIcon/>
+                              <LinkedInIcon />
                             </a>
                           </li>
                           <li className='list-inline-item'>
@@ -310,7 +310,7 @@ const TeamPage = () => {
                               href='https://github.com/rakshitjain13'
                               target='_blank'
                             >
-                              <GitHubIcon/>
+                              <GitHubIcon />
                             </a>
                           </li>
                         </ul>
