@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 import '../css/ViewComponent.css';
 import { Fade, Stagger } from 'react-animation-components';
 import Load from './LoaderComponent';
@@ -12,15 +13,15 @@ class View extends Component {
       var otheritem = list.slice(1);
       return (
         <div className='bg-white'>
+          <Helmet title={this.props.type[0].toUpperCase()+this.props.type.slice(1)}/>
           <div id='header' className='container c-header'>
             <div className='row'>
               <div
-                className='col-md-8 tinted cover-image center-fill-container'
-                style={{ margin: '70px 0px' }}
+                className='col-md-8 tinted cover-image center-fill-container mt-5'
               >
                 <div className='img-container'>
                   <img
-                    className='center-both img-center-fill tall'
+                    className='center-both img-center-fill tall img-check'
                     src={firstitem.image}
                     alt='img'
                   />
@@ -28,7 +29,7 @@ class View extends Component {
               </div>
 
               <div className='col-md-4 cover-details'>
-                <div className='mt-4'>
+                <div className='mt-1'>
                   <div className='a-parent'>
                     <h1>
                       <a
@@ -45,7 +46,7 @@ class View extends Component {
                   {firstitem.user}
                 </div>
                 <div className='dt'>Reading Time : {firstitem.time}</div>
-                <div className='cover-excerpt'>{firstitem.description}</div>
+                <div className='cover-excerpt' style={{"fontFamily":"Ubuntu"}}>{firstitem.description}</div>
               </div>
             </div>
           </div>
@@ -81,7 +82,7 @@ class View extends Component {
                           <div className='dt ml-1'>
                             Reading Time : {item.time}
                           </div>
-                          <div className='intro ml-1'>{item.description}</div>
+                          <div className='intro ml-1' style={{"fontFamily":"Ubuntu"}}>{item.description}</div>
                         </div>
                       </div>
                     </div>

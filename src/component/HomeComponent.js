@@ -8,6 +8,7 @@ import Featured from './FeaturedComponent';
 import Slab from './SlabComponent';
 import PicGallery from './PictureGalleryComponent';
 import Load from './LoaderComponent';
+import Helmet from 'react-helmet';
 import {
   Card,
   Button,
@@ -33,6 +34,7 @@ class Home extends Component {
       const featured = this.state.data.filter((item) => item.featured);
       return (
         <div>
+          <Helmet title="Ingenuity | Student Media Body | IIIT PUNE"/>
           <div className='container'>
             <div className='row '>
               <div className='col-12  col-lg-8 mt-5'>

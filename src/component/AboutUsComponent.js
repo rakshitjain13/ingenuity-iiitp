@@ -1,8 +1,14 @@
 import React from 'react';
 import '../css/AboutUsComponent.css';
+import AddIcon from '@material-ui/icons/Add';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Helmet from 'react-helmet';
 const TeamPage = () => {
   return (
     <div className='bg-white'>
+      <Helmet title="About Us"/>
       <section id='team' className='pb-5'>
         <div className='container'>
           <div
@@ -51,7 +57,7 @@ const TeamPage = () => {
                         <h4 className='card-title'>Rohan Lekhwani </h4>
                         <p className='card-text'>Co-Founder</p>
                         <a href='#' className='btn btn-primary btn-sm'>
-                          <i className='fa fa-plus'></i>
+                        <AddIcon/>
                         </a>
                       </div>
                     </div>
@@ -67,8 +73,8 @@ const TeamPage = () => {
                         </p>
                         <ul className='list-inline'>
                           <li className='list-inline-item'>
-                            <a className='social-icon text-xs-center' href='#'>
-                              <i className='fa fa-instagram'></i>
+                            <a className='social-icon text-xs-center' href='https://www.instagram.com/rohanlekhwani/' target='_blank'>
+                              <InstagramIcon/>
                             </a>
                           </li>
 
@@ -76,16 +82,18 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.linkedin.com/in/rohanlekhwani/'
+                              target='_blank'
                             >
-                              <i className='fa fa-linkedin'></i>
+                             <LinkedInIcon/>
                             </a>
                           </li>
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
                               href='https://github.com/RonLek'
+                              target='_blank'
                             >
-                              <i className='fa fa-github'></i>
+                             <GitHubIcon/>
                             </a>
                           </li>
                         </ul>
@@ -115,7 +123,7 @@ const TeamPage = () => {
                         <h4 className='card-title'>Saksham Mahajan</h4>
                         <p className='card-text'>Co-Founder and Chief Editor</p>
                         <a href='#' className='btn btn-primary btn-sm'>
-                          <i className='fa fa-plus'></i>
+                         <AddIcon/>
                         </a>
                       </div>
                     </div>
@@ -134,8 +142,9 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.instagram.com/sakshammahajan_/'
+                              target='_blank'
                             >
-                              <i className='fa fa-instagram'></i>
+                              <InstagramIcon/>
                             </a>
                           </li>
 
@@ -143,8 +152,9 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.linkedin.com/in/saksham-mahajan/'
+                              target='_blank'
                             >
-                              <i className='fa fa-linkedin'></i>
+                             <LinkedInIcon/>
                             </a>
                           </li>
 
@@ -152,8 +162,9 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://github.com/mahajansaksham'
+                              target='_blank'
                             >
-                              <i className='fa fa-github'></i>
+                            <GitHubIcon/>
                             </a>
                           </li>
                         </ul>
@@ -188,7 +199,7 @@ const TeamPage = () => {
                         <h4 className='card-title'>Mukhrit Gupta</h4>
                         <p className='card-text'>Web Manager</p>
                         <a href='#' className='btn btn-primary btn-sm'>
-                          <i className='fa fa-plus'></i>
+                        <AddIcon/>
                         </a>
                       </div>
                     </div>
@@ -206,8 +217,9 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.instagram.com/mukuboi/'
+                              target='_blank'
                             >
-                              <i className='fa fa-instagram'></i>
+                             <InstagramIcon/>
                             </a>
                           </li>
 
@@ -215,16 +227,18 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.linkedin.com/in/mukhrit-gupta-553196194/'
+                              target='_blank'
                             >
-                              <i className='fa fa-linkedin'></i>
+                             <LinkedInIcon/>
                             </a>
                           </li>
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
                               href='https://github.com/Mukhrit'
+                              target='_blank'
                             >
-                              <i className='fa fa-github'></i>
+                             <GitHubIcon/>
                             </a>
                           </li>
                         </ul>
@@ -254,10 +268,10 @@ const TeamPage = () => {
                         <h4 className='card-title'>Rakshit Jain</h4>
                         <p className='card-text'>Web Manager</p>
                         <a
-                          href='https://www.fiverr.com/share/qb8D02'
+                          href='#'
                           className='btn btn-primary btn-sm'
                         >
-                          <i className='fa fa-plus'></i>
+                         <AddIcon/>
                         </a>
                       </div>
                     </div>
@@ -275,8 +289,9 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.instagram.com/rakshitjain13/'
+                              target='_blank'
                             >
-                              <i className='fa fa-instagram'></i>
+                             <InstagramIcon/>
                             </a>
                           </li>
 
@@ -284,16 +299,18 @@ const TeamPage = () => {
                             <a
                               className='social-icon text-xs-center'
                               href='https://www.linkedin.com/in/rakshit-jain-9b83b5170/?originalSubdomain=in'
+                              target='_blank'
                             >
-                              <i className='fa fa-linkedin'></i>
+                             <LinkedInIcon/>
                             </a>
                           </li>
                           <li className='list-inline-item'>
                             <a
                               className='social-icon text-xs-center'
                               href='https://github.com/rakshitjain13'
+                              target='_blank'
                             >
-                              <i className='fa fa-github'></i>
+                              <GitHubIcon/>
                             </a>
                           </li>
                         </ul>

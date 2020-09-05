@@ -590,6 +590,7 @@ section.featured-posts .image {
 section.featured-posts .image img {
   height: 335px;
   width: 400px;
+  object-fit: cover;
 }
 
 section.featured-posts .post-header {

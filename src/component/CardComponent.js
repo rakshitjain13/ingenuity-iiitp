@@ -22,10 +22,11 @@ const Gallery =(props)=> {
                 >
                   <a href={`${item.type}/${item.articleid}`}>
                     <img
-                      style={{ width: '350px', height: '300px' }}
+                      style={{ width: '350px', height: '300px','object-fit': 'cover' }}
                       src={item.image}
                       alt='...'
                       className='img-fluid'
+                      loading="lazy"
                     />
                   </a>
                 </div>

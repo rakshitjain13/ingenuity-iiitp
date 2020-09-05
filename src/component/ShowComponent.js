@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import parse from 'html-react-parser';
+import Helmet from 'react-helmet';
+import ScheduleIcon from '@material-ui/icons/Schedule';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
+import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
 class Show extends Component {
   render() {
@@ -13,6 +18,7 @@ class Show extends Component {
       const nextblog = this.props.nextdata;
       return (
         <div className='bg-white'>
+          <Helmet title={blog.title}/>
           <div className='container' style={{ padding: 10 }}>
             <div className='row'>
               <main className='post blog-post col-lg-8'>
@@ -37,6 +43,7 @@ class Show extends Component {
                         <a
                           href={blog.link}
                           className='author d-flex align-items-center flex-wrap'
+                          target='_blank'
                         >
                           <div className='avatar'>
                             <img
@@ -51,11 +58,11 @@ class Show extends Component {
                         </a>
                         <div className='d-flex align-items-center flex-wrap'>
                           <div className='date'>
-                            <i className='fa fa-clock-o'></i>
-                            {blog.date}{' '}
+                            <ScheduleIcon style={{fontSize:15}}/>
+                          {' '}{blog.date}{' '}
                           </div>
                           <div className='views'>
-                            <i className='fa fa-book'></i> {blog.time}
+                            <ChromeReaderModeIcon style={{fontSize:15}}/>{' '} {blog.time}
                           </div>
                         </div>
                       </div>
@@ -75,7 +82,7 @@ class Show extends Component {
                           className='prev-post text-left d-flex align-items-center'
                         >
                           <div className='icon prev'>
-                            <i className='fa fa-angle-left'></i>
+                            <KeyboardArrowLeftIcon />
                           </div>
                           <div className='text'>
                             <strong className='text-primary'>
@@ -93,7 +100,7 @@ class Show extends Component {
                             <h6>{nextblog.title}</h6>
                           </div>
                           <div className='icon next'>
-                            <i className='fa fa-angle-right'></i>
+                          <KeyboardArrowRightIcon/>
                           </div>
                         </a>
                       </div>

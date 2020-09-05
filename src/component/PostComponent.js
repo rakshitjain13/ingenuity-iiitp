@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Helmet from 'react-helmet';
 import { baseUrl } from '../shared/baseUrl';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 import { EditorState, convertToRaw } from 'draft-js';
@@ -113,6 +114,7 @@ class Postblog extends Component {
   render() {
     return (
       <div className='container'>
+        <Helmet title="Create"/>
         <div className='row mt-5'>
           <h1>Feature yourself,create your own Blog!</h1>
         </div>

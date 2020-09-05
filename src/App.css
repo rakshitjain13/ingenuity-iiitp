@@ -36,3 +36,6 @@
 .anch:hover{
   color: black!important;
 }
+.img-check{
+  object-fit: cover;
+}

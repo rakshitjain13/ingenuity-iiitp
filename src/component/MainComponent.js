@@ -1,17 +1,38 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Home from './HomeComponent';
-import View from './ViewComponent';
+import Postblog from './PostComponent.js';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import axios from 'axios';
-import Show from './ShowComponent';
-import Postblog from './PostComponent';
-import TeamPage from './AboutUsComponent';
 import { baseUrl } from '../shared/baseUrl';
 import { api } from '../authentication';
 import Load from '../component/LoaderComponent';
-
+import Loadertest from './LoadertestComponent';
+import Loadable from "react-loadable"
+const Home = Loadable({
+	loader: () => import('./HomeComponent'),
+	loading() {
+		return <div><Loadertest/></div>
+	}
+});
+const View = Loadable({
+	loader: () => import('./ViewComponent'),
+	loading() {
+		return <div><Loadertest/></div>
+	}
+});
+const Show = Loadable({
+	loader: () => import('./ShowComponent'),
+	loading() {
+		return <div><Loadertest/></div>
+	}
+});
+const TeamPage = Loadable({
+	loader: () => import('./AboutUsComponent'),
+	loading() {
+		return <div><Loadertest/></div>
+	}
+});
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +54,7 @@ class Main extends Component {
       });
   }
   render() {
+    
     const ShowwithId = ({ match }) => {
       let articleid = match.params.articleId;
       const index = parseInt(articleid[articleid.length - 1], 10);

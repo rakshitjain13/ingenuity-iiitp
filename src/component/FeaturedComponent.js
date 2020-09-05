@@ -1,5 +1,7 @@
 import React from 'react';
 import { Fade, Stagger } from 'react-animation-components';
+import ScheduleIcon from '@material-ui/icons/Schedule';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 import '../css/FeaturedComponent.css';
 
 function RenderList({ blog, index }) {
@@ -8,7 +10,7 @@ function RenderList({ blog, index }) {
     return (
       <div className='row d-flex align-items-stretch ' >
         <div className='image col-lg-4 col-12'>
-          <img src={blog.image} alt='...' />
+          <img clasname="image-check" src={blog.image} alt='...' loading="lazy"/>
         </div>
         <div className='text col-lg-8 col-12'>
           <div className='text-inner d-flex align-items-center'>
@@ -26,6 +28,7 @@ function RenderList({ blog, index }) {
                 <a
                   href={blog.link}
                   className='author d-flex align-items-center flex-wrap'
+                  target='_blank'
                 >
                   <div className='avatar'>
                     <img
@@ -39,11 +42,11 @@ function RenderList({ blog, index }) {
                   </div>
                 </a>
                 <div className='date'>
-                  <i className='fa fa-clock-o'></i>
+                  <ScheduleIcon style={{fontSize:15}}/>{' '}
                   {blog.date}
                 </div>
                 <div className='comments  d-none d-md-block'>
-                  <i className='fa fa-book'> {blog.time}</i>
+                   <ChromeReaderModeIcon style={{fontSize:15}}/> {' '}{blog.time}
                 </div>
               </footer>
             </div>
@@ -71,6 +74,7 @@ function RenderList({ blog, index }) {
                 <a
                   href={blog.link}
                   className='author d-flex align-items-center flex-wrap'
+                  target='_blank'
                 >
                   <div className='avatar'>
                     <img
@@ -84,19 +88,19 @@ function RenderList({ blog, index }) {
                   </div>
                 </a>
                 <div className='date '>
-                  <i className='fa fa-clock-o'></i>
+                <ScheduleIcon style={{fontSize:15}}/>{' '}
                   {blog.date}
                 </div>
                 <div className='comments  d-none d-md-block'>
-                  <i className='fa fa-book'></i>
-                  {blog.time}
+                <ChromeReaderModeIcon style={{fontSize:15}}/>
+                  {' '}{blog.time}
                 </div>
               </footer>
             </div>
           </div>
         </div>
         <div className='image col-lg-4 col-12'>
-          <img src={blog.image} alt='...' />
+          <img src={blog.image} alt='...' loading="lazy" />
         </div>
       </div>
     );

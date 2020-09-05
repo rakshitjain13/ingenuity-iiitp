@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
 import {api} from '../authentication';
 import { baseUrl } from '../shared/baseUrl';
 function ValidationMessage(props) {
@@ -73,9 +76,6 @@ class Footer extends Component {
           password:api.pass
         }
       })
-      .then((res) => {
-        console.log(res.data);
-      });
     // alert('Current State is: ' + JSON.stringify(this.state));
     event.preventDefault();
   }
@@ -105,17 +105,17 @@ class Footer extends Component {
                   <ul className='social-menu'>
                     <li className='list-inline-item'>
                       <a href='#'>
-                        <i className='fa fa-facebook'></i>
+                        <FacebookIcon/>
                       </a>
                     </li>
                     <li className='list-inline-item'>
                       <a href='#'>
-                        <i className='fa fa-twitter'></i>
+                       <TwitterIcon/>
                       </a>
                     </li>
                     <li className='list-inline-item'>
                       <a href='#'>
-                        <i className='fa fa-instagram'></i>
+                       <InstagramIcon/>
                       </a>
                     </li>
                   </ul>
@@ -190,8 +190,21 @@ class Footer extends Component {
           <div className='copyrights'>
             <div className='container'>
               <div className='row'>
-                <div className='col-md-6'>
+                <div className='col-md-10'>
                   <p>&copy; 2020 Ingenuity Student Media Body , IIIT Pune</p>
+                </div>
+                <div className="col-md-2 d-flex justify-content-center">
+                <table cellSpacing="0" width="96" cellPadding="0" border="0">
+                  <tbody>
+                  <tr>
+                    <td height="22" width="96"><a href='' target='_blank'><img src='http://www.imgserver.org/divested4a.jpg' border="0" width="96" height="22" alt=""/></a></td>
+                  </tr>
+                  <tr><td height="15"><a href='http://www.free-counter-plus.com/' target='_blank'><img alt="www.free-counter-plus.com" border="0" width="53" height="15" src='http://www.imgserver.org/corban_s15.jpg'/></a><a href='http://www.free-counter-plus.com/counter/stats/stats.asp?id=555575543' target='_blank'><img alt="" border="0" src='http://www.imgserver.org/grounder/thae_n.gif' width="43" height="15"/></a></td>
+                  </tr>
+                  <tr align='CENTER'><td height="14" colSpan="2"></td>
+                  </tr>
+                  </tbody>
+                  </table>
                 </div>
               </div>
             </div>

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {
   Navbar,
-  NavbarBrand,
   Nav,
   NavbarToggler,
   Collapse,
   NavItem,
 } from 'reactstrap';
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { NavLink ,Link} from 'react-router-dom';
 
 class Header extends Component {
@@ -29,10 +29,11 @@ class Header extends Component {
         <Navbar style={{ backgroundColor: '#0e0e0e' }} expand='md'>
           <div className='container '>
             <NavbarToggler onClick={this.toggleNav}>
-              <span className='fa fa-bars' style={{ color: 'white' }}></span>
+              <MenuRoundedIcon style={{ color: "white" }}/>
             </NavbarToggler>
               <Link to='/'>
               <img
+                style={{ "object-fit": "cover"}}
                 src={require('../assets/images/logo2.png')}
                 height='45'
                 alt='Ingenuity'
