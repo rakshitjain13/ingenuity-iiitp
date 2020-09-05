@@ -33,5 +33,27 @@
     if (raf) raf(cb);
     else window.addEventListener('load', cb);
 </script>
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCZaDCCW6r3WdqCBItJ6NdQ_bPxzYGVpuU",
+    authDomain: "ingenuity-iiitp.firebaseapp.com",
+    databaseURL: "https://ingenuity-iiitp.firebaseio.com",
+    projectId: "ingenuity-iiitp",
+    storageBucket: "ingenuity-iiitp.appspot.com",
+    messagingSenderId: "950345625772",
+    appId: "1:950345625772:web:d1370e33618f7e84506f09",
+    measurementId: "G-5YSTKK4EHP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>

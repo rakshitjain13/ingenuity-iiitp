@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import {api} from '../authentication';
@@ -104,17 +104,17 @@ class Footer extends Component {
                   </p>
                   <ul className='social-menu'>
                     <li className='list-inline-item'>
-                      <a href='#'>
-                        <FacebookIcon/>
+                      <a href='#' target="_blank">
+                        <LinkedInIcon/>
                       </a>
                     </li>
                     <li className='list-inline-item'>
-                      <a href='#'>
+                      <a href='https://twitter.com/ingenuityiiitp' target="_blank">
                        <TwitterIcon/>
                       </a>
                     </li>
                     <li className='list-inline-item'>
-                      <a href='#'>
+                      <a href='https://www.instagram.com/ingenuityiiitp/' target="_blank">
                        <InstagramIcon/>
                       </a>
                     </li>
