@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {useState} from 'react';
 import {
   Navbar,
   Nav,
@@ -9,26 +9,13 @@ import {
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import { NavLink ,Link} from 'react-router-dom';
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isNavOpen: false,
-    };
-    this.toggleNav = this.toggleNav.bind(this);
-  }
-  toggleNav() {
-    this.setState({
-      isNavOpen: !this.state.isNavOpen,
-    });
-  }
-
-  render() {
+const Header =()=>{
+  const [isNavOpen,toggleNav]=useState(false)
     return (
       <div>
         <Navbar style={{ backgroundColor: '#0e0e0e' }} expand='md'>
           <div className='container '>
-            <NavbarToggler onClick={this.toggleNav}>
+            <NavbarToggler onClick={()=>toggleNav(!isNavOpen)}>
               <MenuRoundedIcon style={{ color: "white" }}/>
             </NavbarToggler>
               <Link to='/'>
@@ -40,7 +27,7 @@ class Header extends Component {
               />
               </Link>
 
-            <Collapse isOpen={this.state.isNavOpen} navbar>
+            <Collapse isOpen={isNavOpen} navbar>
               <Nav className='ml-auto' style={{ fontSize: '17px' }} navbar>
                 <NavItem>
                   <NavLink
@@ -93,6 +80,5 @@ class Header extends Component {
         </Navbar>
       </div>
     );
-  }
 }
-export default Header;
+export default React.memo(Header);

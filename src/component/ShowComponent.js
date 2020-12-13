@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import parse from 'html-react-parser';
 import Helmet from 'react-helmet';
 import ScheduleIcon from '@material-ui/icons/Schedule';
@@ -6,16 +6,16 @@ import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
-class Show extends Component {
-  render() {
+const Show =(props)=> {
+ 
     if (
-      this.props.data != null &&
-      this.props.prevdata != null &&
-      this.props.nextdata != null
+     props.data != null &&
+     props.prevdata != null &&
+      props.nextdata != null
     ) {
-      const blog = this.props.data;
-      const prevblog = this.props.prevdata;
-      const nextblog = this.props.nextdata;
+      const blog =props.data;
+      const prevblog =props.prevdata;
+      const nextblog =props.nextdata;
       return (
         <div className='bg-white'>
           <Helmet title={blog.title}/>
@@ -113,6 +113,5 @@ class Show extends Component {
         </div>
       );
     }
-  }
 }
 export default Show;

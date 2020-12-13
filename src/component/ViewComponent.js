@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import '../css/ViewComponent.css';
 import { Fade, Stagger } from 'react-animation-components';
 import Load from './LoaderComponent';
-class View extends Component {
-  render() {
-    if (this.props.content != null) {
-      var list = this.props.content.filter(
-        (item) => item.type === this.props.type
+const View =(props)=> {
+    if (props.content) {
+      var list = props.content.filter(
+        (item) => item.type === props.type
       );
       var firstitem = list[0];
       var otheritem = list.slice(1);
       return (
         <div className='bg-white'>
-          <Helmet title={this.props.type[0].toUpperCase()+this.props.type.slice(1)}/>
+          <Helmet title={props.type[0].toUpperCase()+props.type.slice(1)}/>
           <div id='header' className='container c-header'>
             <div className='row'>
               <div
@@ -96,7 +95,6 @@ class View extends Component {
     } else {
       return <Load />;
     }
-  }
 }
 
 export default View;

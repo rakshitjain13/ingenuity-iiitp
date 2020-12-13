@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {useState,useEffect} from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Postblog from './PostComponent.js';
@@ -9,12 +9,7 @@ import { api } from '../authentication';
 import Load from '../component/LoaderComponent';
 import Loadertest from './LoadertestComponent';
 import Loadable from "react-loadable"
-const Home = Loadable({
-	loader: () => import('./HomeComponent'),
-	loading() {
-		return <div><Loadertest/></div>
-	}
-});
+import Home from './HomeComponent';
 const View = Loadable({
 	loader: () => import('./ViewComponent'),
 	loading() {
@@ -33,14 +28,10 @@ const TeamPage = Loadable({
 		return <div><Loadertest/></div>
 	}
 });
-class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      store: this.props.store,
-    };
-  }
-  componentDidMount() {
+const Main =(props)=> {
+
+  const [store,SetStore]=useState(null);
+ useEffect(()=> {
     axios
       .get(baseUrl + 'api/data', {
         auth: {
@@ -49,17 +40,17 @@ class Main extends Component {
         },
       })
       .then((res) => {
-        const store = res.data;
-        this.setState({ store });
+        const sto = res.data;
+       SetStore(sto);
       });
-  }
-  render() {
+  },[]);
+
     
     const ShowwithId = ({ match }) => {
       let articleid = match.params.articleId;
        let res = articleid.split("-");
        const index = parseInt(res[res.length - 1], 10);
-      const data = this.state.store;
+      const data = store;
       if (data != null) {
         if (index === 1) {
           return (
@@ -91,34 +82,34 @@ class Main extends Component {
       }
     };
     const Homepage = () => {
-      if (this.state.store != null) {
-        return <Home home={this.state.store} />;
+      if (store != null) {
+        return <Home home={store} />;
       } else return <Home />;
     };
-    if (this.state.store) {
+    if (store) {
       return (
         <div>
           <Header />
-          <Switch location={this.props.location}>
+          <Switch location={props.location}>
             <Route
               exact
               path='/editorials'
               component={() => (
-                <View type='editorials' content={this.state.store} />
+                <View type='editorials' content={store} />
               )}
             />
             <Route
               exact
               path='/experience'
               component={() => (
-                <View type='experience' content={this.state.store} />
+                <View type='experience' content={store} />
               )}
             />
             <Route
               exact
               path='/achievements'
               component={() => (
-                <View type='achievements' content={this.state.store} />
+                <View type='achievements' content={store} />
               )}
             />
             <Route exact path='/ourteam' component={() => <TeamPage />} />
@@ -143,6 +134,5 @@ class Main extends Component {
         </div>
       );
     }
-  }
 }
 export default withRouter(Main);

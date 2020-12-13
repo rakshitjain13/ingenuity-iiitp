@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-class Slab extends Component {
-  render() {
+import React from 'react';
+const Slab =()=> {
+ 
     return (
       <section
         className='divider slab-style'
@@ -24,7 +24,6 @@ class Slab extends Component {
         </div>
       </section>
     );
-  }
 }
 
-export default Slab;
+export default React.memo(Slab);

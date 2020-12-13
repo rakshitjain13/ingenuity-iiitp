@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from 'react-animated-slider';
 import '../css/hover-min.css';
 import 'react-animated-slider/build/horizontal.css';
@@ -19,19 +19,14 @@ import {
   CardText,
 } from 'reactstrap';
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: this.props.home,
-    };
-  }
+const Home=(props)=> {
+  const data=props.home;
 
-  render() {
-    if (this.state.data != null) {
-      const content = this.state.data.filter((item) => item.slider);
-      const carddata = this.state.data.filter((item) => item.card);
-      const featured = this.state.data.filter((item) => item.featured);
+
+    if (data != null) {
+      const content = data.filter((item) => item.slider);
+      const carddata = data.filter((item) => item.card);
+      const featured = data.filter((item) => item.featured);
       return (
         <div>
           <Helmet title="Ingenuity | Student Media Body | IIIT PUNE"/>
@@ -125,6 +120,5 @@ class Home extends Component {
     } else {
       return <Load />;
     }
-  }
 }
 export default Home;
