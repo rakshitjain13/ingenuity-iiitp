@@ -9,7 +9,7 @@ const IMAGES = [
     thumbnailWidth: 300,
     thumbnailHeight: 174,
 
-    caption: 'After Interview Preparation Fisrt Year',
+    caption: 'After Interview Preparation First Year',
   },
   {
     id: 1,
@@ -35,7 +35,7 @@ const IMAGES = [
     thumbnail: require('../assets/images/photo-4.jpeg'),
     thumbnailWidth: 300,
     thumbnailHeight: 212,
-    caption: 'After Interview Preparation Fisrt Year',
+    caption: 'After Interview Preparation First Year',
   },
 ];
 

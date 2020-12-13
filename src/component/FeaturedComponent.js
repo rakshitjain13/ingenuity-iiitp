@@ -41,12 +41,12 @@ function RenderList({ blog, index }) {
                     <span>{blog.user}</span>
                   </div>
                 </a>
-                <div className='date'>
+                <div className='date  d-none d-md-block'>
                   <ScheduleIcon style={{fontSize:15}}/>{' '}
                   {blog.date}
                 </div>
-                <div className='comments  d-none d-md-block'>
-                   <ChromeReaderModeIcon style={{fontSize:15}}/> {' '}{blog.time}
+                <div className='comments '>
+                <ChromeReaderModeIcon style={{fontSize:15}}/>{' '}{blog.time}
                 </div>
               </footer>
             </div>
@@ -87,13 +87,13 @@ function RenderList({ blog, index }) {
                     <span>{blog.user}</span>
                   </div>
                 </a>
-                <div className='date '>
-                <ScheduleIcon style={{fontSize:15}}/>{' '}
-                  {blog.date}
+                <div className='date d-none d-md-block '>
+                <ScheduleIcon style={{fontSize:15}}/>
+                 {' '} {blog.date}
                 </div>
-                <div className='comments  d-none d-md-block'>
-                <ChromeReaderModeIcon style={{fontSize:15}}/>
-                  {' '}{blog.time}
+                <div className='comments '>
+                <ChromeReaderModeIcon style={{fontSize:15}}/>{' '}
+                  {blog.time}
                 </div>
               </footer>
             </div>

@@ -57,7 +57,8 @@ class Main extends Component {
     
     const ShowwithId = ({ match }) => {
       let articleid = match.params.articleId;
-      const index = parseInt(articleid[articleid.length - 1], 10);
+       let res = articleid.split("-");
+       const index = parseInt(res[res.length - 1], 10);
       const data = this.state.store;
       if (data != null) {
         if (index === 1) {

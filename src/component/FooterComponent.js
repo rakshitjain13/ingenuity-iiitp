@@ -83,66 +83,75 @@ class Footer extends Component {
   render() {
     return (
       <div>
-        <footer className='main-footer'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-4'>
-                <div className='logo'>
-                  <h6 className='text-white'>Ingenuity</h6>
+        <footer className="main-footer">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="logo">
+                  <h6 className="text-white">Ingenuity</h6>
                 </div>
-                <div className='contact-details'>
+                <div className="contact-details">
                   <p>
                     Near Bopdev Ghat, Kondhwa Annexe, Yewalewadi, Pune,
                     Maharashtra 411048
                   </p>
                   <p>Phone: </p>
                   <p>
-                    Email:{' '}
-                    <a href='mailto:ingenuity@iiitp.ac.in'>
+                    Email:{" "}
+                    <a href="mailto:ingenuity@iiitp.ac.in">
                       ingenuity@iiitp.ac.in
                     </a>
                   </p>
-                  <ul className='social-menu'>
-                    <li className='list-inline-item'>
-                      <a href='#' target="_blank">
-                        <LinkedInIcon/>
+                  <ul className="social-menu">
+                    <li className="list-inline-item">
+                      <a
+                        href="https://www.linkedin.com/company/ingenuityiiitp/"
+                        target="_blank"
+                      >
+                        <LinkedInIcon />
                       </a>
                     </li>
-                    <li className='list-inline-item'>
-                      <a href='https://twitter.com/ingenuityiiitp' target="_blank">
-                       <TwitterIcon/>
+                    <li className="list-inline-item">
+                      <a
+                        href="https://twitter.com/ingenuityiiitp"
+                        target="_blank"
+                      >
+                        <TwitterIcon />
                       </a>
                     </li>
-                    <li className='list-inline-item'>
-                      <a href='https://www.instagram.com/ingenuityiiitp/' target="_blank">
-                       <InstagramIcon/>
+                    <li className="list-inline-item">
+                      <a
+                        href="https://www.instagram.com/ingenuityiiitp/"
+                        target="_blank"
+                      >
+                        <InstagramIcon />
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className='col-md-4 justify-content-center mt-5 '>
-                <a href={'/home'}>
+              <div className="col-md-4 justify-content-center mt-5 ">
+                <a href={"/home"}>
                   <img
-                    src={require('../assets/images/logo2.png')}
-                    width='300'
-                    alt='img'
+                    src={require("../assets/images/logo2.png")}
+                    width="300"
+                    alt="img"
                   ></img>
                 </a>
               </div>
-              <div className='col-md-4'>
+              <div className="col-md-4">
                 <h6>Share your thoughts or Report problems</h6>
                 <Form onSubmit={this.handleSubmit}>
                   <FormGroup row>
-                    <Label htmlFor='name' md={3}>
+                    <Label htmlFor="name" md={3}>
                       Name*
                     </Label>
                     <Col md={9}>
                       <Input
-                        type='text'
-                        id='name'
-                        name='name'
-                        placeholder='Name'
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
                         value={this.state.name}
                         onChange={(e) => this.updatename(e.target.value)}
                       />
@@ -153,16 +162,16 @@ class Footer extends Component {
                     </Col>
                   </FormGroup>
                   <FormGroup row>
-                    <Label htmlFor='message' md={3}>
+                    <Label htmlFor="message" md={3}>
                       Message*
                     </Label>
                     <Col md={9}>
                       <Input
-                        type='textarea'
-                        id='message'
-                        name='message'
-                        rows='5'
-                        placeholder='Your message'
+                        type="textarea"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Your message"
                         value={this.state.message}
                         onChange={(e) => this.updatemessage(e.target.value)}
                       ></Input>
@@ -175,8 +184,8 @@ class Footer extends Component {
                   <FormGroup row>
                     <Col md={{ size: 10, offset: 3 }}>
                       <Button
-                        type='submit'
-                        color='primary'
+                        type="submit"
+                        color="primary"
                         disabled={!this.state.formValid}
                       >
                         Feedback
@@ -187,24 +196,11 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className='copyrights'>
-            <div className='container'>
-              <div className='row'>
-                <div className='col-md-10'>
+          <div className="copyrights">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-10">
                   <p>&copy; 2020 Ingenuity Student Media Body , IIIT Pune</p>
-                </div>
-                <div className="col-md-2 d-flex justify-content-center">
-                <table cellSpacing="0" width="96" cellPadding="0" border="0">
-                  <tbody>
-                  <tr>
-                    <td height="22" width="96"><a href='' target='_blank'><img src='http://www.imgserver.org/divested4a.jpg' border="0" width="96" height="22" alt=""/></a></td>
-                  </tr>
-                  <tr><td height="15"><a href='http://www.free-counter-plus.com/' target='_blank'><img alt="www.free-counter-plus.com" border="0" width="53" height="15" src='http://www.imgserver.org/corban_s15.jpg'/></a><a href='http://www.free-counter-plus.com/counter/stats/stats.asp?id=555575543' target='_blank'><img alt="" border="0" src='http://www.imgserver.org/grounder/thae_n.gif' width="43" height="15"/></a></td>
-                  </tr>
-                  <tr align='CENTER'><td height="14" colSpan="2"></td>
-                  </tr>
-                  </tbody>
-                  </table>
                 </div>
               </div>
             </div>
